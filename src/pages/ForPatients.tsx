@@ -3,9 +3,9 @@ import { digitalConsultation, fastAccess, heroPatient, patientNeed1, patientNeed
 import { Button, Contact, Faq, StakeHolder, Steps } from "../components";
 
 function ForPatients() {
-    // useEffect(() => {
-    //     window.scrollTo({ top: 0, behavior: "smooth" })
-    // }, []);
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }, []);
     return (
         <div className="w-full">
             <section className="w-full min-h-screen px-5 md:px-20 overflow-hidden md:pt-[120px] pt-24 pb-20 md:pb-24 max-w-full flex md:flex-row flex-col">
@@ -132,7 +132,7 @@ function ForPatients() {
                                 </div>
                                 <div className="flex flex-col gap-1">
                                     <h3 className="text-[#343434] text-xl md:text-2xl lg:text-3xl font-medium font-['Work_Sans'] leading-[135%]">
-                                        Choose What You Need
+                                        Choose What You Need 
                                     </h3>
                                     <p className="text-[#545454] text-sm md:text-base lg:text-xl font-normal font-['Work_Sans'] leading-[135%]">
                                         Patients select their region and type of care, right from the app or web platform.
