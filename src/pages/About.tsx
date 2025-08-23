@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import { aboutDoctor, aboutPatient, ourmission, ourvision, work } from "../assets";
 import { Contact } from "../components";
 
 export default function About() {
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }, []);
     return (
         <div className="w-full">
             <section className="w-full min-h-screen px-5 overflow-hidden md:pt-[120px] pt-24 pb-20 md:pb-24 max-w-[1440px] flex flex-col items-center gap-12 mx-auto">
@@ -10,7 +14,7 @@ export default function About() {
                         Redefining Digital Healthcare Smarter, Faster, Human
                     </h2>
                     <p className="w-full text-center text-[#555] text-base sm:text-lg lg:text-xl font-normal font-['Work_Sans'] leading-[135%]">
-                        At PrevHealth, we believe healthcare should work for people, not the other way around. Our platform simplifies clinical workflows, speeds up documentation, and enhances the patient experience
+                        At Clinvvo, we believe healthcare should work for people, not the other way around. Our platform simplifies clinical workflows, speeds up documentation, and enhances the patient experience
                     </p>
                 </div>
                 <div className="w-full flex md:flex-row flex-col gap-3">
@@ -70,7 +74,7 @@ export default function About() {
                     </div>
                     <div className="w-full flex flex-col gap-6">
                         <h3 className="text-[#23586a] xl:text-5xl md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[1.35]">
-                            PrevHealth is a B2B SaaS platform built by European medical professionals and technologists who believe that better healthcare starts with better tools.
+                            Clinvvo is a B2B SaaS platform built by European medical professionals and technologists who believe that better healthcare starts with better tools.
                         </h3>
                         <h3 className="text-[#23586a] xl:text-5xl md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[1.35]">
                             We offer an end-to-end suite of features, from appointment booking and video consultations to AI-powered medical notes and EHR integration, that helps clinics digitize their services under their own brand.
@@ -91,7 +95,7 @@ export default function About() {
                         </h1>
                     </div>
                     <p className="w-full max-w-[743px] text-[#545454] text-lg md:text-xl font-normal font-['Work_Sans'] leading-[1.35]">
-                        Our AI capabilities automate tasks like medical transcription and summarization, freeing up valuable time for caregivers and ensuring a smoother experience for patients. Clinics using PrevHealth see faster documentation, improved efficiency, and better care delivery, every step of the way.
+                        Our AI capabilities automate tasks like medical transcription and summarization, freeing up valuable time for caregivers and ensuring a smoother experience for patients. Clinics using Clinvvo see faster documentation, improved efficiency, and better care delivery, every step of the way.
                     </p>
                 </div>
                 <div className="w-full flex justify-center">

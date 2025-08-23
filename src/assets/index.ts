@@ -12,6 +12,7 @@ import technology from "./technology.svg";
 import charging from "./charging.svg";
 import lens from "./lens.svg";
 import testimonial from "./testimonial.png";
+import testimonialPerson1 from "./testimonial.jpg";
 import digitalConsultation from "./digital-consults.png";
 import questionnaires from "./questionaires.png";
 import templateDropdown from "./template-dropdown.png";
@@ -74,6 +75,8 @@ import aboutDoctor from "./about-doctor.svg";
 import ourmission from "./ourmission.svg";
 import ourvision from "./ourvision.svg";
 import work from "./work.svg";
+import hero from "./hero.png";
+import heroMobile from "./hero-mobile.png";
 export {
   logo,
   globe,
@@ -89,6 +92,7 @@ export {
   charging,
   lens,
   testimonial,
+  testimonialPerson1,
   digitalConsultation,
   questionnaires,
   templateDropdown,
@@ -151,4 +155,6 @@ export {
   ourmission,
   ourvision,
   work,
+  hero,
+  heroMobile,
 };

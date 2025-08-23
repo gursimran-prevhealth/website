@@ -1,9 +1,9 @@
 import { aiTranscription, dashboard, digitalConsultation, questionnaires, templateDropdown } from "../../assets";
-import Button from "../button";
+
 
 function Care() {
     return (
-        <section className="w-full md:py-36 md:px-20 py-16 px-5 max-w-[1560px] mx-auto min-h-screen">
+          <section className="w-full md:py-36 md:px-20 py-16 px-5 max-w-[1560px] mx-auto min-h-screen">
             <div className="w-full max-w-[1280px] mx-auto flex flex-col items-center gap-8 md:gap-14">
                 <div className="w-full max-w-[579px] flex flex-col items-center gap-3 md:gap-4 text-center">
                     <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
@@ -95,10 +95,6 @@ function Care() {
                         </div>
                     </div>
                 </div>
-
-                <Button>
-                    Explore All Features
-                </Button>
             </div>
         </section>
     );

@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { cn } from "../../lib";
-import { globe, logo } from "../../assets";
+import { logo } from "../../assets";
 import Button from "../button";
 
 const navItems = [
@@ -20,15 +20,18 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  useEffect(() => {
+    document.body.style.overflow = isMobileMenuOpen ? "hidden" : ""
+    return () => { document.body.style.overflow = "" };
+  }, [isMobileMenuOpen])
+
   return (
-    <header className="w-full bg-white shadow-sm">
-      {/* Reduced container padding on mobile */}
+    <header className="w-full bg-white shadow-sm fixed top-0 z-[100]">
       <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-20 h-16 md:h-20 flex items-center justify-between relative">
-        <Link to="/" className="w-28 md:w-44 h-5 md:h-6 flex-shrink-0">
+        <Link to="/" className="w-28 md:w-44 h-5 md:h-7 flex-shrink-0 z-[60]">
           <img src={logo} alt="Logo" className="w-full h-full object-contain" />
         </Link>
 
-        {/* Desktop Navigation Links */}
         <nav className="hidden md:flex items-center gap-6 lg:gap-8">
           {navItems.map((item) => {
             const isActive = currentPath === item.path;
@@ -65,64 +68,43 @@ const Navbar = () => {
           <Button className="hidden md:inline-flex" onClick={() => navigate('/contact-us')}>
             Contact Us
           </Button>
-          <div className="hidden md:inline-flex items-center px-3 sm:px-8 py-1.5 sm:py-3 rounded-full outline-1 outline-slate-400 gap-[3px] cursor-pointer">
+          {/* <div className="hidden md:inline-flex items-center px-3 sm:px-8 py-1.5 sm:py-3 rounded-full outline-1 outline-slate-400 gap-[3px] cursor-pointer">
             <img src={globe} alt="Globe" className="w-4 sm:w-5 h-4 sm:h-5 object-contain" />
             <span className="text-[#23586A] text-xs sm:text-sm font-medium font-[Work_Sans] leading-snug">
               English
             </span>
-          </div>
+          </div> */}
 
           <div className="md:hidden">
             <button
-              className="text-[#23586A] focus:outline-none p-1"
+              className="relative w-5 h-4.5 flex flex-col justify-between items-center md:hidden z-[100]"
               onClick={toggleMobileMenu}
             >
-              {isMobileMenuOpen ? (
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              )}
+              <div
+                className={`shrink-0 h-0.5 w-8 bg-[#23586A] rounded-sm transform transition duration-300 ease-in-out ${isMobileMenuOpen ? "rotate-45 translate-y-2" : ""
+                  }`}
+              />
+              <div
+                className={`shrink-0 h-0.5 w-8 bg-[#23586A] rounded-sm transform transition duration-300 ease-in-out ${isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
+                  }`}
+              />
             </button>
+
           </div>
         </div>
 
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-md z-50">
-            <nav className="flex flex-col px-4 py-2">
+          <div className="h-screen fixed inset-0 bg-white flex flex-col items-center justify-center z-50 transition-all duration-500 max-sm:px-6 sm:px-8 pt-16 pb-4">
+            <nav className="w-full h-full flex flex-col gap-4">
               {navItems.map((item) => {
                 const isActive = currentPath === item.path;
-
                 return (
                   <Link
                     key={item.path}
                     to={item.path}
                     className={cn(
-                      "py-2 px-2 text-sm font-medium border-b border-gray-100",
-                      isActive ? "text-rose-500" : "text-[#23586A]"
+                      "font-[Work_Sans] transition text-[32px] leading-[140%]",
+                      isActive ? "text-[#fd8883] font-semibold" : "text-[#23586A] hover:text-[#fd8883]"
                     )}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -130,18 +112,11 @@ const Navbar = () => {
                   </Link>
                 );
               })}
-              <div className="flex flex-col gap-2 mt-3">
-                <Button>Contact Us</Button>
-                <div className="flex items-center justify-center px-3 py-2 rounded-full outline-1 outline-slate-400 gap-1">
-                  <img src={globe} alt="Globe" className="w-4 h-4 object-contain" />
-                  <span className="text-[#23586A] text-xs font-medium font-[Work_Sans] leading-snug">
-                    English
-                  </span>
-                </div>
-              </div>
+              <Button className="mt-auto" onClick={() => { navigate('/contact-us'); setIsMobileMenuOpen(false) }}>Contact Us</Button>
             </nav>
           </div>
         )}
+
       </div>
     </header>
   );

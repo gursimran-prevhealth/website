@@ -1,21 +1,26 @@
+import { useEffect } from "react";
 import { consult1, consult2, consult3, consult4, consult5, consult6, consult7, consult8, heroAi, heroAIMobile } from "../assets";
 import { Button, Contact, Faq, Features, Testimonials, Workflow } from "../components";
 
 function AiFeatures() {
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }, []); 
     return (
         <div className="w-full">
-            <section className="w-full min-h-screen px-5 overflow-hidden md:pt-[120px] pt-24 pb-20 md:pb-24">
+            <section className="relative w-full min-h-screen px-5 overflow-hidden md:pt-[120px] pt-24 pb-20 md:pb-24">
+                <img src="blur.png" className="absolute top-1 w-full h-full -z-10" alt="" />
                 <div className="w-full flex flex-col justify-start items-center gap-6 md:gap-8 lg:gap-12 max-w-[750px] mx-auto">
                     <div className="flex flex-col justify-start items-start gap-3 md:gap-5 w-full">
                         <h2 className="w-full text-center text-[#23586A] text-3xl sm:text-4xl lg:text-6xl font-medium font-['Lora'] leading-[135%]">
                             Everything you need for faster, Smarter care
                         </h2>
                         <p className="w-full text-center text-[#555] text-base sm:text-lg lg:text-xl font-normal font-['Work_Sans'] leading-[135%]">
-                            Explore how PrevHealth's AI works quietly in the background to streamline care, reduce clicks, and empower providers and patients alike.
+                            Explore how Clinvvo's AI works quietly in the background to streamline care, reduce clicks, and empower providers and patients alike.
                         </p>
                     </div>
                     <Button>
-                        See how it Works
+                        <a href="https://calendly.com/prevhealth/30min" target="_blank">Book a Demo</a>
                     </Button>
                 </div>
                 <div className="w-full max-w-full md:pt-12 pt-24 min-w-[calc(100vw-20px)] md:min-w-[unset]">
@@ -33,7 +38,7 @@ function AiFeatures() {
                             </div>
                             <div className="text-center text-[#23586a] text-3xl md:text-5xl font-medium font-['Lora'] leading-[135%]">Your AI Assistant in Every Consultation</div>
                         </div>
-                        <div className="text-center text-[#545454] text-base md:text-xl font-normal font-['Work_Sans'] leading-[135%]">Trusted by care teams across Europe, PrevHealth's AI creates structured medical notes in seconds, fitting smoothly into your workflow so you can review and send to the journal system with one click.</div>
+                        <div className="text-center text-[#545454] text-base md:text-xl font-normal font-['Work_Sans'] leading-[135%]">Trusted by care teams across Europe, Clinvvo's AI creates structured medical notes in seconds, fitting smoothly into your workflow so you can review and send to the journal system with one click.</div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-10 w-full max-w-full">
@@ -41,7 +46,7 @@ function AiFeatures() {
                             <div className="col-span-1 w-full">
                                 <div className="max-w-[411px] justify-start text-[#343434] md:text-[28px] text-2xl font-medium font-['Work_Sans'] leading-[135%]">Easy Medical Note Generation</div>
                                 <div className="text-[#555] font-['Work_Sans'] text-base font-normal leading-[135%] pt-2 max-w-[315px]">
-                                    PrevHealth listens, transcribes, and converts your consultation into structured, clinically accurate notes—ready to review or send in seconds.                                <ul className="list-disc pl-4">
+                                    Clinvvo listens, transcribes, and converts your consultation into structured, clinically accurate notes—ready to review or send in seconds.                                <ul className="list-disc pl-4">
                                         <li className="">Auto-generated transcription and medical notes</li>
                                         <li className="">Works seamlessly for both in-person and digital consultation</li>
                                         <li className="">Structured output tailored to match your journal templates</li>
@@ -93,7 +98,7 @@ function AiFeatures() {
                             <div className="w-full">
                                 <div className="max-w-[235px] justify-start text-[#343434] md:text-[28px] text-2xl font-medium font-['Work_Sans'] leading-[135%]">Built for Trust & Security</div>
                                 <p className="text-[#555] font-['Work_Sans'] text-base font-normal leading-[135%] pt-2 max-w-[460px]">
-                                    PrevHealth is GDPR-compliant and offers secure login with BankID, SITHS via Net iD, and SITHS via eID—keeping patient data protected at all times                            </p>
+                                    Clinvvo is GDPR-compliant and offers secure login with BankID, SITHS via Net iD, and SITHS via eID—keeping patient data protected at all times                            </p>
                             </div>
                             <div className="w-full">
                                 <img src={consult6} alt="" className="max-w-[95%] ml-auto w-full" />
@@ -103,24 +108,23 @@ function AiFeatures() {
                             <img src={consult7} alt="" className="max-w-full w-full" />
                             <div className="max-w-[390px] justify-start text-[#343434] md:text-[28px] text-2xl font-medium font-['Work_Sans'] leading-[135%] md:pt-6 pt-4">Multilingual Transcription</div>
                             <p className="text-[#555] font-['Work_Sans'] text-base font-normal leading-[135%] pt-2 max-w-[460px]">
-                                Speak in one language, get notes in another. PrevHealth supports multilingual consultations and transcribes everything in your preferred clinical language
+                                Speak in one language, get notes in another. Clinvvo supports multilingual consultations and transcribes everything in your preferred clinical language
                             </p>
                         </div>
                         <div className="w-full md:p-6 p-4 rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)]">
                             <div className="max-w-[365px] justify-start text-[#343434] md:text-[28px] text-2xl font-medium font-['Work_Sans'] leading-[135%]">Effortless ICD-10 Coding</div>
                             <p className="text-[#555] font-['Work_Sans'] text-base font-normal leading-[135%] pt-2 max-w-[572px]">
-                                No more digging through code lists. As you document, PrevHealth surfaces the most relevant ICD-10 codes right next to your notes, ready when you need them
+                                No more digging through code lists. As you document, Clinvvo surfaces the most relevant ICD-10 codes right next to your notes, ready when you need them
                             </p>
                             <div className="w-full flex justify-center md:pt-8 pt-4">
                                 <img src={consult8} alt="Consult" className="max-w-[430px] w-full" />
                             </div>
                         </div>
-
                     </div>
 
-                    <div className="px-8 py-4 bg-[#23586a] rounded-[48px] inline-flex justify-center items-center mt-6 md:mt-0">
-                        <div className="text-white text-base font-medium font-['Work_Sans'] leading-[135%]">Book a Demo</div>
-                    </div>
+                    <Button>
+                        <a href="https://calendly.com/prevhealth/30min" target="_blank">Book a Demo</a>
+                    </Button>
                 </div>
             </section>
             <Features />

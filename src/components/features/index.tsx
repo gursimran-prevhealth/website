@@ -1,5 +1,5 @@
 import { feat1, feat2, feat3, feat4, feat5, feat6, feat7, feat8, feat9 } from "../../assets";
-import Button from "../button";
+
 
 const featureData = [
     {
@@ -19,27 +19,27 @@ const featureData = [
     },
     {
         title: "Smart Dictation",
-        desc: "Just speak into a blank template after your consultation, and PrevHealth takes care of the rest.",
+        desc: "Just speak into a blank template after your consultation, and Clinvvo takes care of the rest.",
         img: feat4,
     },
     {
         title: "Diagnosis Codes",
-        desc: "PrevHealth suggests relevant codes as you speak or type, so you can focus on care, not coding.",
+        desc: "Clinvvo suggests relevant codes as you speak or type, so you can focus on care, not coding.",
         img: feat5,
     },
     {
         title: "AI Speech Recognition",
-        desc: "Dictate freely or directly into fields, PrevHealth transcribes it all with built-in speech recognition.",
+        desc: "Dictate freely or directly into fields, Clinvvo transcribes it all with built-in speech recognition.",
         img: feat6,
     },
     {
         title: "Automatic Clinical Language",
-        desc: "Say it your way, PrevHealth translates it into clear, professional clinical phrasing automatically.",
+        desc: "Say it your way, Clinvvo translates it into clear, professional clinical phrasing automatically.",
         img: feat7,
     },
     {
         title: "One Click Transfer",
-        desc: "Once your medical note is ready, PrevHealth seamlessly transfer it to your medical journal system.",
+        desc: "Once your medical note is ready, Clinvvo seamlessly transfer it to your medical journal system.",
         img: feat8,
     },
     {
@@ -81,9 +81,6 @@ export default function Features() {
                     </div>
                 ))}
             </div>
-            <Button>
-                See How it Works
-            </Button>
         </div>
     );
 }

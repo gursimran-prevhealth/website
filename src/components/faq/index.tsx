@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { cross } from "../../assets"; // Make sure this is a valid import
-import { faqData } from "../../lib/consts";
+import { cross } from "../../assets";
+import { faqData } from "../../lib/const";
 
 export default function Faq() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -10,7 +10,7 @@ export default function Faq() {
     };
 
     return (
-        <section className="w-full  px-5 md:py-24 pt-16 pb-12 min-h-screen">
+        <section className="w-full  px-5 md:py-24 pt-12 pb-12 sm:min-h-screen">
             <div className="w-full max-w-[868px] mx-auto flex flex-col items-center gap-10 md:gap-14">
                 {/* Header */}
                 <div className="w-full max-w-[582px] flex flex-col items-center gap-3 md:gap-4">

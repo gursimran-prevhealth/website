@@ -1,29 +1,45 @@
-import { aiPowered, charging, forPatient, forPatient1, lens, smartCare, technology } from "../assets";
+import { Link } from "react-router-dom";
+import { aiPowered, charging, forPatient, forPatient1, hero, heroMobile, lens, smartCare, technology } from "../assets";
 import { Care, Contact, Faq, Testimonials } from "../components";
 import Button from "../components/button";
 
 export default function Home() {
     return (
         <div className="w-full">
-            <section className="w-full min-h-screen flex flex-col items-center gap-10 px-5 py-24 sm:px-10 sm:py-32">
+            <section className="relative w-full flex flex-col items-center gap-10 px-5 py-24 sm:px-10 sm:py-32 pb-0 sm:pb-0">
+                <img src="blur.png" className="absolute w-full h-full -z-10" alt="" />
                 <div className="flex flex-col items-center gap-5 max-w-[1023px]">
                     <h1 className="text-center text-[#23586A] font-medium font-[Lora] leading-[135%] text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
                         The Operating System for Modern Healthcare
                     </h1>
                     <p className="text-center text-[#555] font-normal font-[Work_Sans] text-base sm:text-lg md:text-xl leading-[135%] max-w-[975px]">
-                        We’ve reimagined care to be smarter, faster, and more human. PrevHealth
+                        We’ve reimagined care to be smarter, faster, and more human. Clinvvo
                         provides the tools that help care teams stay connected and focused on
                         the patient, so care happens naturally, when and where it’s needed most.
                     </p>
                 </div>
                 <div className="flex flex-wrap justify-center items-center gap-4">
-                    <Button>Book a Demo</Button>
-                    <button className="px-6 sm:px-8 py-3.5 sm:py-4 bg-white outline-[0.6px] outline-zinc-300 text-cyan-950 text-sm sm:text-base font-medium font-[Work_Sans] leading-tight sm:leading-snug rounded-full cursor-pointer">
-                        See how it works
-                    </button>
+                    <Button>
+                        <a href="https://calendly.com/prevhealth/30min" target="_blank">Book a Demo</a>
+                    </Button>
                 </div>
+
             </section>
-            <div className="w-full max-w-[1560px] mx-auto md:min-h-[384px] min-h-[633px] bg-[#F7FDFF] overflow-hidden flex items-center justify-center p-6">
+            <div className="home-image w-[80%] relative overflow-hidden min-h-[160px] mx-auto mt-8">
+                <div className="absolute inset-0 bg-gray-300 animate-pulse w-full h-full"></div>
+                <img
+                    src={hero}
+                    alt="Hero"
+                    className="w-full object-cover relative bg-white hidden md:block"
+                />
+                <img
+                    src={heroMobile}
+                    alt="Hero"
+                    className="w-full object-cover relative bg-white md:hidden"
+                />
+            </div>
+
+            <div className="w-full max-w-[1560px] mx-auto md:min-h-[384px] min-h-[633px] bg-[#F7FDFF] overflow-hidden flex items-center justify-center p-6 pt-0">
                 <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-32">
                     <div className="max-w-64 w-full flex flex-col items-center gap-3">
                         <div className="text-7xl md:text-8xl font-semibold font-[Work_Sans] text-[#23586A] leading-[135%]">
@@ -51,7 +67,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <section className="w-full min-h-screen  max-w-[1560px] mx-auto md:pt-[122px] md:pb-[70px] pb-[50px] pt-32 bg-white">
+            <section className="w-full max-w-[1560px] mx-auto md:pt-[122px] md:pb-[70px] pb-[50px] pt-15 bg-white">
                 <div className="w-full max-w-[937px] mx-auto flex flex-col items-center gap-3 md:gap-4 px-4">
                     <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
                         <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />
@@ -63,11 +79,11 @@ export default function Home() {
                         Built for Doctors. Designed for Patients. Powered by Smart AI.
                     </h2>
                     <p className="text-base md:text-xl text-[#555] font-normal font-[Work_Sans] leading-snug md:leading-7 text-center">
-                        Whether you're treating patients or looking for care yourself, PrevHealth brings everything together in one place—faster consults, smarter tools, and tech that stays out of the way but keeps everything running smoothly
+                        Whether you're treating patients or looking for care yourself, Clinvvo brings everything together in one place—faster consults, smarter tools, and tech that stays out of the way but keeps everything running smoothly
                     </p>
                 </div>
             </section>
-            <section className="w-full min-h-screen flex flex-col gap-24 md:px-20 px-5 max-w-[1560px] mx-auto overflow-hidden">
+            <section className="w-full min-h-screen flex flex-col gap-24 md:px-20 px-5 max-w-[1560px] mx-auto pt-15 overflow-hidden">
                 <div className="w-full flex lg:flex-row flex-col-reverse gap-6 h-full">
                     <div className="w-full h-full flex items-end justify-start mt-auto">
                         <div className="w-full lg:max-w-[579px] flex flex-col items-start gap-3 md:gap-4">
@@ -76,8 +92,12 @@ export default function Home() {
                                 <span className="text-sm md:text-base text-[#555] font-normal font-[Work_Sans] leading-[135%]">FOR DOCTORS</span>
                             </div>
                             <h2 className="text-3xl md:text-5xl text-[#23586A] font-medium font-[Lora] leading-[135%]">Less Admin. More Time for Real Care.</h2>
-                            <p className="text-base md:text-xl text-[#555] font-normal font-[Work_Sans] leading-[135%]">PrevHealth helps doctors focus on what matters. With AI-generated notes, smart intake summaries, and a unified dashboard, you can spend less time on administrative work and more time connecting with patients.</p>
-                            <Button>Explore More</Button>
+                            <p className="text-base md:text-xl text-[#555] font-normal font-[Work_Sans] leading-[135%]">Clinvvo helps doctors focus on what matters. With AI-generated notes, smart intake summaries, and a unified dashboard, you can spend less time on administrative work and more time connecting with patients.</p>
+                            <Button>
+                                <Link to="/for-doctors">
+                                    Explore More
+                                </Link>
+                            </Button>
                         </div>
                     </div>
                     <div className="w-full flex justify-end items-end">
@@ -92,8 +112,12 @@ export default function Home() {
                                 <span className="text-sm md:text-base text-[#555] font-normal font-[Work_Sans] leading-[135%]">FOR PATIENTS</span>
                             </div>
                             <h2 className="text-3xl md:text-5xl text-[#23586A] font-medium font-[Lora] leading-[135%]">Faster Answers. Happier Outcomes</h2>
-                            <p className="text-base md:text-xl text-[#555] font-normal font-[Work_Sans] leading-[135%]">PrevHealth helps your patients get care without the friction - no crowded waiting rooms, no clunky intake. They choose their service, fill out a short guided form, and connect with your providers through secure chat, call, or video. Follow-ups and updates are built in, so they feel supported every step of the way.</p>
-                            <Button>Explore More</Button>
+                            <p className="text-base md:text-xl text-[#555] font-normal font-[Work_Sans] leading-[135%]">Clinvvo helps your patients get care without the friction - no crowded waiting rooms, no clunky intake. They choose their service, fill out a short guided form, and connect with your providers through secure chat, call, or video. Follow-ups and updates are built in, so they feel supported every step of the way.</p>
+                            <Button>
+                                <Link to="/for-patients">
+                                    Explore More
+                                </Link>
+                            </Button>
                         </div>
                     </div>
                     <div className="w-full flex justify-end items-end">
@@ -108,8 +132,12 @@ export default function Home() {
                                 <span className="text-sm md:text-base text-[#555] font-normal font-[Work_Sans] leading-[135%]">POWERED BY AI</span>
                             </div>
                             <h2 className="text-3xl md:text-5xl text-[#23586A] font-medium font-[Lora] leading-[135%]">AI That Listens & Lightens the Load</h2>
-                            <p className="text-base md:text-xl text-[#555] font-normal font-[Work_Sans] leading-[135%]">PrevHealth's AI handles the busywork, transcribing consults, generating medical notes, transferring to EHR, so your clinicians can focus on care. For patients, it means faster appointments, fewer forms, and a more connected experience, all quietly powered behind the scenes.</p>
-                            <Button>Explore More</Button>
+                            <p className="text-base md:text-xl text-[#555] font-normal font-[Work_Sans] leading-[135%]">Clinvvo's AI handles the busywork, transcribing consults, generating medical notes, transferring to EHR, so your clinicians can focus on care. For patients, it means faster appointments, fewer forms, and a more connected experience, all quietly powered behind the scenes.</p>
+                            <Button>
+                                <Link to="/ai-features">
+                                    Explore More
+                                </Link>
+                            </Button>
                         </div>
                     </div>
                     <div className="flex justify-end items-end md:-mr-20 -mr-5 md:w-[calc(100%+80px)] w-[calc(100%+20px)]">
@@ -133,7 +161,7 @@ export default function Home() {
                             </div>
                             <div className="flex flex-col justify-start items-start gap-4">
                                 <div className="text-[#555] text-base md:text-lg lg:text-xl font-normal font-['Work_Sans'] leading-snug md:leading-6 lg:leading-7">
-                                    PrevHealth is a B2B SaaS platform built by European medical professionals and technologists who believe that better healthcare starts with better tools.
+                                    Clinvvo is a B2B SaaS platform built by European medical professionals and technologists who believe that better healthcare starts with better tools.
                                 </div>
                                 <div className="text-[#555] text-base md:text-lg lg:text-xl font-normal font-['Work_Sans'] leading-snug md:leading-6 lg:leading-7">
                                     We offer an end-to-end suite of features, from appointment booking and video consultations to AI-powered medical notes and EHR integration, that helps clinics digitize their services under their own brand.
@@ -141,7 +169,9 @@ export default function Home() {
                             </div>
                         </div>
                         <Button>
-                            More About Us
+                            <Link to="/about">
+                                More About Us
+                            </Link>
                         </Button>
                     </div>
 
@@ -149,13 +179,13 @@ export default function Home() {
                         <img
                             className="w-full h-full size-full"
                             src={smartCare}
-                            alt="PrevHealth platform screenshot"
+                            alt="Clinvvo platform screenshot"
                         />
 
                     </div>
                 </div>
             </section>
-            <div className="w-full min-h-screen max-w-[1560px] mx-auto px-5 sm:px-10 lg:px-20 py-16 md:pb-24 md:pt-20 flex flex-col items-center gap-16 md:gap-18 ">
+            <div className="w-full min-h-screen max-w-[1560px] mx-auto px-5 sm:px-10 lg:px-20 py-16 md:pb-24 md:pt-15 flex flex-col items-center gap-16 md:gap-18 ">
                 <div className="w-full max-w-[609px] flex flex-col items-center gap-3 md:gap-4 text-center">
                     <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
                         <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />

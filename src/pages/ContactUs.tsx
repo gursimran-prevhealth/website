@@ -1,7 +1,11 @@
-import { email, location } from "../assets";
+import { useEffect } from "react";
+import { email } from "../assets";
 import { Button, Faq } from "../components";
 
 function ContactUs() {
+    useEffect(() => {
+            window.scrollTo({ top: 0, behavior: "smooth" })
+        }, []);
     return (
         <div className="w-full">
             <section className="w-full min-h-screen px-5 overflow-hidden md:pt-[120px] pt-24 pb-20 md:pb-24 max-w-[1440px] flex flex-col items-center gap-12 mx-auto">
@@ -30,10 +34,10 @@ function ContactUs() {
                             <img src={email} alt="Email" />
                             <span className="text-[#7D7D7D] font-[Work_Sans] text-[16px] not-italic font-normal leading-[146%]">contact@preveu.com</span>
                         </div>
-                        <div className="w-full flex items-center gap-2">
+                        {/* <div className="w-full flex items-center gap-2">
                             <img src={location} alt="Location" />
                             <span className="text-[#7D7D7D] font-[Work_Sans] text-[16px] not-italic font-normal leading-[146%]">Idungränd 8, 187 73 Täby, Sweden</span>
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>

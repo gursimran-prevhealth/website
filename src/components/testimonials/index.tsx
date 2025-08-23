@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { useState } from 'react';
 import SwiperCore from 'swiper';
-import { testimonial } from '../../assets';
+import { testimonial, testimonialPerson1 } from '../../assets';
 
 const Testimonials = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -11,25 +11,25 @@ const Testimonials = () => {
     const testimonials = [
         {
             id: 1,
-            quote: "PrevHealth’s system and app have revolutionized our workflow and significantly enhanced the patient experience. It has simplified patient contact for our midwives and doctors, leading to substantial cost savings for our organization. Thanks to PrevHealth’s solution, our operations are more efficient and effective.",
-            name: "Name of the Person",
-            role: "Designation",
+            quote: "Clinvvo’s system and app have revolutionized our workflow and significantly enhanced the patient experience. It has simplified patient contact for our midwives and doctors, leading to substantial cost savings for our organization. Thanks to Clinvvo’s solution, our operations are more efficient and effective.",
+            name: "Hugo Lewné",
+            role: "CEO, Barnmorskegruppen Mama Mia AB",
             image: testimonial
         },
-        {
-            id: 2,
-            quote: "PrevHealth’s system and app have revolutionized our workflow and significantly enhanced the patient experience. It has simplified patient contact for our midwives and doctors, leading to substantial cost savings for our organization. Thanks to PrevHealth’s solution, our operations are more efficient and effective.",
-            name: "Second Person",
-            role: "Their Role",
-            image: testimonial
-        },
-        {
-            id: 3,
-            quote: "PrevHealth’s system and app have revolutionized our workflow and significantly enhanced the patient experience. It has simplified patient contact for our midwives and doctors, leading to substantial cost savings for our organization. Thanks to PrevHealth’s solution, our operations are more efficient and effective.",
-            name: "Third Person",
-            role: "Their Position",
-            image: testimonial
-        }
+        // {
+        //     id: 2,
+        //     quote: "Clinvvo’s system and app have revolutionized our workflow and significantly enhanced the patient experience. It has simplified patient contact for our midwives and doctors, leading to substantial cost savings for our organization. Thanks to Clinvvo’s solution, our operations are more efficient and effective.",
+        //     name: "Second Person",
+        //     role: "Their Role",
+        //     image: testimonial
+        // },
+        // {
+        //     id: 3,
+        //     quote: "Clinvvo’s system and app have revolutionized our workflow and significantly enhanced the patient experience. It has simplified patient contact for our midwives and doctors, leading to substantial cost savings for our organization. Thanks to Clinvvo’s solution, our operations are more efficient and effective.",
+        //     name: "Third Person",
+        //     role: "Their Position",
+        //     image: testimonial
+        // }
     ];
 
     return (
@@ -83,7 +83,9 @@ const Testimonials = () => {
                                     </p>
 
                                     <div className="flex items-center gap-4">
-                                        <div className="w-14 h-14 bg-zinc-300 rounded-full" />
+                                        <div className="w-14 h-14 bg-zinc-300 rounded-full overflow-hidden" >
+                                            <img src={testimonialPerson1} className='size-full object-cover' alt="" />
+                                            </div>
                                         <div>
                                             <h4 className="text-base md:text-lg text-[#555] font-normal font-[Work_Sans] leading-[135%]">
                                                 {testimonial.name}

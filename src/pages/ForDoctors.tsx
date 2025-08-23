@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import { cloud, customize, demo, ecosystem1, ecosystem2, ecosystem3, ecosystem5, ecosystem6, gdpr, heroDoctor, heroDoctor1, idSvg, lock, microphone, rocket, support, sWorkFlow1, sWorkFlow2, sWorkFlow3 } from "../assets";
 import { Button, Contact, Faq, StakeHolder } from "../components";
 
 function ForDoctors() {
-    return (<div className="w-full">
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }, []);
+    return (
+    <div className="w-full">
         <section className="w-full min-h-screen px-5 overflow-hidden md:pt-[120px] pt-24 pb-20 md:pb-24 max-w-full">
             <div className="w-full flex flex-col justify-start items-center gap-6 md:gap-8 lg:gap-12 max-w-[743px] mx-auto">
                 <div className="flex flex-col justify-start items-start gap-3 md:gap-4 w-full">
@@ -14,7 +19,7 @@ function ForDoctors() {
                     </p>
                 </div>
                 <Button>
-                    Explore Features
+                    <a href="https://calendly.com/prevhealth/30min" target="_blank">Book a Demo</a>
                 </Button>
             </div>
             <div className="w-full max-w-full md:min-w-[unset]  min-w-screen relative -left-5 md:left-[unset] md:pt-0 pt-18">
@@ -161,11 +166,11 @@ function ForDoctors() {
                         </span>
                     </div>
                     <h2 className="text-[#23586a] text-3xl md:text-4xl lg:text-5xl font-medium font-['Lora'] leading-[135%]">
-                        How You Launch With PrevHealth
+                        How You Launch With Clinvvo
                     </h2>
                 </div>
-                <Button className="md:block hidden">
-                    Book a Demo Today
+                <Button className="md:hidden block">
+                    <a href="https://calendly.com/prevhealth/30min" target="_blank">Book a Demo Today</a>
                 </Button>
             </div>
             <div className="w-full overflow-x-auto max-w-full scrollbar-hide md:p-0 p-1">
@@ -221,11 +226,11 @@ function ForDoctors() {
                 </div>
             </div>
             <Button className="md:hidden block">
-                Book a Demo Today
+                <a href="https://calendly.com/prevhealth/30min" target="_blank">Book a Demo Today</a>
             </Button>
         </div>
         <StakeHolder />
-        <section className="w-full min-h-screen flex flex-col items-center gap-12 md:px-20 px-5 md:py-24 py-16 max-w-[1063px] mx-auto">
+        <section className="w-full min-h-[60vh] flex flex-col items-center justify-center gap-12 md:px-20 px-5 md:py-24 py-16 max-w-[1063px] mx-auto">
             <div className="w-full max-w-[616px] flex flex-col items-center gap-2.5">
                 <div className="rounded-[10px] inline-flex items-center gap-2">
                     <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#fd8883] rounded-full" />
