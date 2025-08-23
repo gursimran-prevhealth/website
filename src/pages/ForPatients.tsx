@@ -3,9 +3,9 @@ import { digitalConsultation, fastAccess, heroPatient, patientNeed1, patientNeed
 import { Button, Contact, Faq, StakeHolder, Steps } from "../components";
 
 function ForPatients() {
-    useEffect(() => {
-        window.scrollTo({ top: 0, behavior: "smooth" })
-    }, []);
+    // useEffect(() => {
+    //     window.scrollTo({ top: 0, behavior: "smooth" })
+    // }, []);
     return (
         <div className="w-full">
             <section className="w-full min-h-screen px-5 md:px-20 overflow-hidden md:pt-[120px] pt-24 pb-20 md:pb-24 max-w-full flex md:flex-row flex-col">

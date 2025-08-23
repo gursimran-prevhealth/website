@@ -19,9 +19,9 @@ function StakeHolder() {
             <div className="w-full pb-4 md:pb-0 overflow-x-auto md:overflow-x-visible scrollbar-hide">
                 <div className="w-max md:w-full grid grid-cols-3 gap-4">
 
-                    <div className="w-[300px] md:w-full flex flex-col gap-4">
-                        <div className="w-full bg-white rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] overflow-hidden flex items-center justify-center">
-                            <img src={stakeDoctor} alt="Smart Workflow" className="w-full max-w-full" />
+                    <div className="w-[322px] max-md:h-[391px] md:w-full flex flex-col gap-4">
+                        <div className="max-md:h-[295px] w-full bg-white rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] overflow-hidden flex items-center justify-center">
+                            <img src={stakeDoctor} alt="Smart Workflow" className="size-full object-left object-cover" />
                         </div>
                         <div className="flex flex-col gap-1">
                             <h3 className="text-[#343434] text-xl md:text-2xl lg:text-3xl font-medium font-['Work_Sans'] leading-[135%]">
@@ -33,9 +33,9 @@ function StakeHolder() {
                         </div>
                     </div>
 
-                    <div className="w-[300px] md:w-full flex flex-col gap-4">
-                        <div className="w-full bg-neutral-100 rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] overflow-hidden flex flex-col items-center justify-center gap-2">
-                            <img src={stakePatient} alt="Smart Workflow" className="w-full max-w-full" />
+                    <div className="w-[322px] max-md:h-[391px] md:w-full flex flex-col gap-4">
+                        <div className="max-md:h-[295px] w-full bg-neutral-100 rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] overflow-hidden flex flex-col items-center justify-center gap-2">
+                            <img src={stakePatient} alt="Smart Workflow" className="size-full object-left object-cover" />
                         </div>
                         <div className="flex flex-col gap-1">
                             <h3 className="text-[#343434] text-xl md:text-2xl lg:text-3xl font-medium font-['Work_Sans'] leading-[135%]">
@@ -46,9 +46,9 @@ function StakeHolder() {
                         </div>
                     </div>
 
-                    <div className="w-[300px] md:w-full flex flex-col gap-4">
-                        <div className="w-full bg-neutral-100 rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] overflow-hidden flex flex-col items-center justify-center gap-2">
-                            <img src={stakeAi} alt="Smart Workflow" className="w-full max-w-full" />
+                    <div className="w-[322px] max-md:h-[391px] md:w-full flex flex-col gap-4">
+                        <div className="max-md:h-[295px] w-full bg-neutral-100 rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] overflow-hidden flex flex-col items-center justify-center gap-2">
+                            <img src={stakeAi} alt="Smart Workflow" className="size-full object-left object-cover" />
                         </div>
                         <div className="flex flex-col gap-1">
                             <h3 className="text-[#343434] text-xl md:text-2xl lg:text-3xl font-medium font-['Work_Sans'] leading-[135%]">
