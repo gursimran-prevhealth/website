@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { useState } from 'react';
 import SwiperCore from 'swiper';
-import { testimonial, testimonialPerson1 } from '../../assets';
+import { testimonial, testimonialPerson1,testimonialPerson2} from '../../assets';
 
 const Testimonials = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -13,16 +13,18 @@ const Testimonials = () => {
             id: 1,
             quote: "Clinvvo’s system and app have revolutionized our workflow and significantly enhanced the patient experience. It has simplified patient contact for our midwives and doctors, leading to substantial cost savings for our organization. Thanks to Clinvvo’s solution, our operations are more efficient and effective.",
             name: "Hugo Lewné",
-            role: "CEO, Barnmorskegruppen Mama Mia AB",
-            image: testimonial
+            role: "CEO, Prima Vård AB",
+            image: testimonial,
+            image1:testimonialPerson1
         },
-        // {
-        //     id: 2,
-        //     quote: "Clinvvo’s system and app have revolutionized our workflow and significantly enhanced the patient experience. It has simplified patient contact for our midwives and doctors, leading to substantial cost savings for our organization. Thanks to Clinvvo’s solution, our operations are more efficient and effective.",
-        //     name: "Second Person",
-        //     role: "Their Role",
-        //     image: testimonial
-        // },
+        {
+            id: 2,
+            quote: "Clinvvo’s platform has transformed the way we work, streamlining communication and making patient interactions smoother than ever. Our clinicians save valuable time, while patients experience faster and more personalized care. The result is both improved efficiency and measurable cost reductions across the organization.",
+            name: "Sofie Andresen",
+            role: "Affärsområdeschef Barn & KvinnohälsaVD Barnbördhuset Stockholm och Verksamhetschef BB Stockholm Family",
+            image: testimonial,
+            image1:testimonialPerson2
+        },
         // {
         //     id: 3,
         //     quote: "Clinvvo’s system and app have revolutionized our workflow and significantly enhanced the patient experience. It has simplified patient contact for our midwives and doctors, leading to substantial cost savings for our organization. Thanks to Clinvvo’s solution, our operations are more efficient and effective.",
@@ -84,7 +86,7 @@ const Testimonials = () => {
 
                                     <div className="flex items-center gap-4">
                                         <div className="w-14 h-14 bg-zinc-300 rounded-full overflow-hidden" >
-                                            <img src={testimonialPerson1} className='size-full object-cover' alt="" />
+                                            <img src={testimonial.image1} className='size-full object-cover' alt="" />
                                             </div>
                                         <div>
                                             <h4 className="text-base md:text-lg text-[#555] font-normal font-[Work_Sans] leading-[135%]">

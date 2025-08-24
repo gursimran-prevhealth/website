@@ -75,7 +75,7 @@ const Navbar = () => {
             </span>
           </div> */}
 
-          <div className="md:hidden mx-3">
+          <div className="md:hidden">
             <button
               className="relative w-5 h-4.5 flex flex-col justify-between items-center md:hidden z-[100]"
               onClick={toggleMobileMenu}
@@ -94,12 +94,8 @@ const Navbar = () => {
         </div>
 
         {isMobileMenuOpen && (
-          <div
-            className="fixed inset-0 bg-white flex flex-col z-50 
-               transition-all duration-500 max-sm:px-6 sm:px-8 pt-16 pb-10
-               h-[100dvh] overflow-y-auto"
-          >
-            <nav className="flex flex-col gap-4 flex-1">
+          <div className="h-screen fixed inset-0 bg-white flex flex-col items-center justify-center z-50 transition-all duration-500 max-sm:px-6 sm:px-8 pt-16 pb-4">
+            <nav className="w-full h-full flex flex-col gap-4">
               {navItems.map((item) => {
                 const isActive = currentPath === item.path;
                 return (
@@ -108,9 +104,7 @@ const Navbar = () => {
                     to={item.path}
                     className={cn(
                       "font-[Work_Sans] transition text-[32px] leading-[140%]",
-                      isActive
-                        ? "text-[#fd8883] font-semibold"
-                        : "text-[#23586A] hover:text-[#fd8883]"
+                      isActive ? "text-[#fd8883] font-semibold" : "text-[#23586A] hover:text-[#fd8883]"
                     )}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -118,23 +112,10 @@ const Navbar = () => {
                   </Link>
                 );
               })}
-
-              {/* Contact button stays visible around 90% height */}
-              <div className="mt-auto flex justify-center pb-4">
-                <Button
-                  className="w-full sm:w-auto"
-                  onClick={() => {
-                    navigate("/contact-us");
-                    setIsMobileMenuOpen(false);
-                  }}
-                >
-                  Contact Us
-                </Button>
-              </div>
+              <Button className="mt-auto" onClick={() => { navigate('/contact-us'); setIsMobileMenuOpen(false) }}>Contact Us</Button>
             </nav>
           </div>
         )}
-
 
       </div>
     </header>

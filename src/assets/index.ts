@@ -13,6 +13,7 @@ import charging from "./charging.svg";
 import lens from "./lens.svg";
 import testimonial from "./testimonial.png";
 import testimonialPerson1 from "./testimonial.jpg";
+import testimonialPerson2 from "./testimonial1.jpg";
 import digitalConsultation from "./digital-consults.png";
 import questionnaires from "./questionaires.png";
 import templateDropdown from "./template-dropdown.png";
@@ -92,7 +93,9 @@ export {
   charging,
   lens,
   testimonial,
+
   testimonialPerson1,
+  testimonialPerson2,
   digitalConsultation,
   questionnaires,
   templateDropdown,
