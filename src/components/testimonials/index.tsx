@@ -21,7 +21,8 @@ const Testimonials = () => {
             id: 2,
             quote: "Clinvvo’s platform has transformed the way we work, streamlining communication and making patient interactions smoother than ever. Our clinicians save valuable time, while patients experience faster and more personalized care. The result is both improved efficiency and measurable cost reductions across the organization.",
             name: "Sofie Andresen",
-            role: "Affärsområdeschef Barn & KvinnohälsaVD Barnbördhuset Stockholm och Verksamhetschef BB Stockholm Family",
+            role: "Affärsområdeschef Barn & Kvinnohälsa",
+            desc:"VD Barnbördhuset Stockholm och Verksamhetschef BB Stockholm Family",
             image: testimonial,
             image1:testimonialPerson2
         },
@@ -94,6 +95,9 @@ const Testimonials = () => {
                                             </h4>
                                             <p className="text-sm md:text-base text-[#555] font-normal font-[Work_Sans] leading-[135%]">
                                                 {testimonial.role}
+                                            </p>
+                                            <p className="text-sm md:text-base text-[#555] font-normal font-[Work_Sans] leading-[135%]">
+                                                {testimonial.desc}
                                             </p>
                                         </div>
                                     </div>
