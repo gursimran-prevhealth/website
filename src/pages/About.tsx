@@ -17,9 +17,9 @@ export default function About() {
                         At Clinvvo, we believe healthcare should work for people, not the other way around. Our platform simplifies clinical workflows, speeds up documentation, and enhances the patient experience
                     </p>
                 </div>
-                <div className="w-full flex md:flex-row flex-col gap-3">
-                    <img src={aboutPatient} alt="Patient Image" className="w-full md:rounded-bl-[60px] md:rounded-tl-[0px] rounded-tl-[60px]" />
-                    <img src={aboutDoctor} alt="Doctor Image" className="w-full md:rounded-tr-[60px] md:rounded-br-[0px] rounded-br-[60px]" />
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <img src={aboutPatient} alt="Patient Image" className="w-full h-full md:rounded-bl-[60px] md:rounded-tl-[0px] rounded-tl-[60px]" />
+                    <img src={aboutDoctor} alt="Doctor Image" className="w-full h-full md:rounded-tr-[60px] md:rounded-br-[0px] rounded-br-[60px]" />
                 </div>
             </section>
             <section className="w-full min-h-screen md:px-20 px-5 md:py-24 py-16 mx-auto flex flex-col items-center gap-16 max-w-[1440px]">
