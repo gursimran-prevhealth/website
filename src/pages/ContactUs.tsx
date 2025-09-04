@@ -1,11 +1,44 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { email } from "../assets";
 import { Button, Faq } from "../components";
 
 function ContactUs() {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+    });
+
     useEffect(() => {
-            window.scrollTo({ top: 0, behavior: "smooth" })
-        }, []);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, []);
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({ ...prev, [name]: value, }));
+    };
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        try {
+            const newFormData = new FormData();
+            newFormData.append("email", formData.email)
+            newFormData.append("message", formData.message)
+            newFormData.append("name", formData.name)
+            newFormData.append("phone", formData.phone)
+
+            const response = await fetch(`${import.meta.env.VITE_PUBLIC_SPREADSHEET_URL}`, {
+                method: "POST",
+                body: newFormData,
+            });
+            const result = await response.json();
+            console.log("Google Sheet Response:", result);
+        } catch (error) {
+            console.error("Error submitting form:", error);
+        }
+    };
+
     return (
         <div className="w-full">
             <section className="w-full min-h-screen px-5 overflow-hidden md:pt-[120px] pt-24 pb-20 md:pb-24 max-w-[1440px] flex flex-col items-center gap-12 mx-auto">
@@ -18,28 +51,58 @@ function ContactUs() {
                     </p>
                 </div>
                 <div className="w-full flex lg:flex-row flex-col xl:gap-24 lg:gap-16 gap-12 justify-center lg:items-start items-center">
-                    <div className="w-full max-w-[740px] bg-[#FBFBFB] xl:py-16 xl:px-20 md:p-12 p-8">
+                    <form
+                        onSubmit={handleSubmit}
+                        className="w-full max-w-[740px] bg-[#FBFBFB] xl:py-16 xl:px-20 md:p-12 p-8"
+                    >
                         <div className="w-full flex flex-col gap-14">
-                            <input type="text" name="name" id="name" placeholder="Name" className="w-full block pb-3 text-[#23586A] placeholder:text-[#AFAFAF] font-[Work_Sans] text-[20px] not-italic font-normal leading-normal outline-none border-b-[1px] border-b-[#9DBEB9]" />
-                            <input type="text" name="email" id="email" placeholder="Email" className="w-full block pb-3 text-[#23586A] placeholder:text-[#AFAFAF] font-[Work_Sans] text-[20px] not-italic font-normal leading-normal outline-none border-b-[1px] border-b-[#9DBEB9]" />
-                            <input type="text" name="phone" id="phone" placeholder="Phone Number" className="w-full block pb-3 text-[#23586A] placeholder:text-[#AFAFAF] font-[Work_Sans] text-[20px] not-italic font-normal leading-normal outline-none border-b-[1px] border-b-[#9DBEB9]" />
-                            <textarea name="phone" id="phone" placeholder="Anything else you’d like us to know?" className="w-full block pb-3 text-[#23586A] placeholder:text-[#AFAFAF] font-[Work_Sans] text-[20px] not-italic font-normal leading-normal outline-none border-b-[1px] border-b-[#9DBEB9] resize-none" rows={3} />
-                            <Button className="w-fit">
+                            <input
+                                type="text"
+                                name="name"
+                                value={formData.name}
+                                onChange={handleChange}
+                                placeholder="Name"
+                                required
+                                className="w-full block pb-3 text-[#23586A] placeholder:text-[#AFAFAF] font-[Work_Sans] text-[20px] font-normal outline-none border-b border-b-[#9DBEB9]"
+                            />
+                            <input
+                                type="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                placeholder="Email"
+                                required
+                                className="w-full block pb-3 text-[#23586A] placeholder:text-[#AFAFAF] font-[Work_Sans] text-[20px] font-normal outline-none border-b border-b-[#9DBEB9]"
+                            />
+                            <input
+                                type="tel"
+                                name="phone"
+                                value={formData.phone}
+                                onChange={handleChange}
+                                placeholder="Phone Number"
+                                className="w-full block pb-3 text-[#23586A] placeholder:text-[#AFAFAF] font-[Work_Sans] text-[20px] font-normal outline-none border-b border-b-[#9DBEB9]"
+                            />
+                            <textarea
+                                name="message"
+                                value={formData.message}
+                                onChange={handleChange}
+                                placeholder="Anything else you’d like us to know?"
+                                rows={3}
+                                className="w-full block pb-3 text-[#23586A] placeholder:text-[#AFAFAF] font-[Work_Sans] text-[20px] font-normal outline-none border-b border-b-[#9DBEB9] resize-none"
+                            />
+                            <Button type="submit" className="w-fit">
                                 Let’s Talk
                             </Button>
                         </div>
-                    </div>
+                    </form>
                     <div className="w-[333px] flex flex-col gap-2 lg:pt-16">
                         <div className="w-full flex items-center gap-2">
                             <img src={email} alt="Email" />
-                            <span className="text-[#7D7D7D] font-[Work_Sans] text-[16px] not-italic font-normal leading-[146%]">contact@preveu.com</span>
+                            <span className="text-[#7D7D7D] font-[Work_Sans] text-[16px] font-normal leading-[146%]">
+                                contact@preveu.com
+                            </span>
                         </div>
-                        {/* <div className="w-full flex items-center gap-2">
-                            <img src={location} alt="Location" />
-                            <span className="text-[#7D7D7D] font-[Work_Sans] text-[16px] not-italic font-normal leading-[146%]">Idungränd 8, 187 73 Täby, Sweden</span>
-                        </div> */}
                     </div>
-
                 </div>
             </section>
             <Faq />
