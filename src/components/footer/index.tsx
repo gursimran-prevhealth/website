@@ -24,7 +24,7 @@ export default function Footer() {
                                     <img src={email} className="w-6 h-4" />
                                 </div>
                                 <span className="text-zinc-500 text-base font-normal font-[Work_Sans]">
-                                    contact@preveu.com
+                                    contact@clinvvo.ai
                                 </span>
                             </div>
                             {/* <div className="flex items-center gap-2">
