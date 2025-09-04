@@ -99,7 +99,7 @@ function ContactUs() {
                         <div className="w-full flex items-center gap-2">
                             <img src={email} alt="Email" />
                             <span className="text-[#7D7D7D] font-[Work_Sans] text-[16px] font-normal leading-[146%]">
-                                contact@preveu.com
+                                contact@clinvvo.ai
                             </span>
                         </div>
                     </div>
