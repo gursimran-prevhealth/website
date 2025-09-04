@@ -1,16 +1,24 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { cross } from "../../assets";
 import { faqData } from "../../lib/const";
 
 export default function Faq() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
+    const [heights, setHeights] = useState<number[]>([]);
+    const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+    useEffect(() => {
+        // measure all heights after mount
+        const newHeights = contentRefs.current.map((ref) => ref?.scrollHeight || 0);
+        setHeights(newHeights);
+    }, [faqData]);
 
     const toggleFaq = (index: number) => {
         setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
     };
 
     return (
-        <section className="w-full  px-5 md:py-24 pt-12 pb-12 sm:min-h-screen">
+        <section className="w-full px-5 md:py-24 pt-12 pb-12 sm:min-h-screen">
             <div className="w-full max-w-[868px] mx-auto flex flex-col items-center gap-10 md:gap-14">
                 {/* Header */}
                 <div className="w-full max-w-[582px] flex flex-col items-center gap-3 md:gap-4">
@@ -28,30 +36,43 @@ export default function Faq() {
                 {/* FAQ Items */}
                 <div className="w-full flex flex-col gap-2 md:gap-4">
                     {faqData.map((item, index) => (
-                        <div key={index} className="w-full">
+                        <div
+                            key={index}
+                            className="w-full cursor-pointer"
+                            onClick={() => toggleFaq(index)}
+                        >
                             <div className="flex flex-col gap-2 md:gap-3 py-3 md:py-4">
-                                <div
-                                    className="flex justify-between items-start gap-4 cursor-pointer"
-                                    onClick={() => toggleFaq(index)}
-                                >
-                                    <div className="flex-1">
-                                        <h3 className="text-base md:text-xl text-[#555] font-normal font-[Work_Sans] leading-snug md:leading-7">
-                                            {item.question}
-                                        </h3>
-                                        {openIndex === index && (
-                                            <p className="mt-1 md:mt-2 text-base md:text-xl text-zinc-500 font-normal font-[Work_Sans] leading-snug md:leading-7 transition-all duration-300 ease-in-out">
-                                                {item.answer}
-                                            </p>
-                                        )}
-                                    </div>
+                                {/* Header Row */}
+                                <div className="flex justify-between items-start gap-4">
+                                    <h3 className="flex-1 text-base md:text-xl text-[#555] font-normal font-[Work_Sans] leading-snug md:leading-7">
+                                        {item.question}
+                                    </h3>
                                     <img
                                         src={cross}
                                         alt="toggle"
-                                        className={`w-5 h-5 md:w-8 md:h-8 transition-transform duration-300 ${openIndex === index ? "" : "rotate-45"
-                                            }`}
+                                        className={`w-5 h-5 md:w-8 md:h-8 transition-transform duration-300 ${
+                                            openIndex === index ? "" : "rotate-45"
+                                        }`}
                                     />
                                 </div>
+
+                                {/* Expanding Answer */}
+                                <div
+                                    ref={(el) => {
+                                        contentRefs.current[index] = el;
+                                    }}
+                                    className="overflow-hidden transition-[max-height] duration-500 ease-in-out"
+                                    style={{
+                                        maxHeight: openIndex === index ? `${heights[index]}px` : "0px",
+                                    }}
+                                >
+                                    <p className="mt-1 md:mt-2 text-base md:text-xl text-zinc-500 font-normal font-[Work_Sans] leading-snug md:leading-7">
+                                        {item.answer}
+                                    </p>
+                                </div>
                             </div>
+
+                            {/* Divider */}
                             {index < faqData.length - 1 && (
                                 <div className="w-full h-px bg-neutral-100" />
                             )}

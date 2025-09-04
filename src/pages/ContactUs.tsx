@@ -3,12 +3,10 @@ import { email } from "../assets";
 import { Button, Faq } from "../components";
 
 function ContactUs() {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
-    });
+    const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "", });
+    const [success, setSuccess] = useState<string>("");
+    const [error, setError] = useState<string>("")
+    const [isSending, setIsSending] = useState(false)
 
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -21,6 +19,8 @@ function ContactUs() {
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        if (isSending) return;
+        setIsSending(true)
         try {
             const newFormData = new FormData();
             newFormData.append("email", formData.email)
@@ -33,9 +33,16 @@ function ContactUs() {
                 body: newFormData,
             });
             const result = await response.json();
+            setFormData({ email: "", message: "", name: "", phone: "" })
+            setError("")
+            setSuccess("Thank you for your interest in Clinvvo! We have received your request and will get back to you soon.")
             console.log("Google Sheet Response:", result);
         } catch (error) {
+            setSuccess("")
+            setError("Failed to send form data")
             console.error("Error submitting form:", error);
+        } finally {
+            setIsSending(false)
         }
     };
 
@@ -90,7 +97,13 @@ function ContactUs() {
                                 rows={3}
                                 className="w-full block pb-3 text-[#23586A] placeholder:text-[#AFAFAF] font-[Work_Sans] text-[20px] font-normal outline-none border-b border-b-[#9DBEB9] resize-none"
                             />
-                            <Button type="submit" className="w-fit">
+                            {success && (
+                                <p className="text-green-600 text-base font-[Work_Sans]">{success}</p>
+                            )}
+                            {error && (
+                                <p className="text-red-600 text-base font-[Work_Sans]">{error}</p>
+                            )}
+                            <Button type="submit" className="w-fit" disabled={isSending}>
                                 Let’s Talk
                             </Button>
                         </div>
