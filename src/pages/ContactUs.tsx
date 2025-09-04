@@ -98,7 +98,7 @@ function ContactUs() {
                                 className="w-full block pb-3 text-[#23586A] placeholder:text-[#AFAFAF] font-[Work_Sans] text-[20px] font-normal outline-none border-b border-b-[#9DBEB9] resize-none"
                             />
                             {success && (
-                                <p className="text-green-600 text-base font-[Work_Sans]">{success}</p>
+                                <p className="text-[#555] text-base font-[Work_Sans]">{success}</p>
                             )}
                             {error && (
                                 <p className="text-red-600 text-base font-[Work_Sans]">{error}</p>
