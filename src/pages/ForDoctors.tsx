@@ -14,14 +14,18 @@ function ForDoctors() {
               <h2 className="w-full text-center text-[#23586A] text-3xl sm:text-4xl lg:text-6xl font-medium font-['Lora'] leading-[135%] max-w-[632px] mx-auto">
                 Better Care Starts with Better Tools
               </h2>
-              <p className="w-full text-center text-[#555] text-base sm:text-lg lg:text-xl font-light font-['Work_Sans'] leading-[135%]">
+              <p className="w-full text-center text-[#555] text-base sm:text-lg lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 We bring together everything modern healthcare needs, from
                 AI-enhanced workflows to personalized patient journeys. Fully
                 white-labeled and built to scale, just for you.
               </p>
             </div>
             <Button>
-              <a href="https://calendly.com/prevhealth/30min" target="_blank">
+              <a
+                href="https://calendly.com/prevhealth/30min"
+                target="_blank"
+                className="tracking-wider"
+              >
                 Book a Demo
               </a>
             </Button>
@@ -47,14 +51,14 @@ function ForDoctors() {
           <div className="w-full max-w-[535px] flex flex-col items-center gap-2.5">
             <div className="rounded-[10px] inline-flex items-center gap-2">
               <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#fd8883] rounded-full" />
-              <span className="text-[#545454] text-sm md:text-base font-light font-['Work_Sans'] leading-[135%]">
+              <span className="text-[#545454] text-sm md:text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 WHAT YOU GET
               </span>
             </div>
             <h2 className="w-full pt-1.5 text-center text-[#23586a] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium font-['Lora'] leading-[135%]">
               All-in-One Healthcare Ecosystem
             </h2>
-            <p className="w-full text-center text-[#545454] text-sm md:text-base lg:text-xl font-light font-['Work_Sans'] leading-[135%]">
+            <p className="w-full text-center text-[#545454] text-sm md:text-base lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
               Built for providers, doctors and patients. Designed to save time
               and streamline care.
             </p>
@@ -69,7 +73,7 @@ function ForDoctors() {
               <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
                 Unified Dashboard
               </h3>
-              <div className="w-full justify-start text-[#545454] text-base font-light font-['Work_Sans'] leading-[135%]">
+              <div className="w-full justify-start text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 Manage patients, track consult notes, monitor group sessions,
                 and schedule, all from one intuitive interface.
               </div>
@@ -83,7 +87,7 @@ function ForDoctors() {
               <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
                 AI-Powered Clinical Notes
               </h3>
-              <div className="w-full justify-start text-[#545454] text-base font-light font-['Work_Sans'] leading-[135%]">
+              <div className="w-full justify-start text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 We automatically transcribe and summarize your consults, saving
                 you time and cutting down on manual entry.
               </div>
@@ -97,7 +101,7 @@ function ForDoctors() {
               <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
                 Smart Intake Summaries
               </h3>
-              <div className="w-full justify-start text-[#545454] text-base font-light font-['Work_Sans'] leading-[135%]">
+              <div className="w-full justify-start text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 Receive pre-filled, structured patient info before each consult.
                 No more back-and-forth, just the details you need, upfront.
               </div>
@@ -114,7 +118,7 @@ function ForDoctors() {
               <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
                 Voice-Based Note Editing
               </h3>
-              <div className="w-full justify-start text-[#545454] text-base font-light font-['Work_Sans'] leading-[135%]">
+              <div className="w-full justify-start text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 Need to change something? Just speak. Your edits are applied
                 directly into the summary, hands-free.
               </div>
@@ -129,7 +133,7 @@ function ForDoctors() {
               <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
                 In-Consult Resource Sharing
               </h3>
-              <div className="w-full justify-start text-[#545454] text-base font-light font-['Work_Sans'] leading-[135%]">
+              <div className="w-full justify-start text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 Easily send test results, documents, or links during a live
                 consult, keeping everything within the session flow.
               </div>
@@ -144,7 +148,7 @@ function ForDoctors() {
               <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
                 Group Session Hosting
               </h3>
-              <div className="w-full justify-start text-[#545454] text-base font-light font-['Work_Sans'] leading-[135%]">
+              <div className="w-full justify-start text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 Host multiple patients at once for common concerns or
                 follow-ups, saving time and increasing reach.
               </div>
@@ -155,14 +159,14 @@ function ForDoctors() {
           <div className="w-full max-w-[475px] flex flex-col items-center gap-2.5 ">
             <div className="rounded-[10px] inline-flex items-center gap-2">
               <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#fd8883] rounded-full" />
-              <span className="text-[#545454] text-sm md:text-base font-light font-['Work_Sans'] leading-[135%]">
+              <span className="text-[#545454] text-sm md:text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 BUILT FOR HOW YOU WORK
               </span>
             </div>
             <h2 className="w-full pt-1.5 text-center text-[#23586a] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium font-['Lora'] leading-[135%]">
               Seamless, Smart Workflows
             </h2>
-            <p className="w-full text-center text-[#545454] text-sm md:text-base lg:text-xl font-light font-['Work_Sans'] leading-[135%]">
+            <p className="w-full text-center text-[#545454] text-sm md:text-base lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
               Give your teams tools that actually save time
             </p>
           </div>
@@ -182,7 +186,7 @@ function ForDoctors() {
                     <h3 className="text-[#343434] text-xl md:text-2xl lg:text-3xl font-medium font-['Work_Sans'] leading-[135%]">
                       Log In & Get Ready
                     </h3>
-                    <p className="text-[#545454] text-sm md:text-base lg:text-xl font-light font-['Work_Sans'] leading-[135%]">
+                    <p className="text-[#545454] text-sm md:text-base lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                       Securely access your dashboard with BankID or SITHS &
                       review smart intake summaries filled out by patients
                     </p>
@@ -201,7 +205,7 @@ function ForDoctors() {
                     <h3 className="text-[#343434] text-xl md:text-2xl lg:text-3xl font-medium font-['Work_Sans'] leading-[135%]">
                       Connect & Consult
                     </h3>
-                    <p className="text-[#545454] text-sm md:text-base lg:text-xl font-light font-['Work_Sans'] leading-[135%]">
+                    <p className="text-[#545454] text-sm md:text-base lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                       Start 1:1 or group consults via chat, audio, or video,
                       with everything tailored to your specialty & settings
                     </p>
@@ -220,7 +224,7 @@ function ForDoctors() {
                     <h3 className="text-[#343434] text-xl md:text-2xl lg:text-3xl font-medium font-['Work_Sans'] leading-[135%]">
                       Let AI Handle the Notes
                     </h3>
-                    <p className="text-[#545454] text-sm md:text-base lg:text-xl font-light font-['Work_Sans'] leading-[135%]">
+                    <p className="text-[#545454] text-sm md:text-base lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                       Consults are transcribed and summarized in real time. Just
                       review, edit if needed, and transfer directly to the
                       journal
@@ -236,7 +240,7 @@ function ForDoctors() {
             <div className="flex flex-col justify-start items-start gap-2.5">
               <div className="py-1 rounded-[10px] inline-flex justify-center items-center gap-2">
                 <div className="w-2.5 h-2.5 bg-[#fd8883] rounded-full" />
-                <span className="text-[#545454] text-base font-light font-['Work_Sans'] leading-[135%]">
+                <span className="text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                   HOW IT WORKS
                 </span>
               </div>
@@ -259,7 +263,7 @@ function ForDoctors() {
                   <h3 className="text-[#23586a] text-xl sm:text-2xl font-medium font-['Work_Sans'] leading-[135%]">
                     Book a Demo
                   </h3>
-                  <p className="text-[#545454]  text-base sm:text-xl font-light font-['Work_Sans'] leading-[135%]">
+                  <p className="text-[#545454]  text-base sm:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                     Let's talk. You tell us what your organization needs, we'll
                     show you how it all works.
                   </p>
@@ -272,7 +276,7 @@ function ForDoctors() {
                   <h3 className="text-[#23586a] text-xl sm:text-2xl font-medium font-['Work_Sans'] leading-[135%]">
                     Customize Your Platform
                   </h3>
-                  <p className="text-[#545454] text-base sm:text-xl font-light font-['Work_Sans'] leading-[135%]">
+                  <p className="text-[#545454] text-base sm:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                     Pick the services, language options and features that can
                     support your patients and care teams.
                   </p>
@@ -285,7 +289,7 @@ function ForDoctors() {
                   <h3 className="text-[#23586a] text-xl sm:text-2xl font-medium font-['Work_Sans'] leading-[135%]">
                     We Brand & Launch
                   </h3>
-                  <p className="text-[#545454] text-base sm:text-xl font-light font-['Work_Sans'] leading-[135%]">
+                  <p className="text-[#545454] text-base sm:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                     We design and deliver the platform under your brand. Your
                     team gets trained. You go live, fast.
                   </p>
@@ -298,7 +302,7 @@ function ForDoctors() {
                   <h3 className="text-[#23586a] text-xl sm:text-2xl font-medium font-['Work_Sans'] leading-[135%]">
                     Support & Upgrade
                   </h3>
-                  <p className="text-[#545454] text-base sm:text-xl font-light font-['Work_Sans'] leading-[135%]">
+                  <p className="text-[#545454] text-base sm:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                     We handle maintenance, updates, and compliance. You focus on
                     growing care, we've got the tech.
                   </p>
@@ -307,7 +311,11 @@ function ForDoctors() {
             </div>
           </div>
           <Button className="md:hidden block">
-            <a href="https://calendly.com/prevhealth/30min" target="_blank">
+            <a
+              href="https://calendly.com/prevhealth/30min"
+              target="_blank"
+              className="tracking-wider"
+            >
               Book a Demo Today
             </a>
           </Button>
@@ -317,7 +325,7 @@ function ForDoctors() {
           <div className="w-full max-w-[616px] flex flex-col items-center gap-2.5">
             <div className="rounded-[10px] inline-flex items-center gap-2">
               <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#fd8883] rounded-full" />
-              <span className="text-[#545454] text-sm md:text-base font-light font-['Work_Sans'] leading-[135%]">
+              <span className="text-[#545454] text-sm md:text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 SECURITY & COMPLIANCE
               </span>
             </div>

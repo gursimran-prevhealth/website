@@ -69,7 +69,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-1.5 sm:gap-3">
           <Button
-            className="hidden md:inline-flex"
+            className="hidden md:inline-flex tracking-wider"
             onClick={() => navigate("/contact-us")}
           >
             Contact Us

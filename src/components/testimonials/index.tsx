@@ -40,14 +40,14 @@ const Testimonials = () => {
         <div className="w-full max-w-[657px] flex flex-col items-center gap-3 md:gap-4 text-center">
           <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
             <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />
-            <span className="text-sm md:text-base text-[#555] font-light font-[Work_Sans] leading-[135%]">
+            <span className="text-sm md:text-base text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
               TESTIMONIALS
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl text-[#23586A] font-medium font-[Lora] leading-[135%]">
             From Those Who Use It Daily
           </h2>
-          <p className="text-base md:text-xl text-[#555] font-light font-[Work_Sans] leading-[135%]">
+          <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
             See how we're making care easier, faster, and more human directly
             from those who've felt the difference
           </p>
@@ -82,7 +82,7 @@ const Testimonials = () => {
                     />
                   </div>
                   <div className="w-full lg:w-1/2 flex flex-col gap-6 md:gap-8 h-full">
-                    <p className="text-base md:text-xl text-[#555] font-light font-[Work_Sans] leading-[135%]">
+                    <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
                       {testimonial.quote}
                     </p>
 
@@ -95,13 +95,13 @@ const Testimonials = () => {
                         />
                       </div>
                       <div>
-                        <h4 className="text-base md:text-lg text-[#555] font-light font-[Work_Sans] leading-[135%]">
+                        <h4 className="text-base md:text-lg text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
                           {testimonial.name}
                         </h4>
-                        <p className="text-sm md:text-base text-[#555] font-light font-[Work_Sans] leading-[135%]">
+                        <p className="text-sm md:text-base text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
                           {testimonial.role}
                         </p>
-                        <p className="text-sm md:text-base text-[#555] font-light font-[Work_Sans] leading-[135%]">
+                        <p className="text-sm md:text-base text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
                           {testimonial.desc}
                         </p>
                       </div>

@@ -14,14 +14,18 @@ function ForPatients() {
               <h2 className="w-full text-center md:text-left text-[#23586A] text-3xl sm:text-4xl lg:text-6xl font-medium font-['Lora'] leading-[135%] max-w-[632px]">
                 Care That Meets You Where You Are
               </h2>
-              <p className="w-full text-center md:text-left text-[#555] text-base sm:text-lg lg:text-xl font-light font-['Work_Sans'] leading-[135%]">
+              <p className="w-full text-center md:text-left text-[#555] text-base tracking-wider sm:text-lg lg:text-xl font-light font-['Work_Sans'] leading-[135%]">
                 Clinvvo enables secure, seamless conversations between patients
                 and licensed healthcare professionals—no delays, no
                 distractions.
               </p>
             </div>
             <Button>
-              <a href="https://calendly.com/prevhealth/30min" target="_blank">
+              <a
+                href="https://calendly.com/prevhealth/30min"
+                target="_blank"
+                className="tracking-wider"
+              >
                 Book a Demo
               </a>
             </Button>
@@ -49,14 +53,14 @@ function ForPatients() {
           <div className="w-full max-w-[933px] flex flex-col items-center gap-2.5">
             <div className="rounded-[10px] inline-flex items-center gap-2">
               <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#fd8883] rounded-full" />
-              <span className="text-[#545454] text-sm md:text-base font-light font-['Work_Sans'] leading-[135%]">
+              <span className="text-[#545454] text-sm md:text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 WHAT YOUR PATIENTS GET
               </span>
             </div>
             <h2 className="w-full max-w-[759px] pt-1.5 text-center text-[#23586a] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium font-['Lora'] leading-[135%]">
               Everything You Need to Get Care Fast, Simple, and Secure
             </h2>
-            <p className="w-full text-center text-[#545454] text-sm md:text-base lg:text-xl font-light font-['Work_Sans'] leading-[135%]">
+            <p className="w-full text-center text-[#545454] text-sm md:text-base lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
               Clinvvo makes it easy to get care on your patients terms. From
               quick symptom forms to group sessions and a personal dashboard,
               everything’s built to save their time and stress.
@@ -74,7 +78,7 @@ function ForPatients() {
               <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
                 Region & Service Selection
               </h3>
-              <div className="w-full justify-start text-[#545454] text-base font-light font-['Work_Sans'] leading-[135%]">
+              <div className="w-full justify-start text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 Get started by selecting your region and area of concern OBGYN,
                 Sexual Health, BMM, or BVC. We guide your patients to the right
                 care.
@@ -89,7 +93,7 @@ function ForPatients() {
               <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
                 AI-Powered Clinical Notes
               </h3>
-              <div className="w-full justify-start text-[#545454] text-base font-light font-['Work_Sans'] leading-[135%]">
+              <div className="w-full justify-start text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 We provide secure options for chat, audio, or video consults, so
                 your patients can connect in the way that suits you best.
               </div>
@@ -105,7 +109,7 @@ function ForPatients() {
               <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
                 Smart Intake Summaries
               </h3>
-              <div className="w-full justify-start text-[#545454] text-base font-light font-['Work_Sans'] leading-[135%]">
+              <div className="w-full justify-start text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 We eliminate paperwork by enabling patients to fill out brief,
                 smart forms ahead of time, so doctors receive clear, focused
                 insights before every consult.
@@ -121,7 +125,7 @@ function ForPatients() {
               <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
                 Voice-Based Note Editing
               </h3>
-              <div className="w-full justify-start text-[#545454] text-base font-light font-['Work_Sans'] leading-[135%]">
+              <div className="w-full justify-start text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 Join digital health sessions led by medical experts. Ideal for
                 shared topics and time-saving consults.
               </div>
@@ -138,7 +142,7 @@ function ForPatients() {
               <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
                 In-Consult Resource Sharing
               </h3>
-              <div className="w-full justify-start text-[#545454] text-base font-light font-['Work_Sans'] leading-[135%]">
+              <div className="w-full justify-start text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 Manage appointments, review consult history, and access letters
                 all in one place.
               </div>
@@ -153,7 +157,7 @@ function ForPatients() {
               <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
                 Group Session Hosting
               </h3>
-              <div className="w-full justify-start text-[#545454] text-base font-light font-['Work_Sans'] leading-[135%]">
+              <div className="w-full justify-start text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 Keep your patients informed with wellness tips, regular updates,
                 and curated health content, delivered straight to their inbox.
               </div>
@@ -164,14 +168,14 @@ function ForPatients() {
           <div className="w-full max-w-[445px] flex flex-col items-center gap-2.5">
             <div className="rounded-[10px] inline-flex items-center gap-2">
               <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#fd8883] rounded-full" />
-              <span className="text-[#545454] text-sm md:text-base font-light font-['Work_Sans'] leading-[135%]">
+              <span className="text-[#545454] text-sm md:text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 CARE WITHOUT THE COMPLICATIONS
               </span>
             </div>
             <h2 className="w-full max-w-[381px] mx-auto pt-1.5 text-center text-[#23586a] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium font-['Lora'] leading-[135%]">
               Easy Access, Fast Support
             </h2>
-            <p className="w-full text-center text-[#545454] text-sm md:text-base lg:text-xl font-light font-['Work_Sans'] leading-[135%]">
+            <p className="w-full text-center text-[#545454] text-sm md:text-base lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
               An experience that feels simple and personal
             </p>
           </div>
@@ -191,7 +195,7 @@ function ForPatients() {
                     <h3 className="text-[#343434] text-xl md:text-2xl lg:text-3xl font-medium font-['Work_Sans'] leading-[135%]">
                       Choose What You Need
                     </h3>
-                    <p className="text-[#545454] text-sm md:text-base lg:text-xl font-light font-['Work_Sans'] leading-[135%]">
+                    <p className="text-[#545454] text-sm md:text-base lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                       Patients select their region and type of care, right from
                       the app or web platform.
                     </p>
@@ -210,7 +214,7 @@ function ForPatients() {
                     <h3 className="text-[#343434] text-xl md:text-2xl lg:text-3xl font-medium font-['Work_Sans'] leading-[135%]">
                       Share Symptoms Easily
                     </h3>
-                    <p className="text-[#545454] text-sm md:text-base lg:text-xl font-light font-['Work_Sans'] leading-[135%]">
+                    <p className="text-[#545454] text-sm md:text-base lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                       Fill out a quick form so your doctor’s ready to help
                     </p>
                   </div>
@@ -228,7 +232,7 @@ function ForPatients() {
                     <h3 className="text-[#343434] text-xl md:text-2xl lg:text-3xl font-medium font-['Work_Sans'] leading-[135%]">
                       Connect with a Doctor, Fast
                     </h3>
-                    <p className="text-[#545454] text-sm md:text-base lg:text-xl font-light font-['Work_Sans'] leading-[135%]">
+                    <p className="text-[#545454] text-sm md:text-base lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                       Connect with a doctor instantly via chat, call, or video
                     </p>
                   </div>
@@ -237,7 +241,11 @@ function ForPatients() {
             </div>
           </div>
           <Button>
-            <a href="https://calendly.com/prevhealth/30min" target="_blank">
+            <a
+              href="https://calendly.com/prevhealth/30min"
+              target="_blank"
+              className="tracking-wider"
+            >
               Book a Demo Today
             </a>
           </Button>

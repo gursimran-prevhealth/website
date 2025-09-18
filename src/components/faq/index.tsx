@@ -24,7 +24,7 @@ export default function Faq() {
           <div className="w-full max-w-[582px] flex flex-col items-center gap-3 md:gap-4">
             <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
               <div className="w-2.5 h-2.5 bg-[#FD8883] rounded-full" />
-              <span className="text-sm md:text-base text-[#555] font-light font-[Work_Sans] leading-tight md:leading-snug">
+              <span className="text-sm md:text-base text-[#555] tracking-wider font-light font-[Work_Sans] leading-tight md:leading-snug">
                 FAQS
               </span>
             </div>
@@ -44,7 +44,7 @@ export default function Faq() {
                 <div className="flex flex-col gap-2 md:gap-3 py-3 md:py-4">
                   {/* Header Row */}
                   <div className="flex justify-between items-start gap-4">
-                    <h3 className="flex-1 text-base md:text-xl text-[#555] font-light font-[Work_Sans] leading-snug md:leading-7">
+                    <h3 className="flex-1 text-base md:text-xl text-[#555] tracking-wider font-light font-[Work_Sans] leading-snug md:leading-7">
                       {item.question}
                     </h3>
                     <img
@@ -67,7 +67,7 @@ export default function Faq() {
                         openIndex === index ? `${heights[index]}px` : "0px",
                     }}
                   >
-                    <p className="mt-1 md:mt-2 text-base md:text-xl text-zinc-500 font-light font-[Work_Sans] leading-snug md:leading-7">
+                    <p className="mt-1 md:mt-2 text-sm md:text-lg text-zinc-500 tracking-wider font-light font-[Work_Sans] leading-snug md:leading-7">
                       {item.answer}
                     </p>
                   </div>

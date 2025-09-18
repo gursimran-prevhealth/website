@@ -6,7 +6,7 @@ function StakeHolder() {
         <div className="w-full max-w-[541px] flex flex-col items-center gap-2.5">
           <div className="rounded-[10px] inline-flex items-center gap-2">
             <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#fd8883] rounded-full" />
-            <span className="text-[#545454] text-sm md:text-base font-light font-['Work_Sans'] leading-[135%]">
+            <span className="text-[#545454] text-sm md:text-base font-light tracking-wider font-['Work_Sans'] leading-[135%]">
               WHO WE HELP
             </span>
           </div>
@@ -30,7 +30,7 @@ function StakeHolder() {
                   <h3 className="text-[#343434] text-xl md:text-2xl lg:text-3xl font-medium font-['Work_Sans'] leading-[135%]">
                     For Doctors
                   </h3>
-                  <p className="text-[#545454] text-sm md:text-base lg:text-xl font-light font-['Work_Sans'] leading-[135%]">
+                  <p className="text-[#545454] text-sm md:text-base lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                     Less admin, more care. AI assists with medical notes.
                   </p>
                 </div>
@@ -48,7 +48,7 @@ function StakeHolder() {
                   <h3 className="text-[#343434] text-xl md:text-2xl lg:text-3xl font-medium font-['Work_Sans'] leading-[135%]">
                     For Patients
                   </h3>
-                  <p className="text-[#545454] text-sm md:text-base lg:text-xl font-light font-['Work_Sans'] leading-[135%]">
+                  <p className="text-[#545454] text-sm md:text-base lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                     Easy access to services, appointments, and answers, wherever
                     they are.{" "}
                   </p>
@@ -67,7 +67,7 @@ function StakeHolder() {
                   <h3 className="text-[#343434] text-xl md:text-2xl lg:text-3xl font-medium font-['Work_Sans'] leading-[135%]">
                     AI for Healthcare Providers
                   </h3>
-                  <p className="text-[#545454] text-sm md:text-base lg:text-xl font-light font-['Work_Sans'] leading-[135%]">
+                  <p className="text-[#545454] text-sm md:text-base lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                     Scalable, cost-saving digital health infrastructure branded
                     for your organization.{" "}
                   </p>

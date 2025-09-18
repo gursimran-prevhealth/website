@@ -30,7 +30,7 @@ const Steps = () => {
         <div className="w-full max-w-[475px] flex flex-col items-center gap-2.5">
           <div className="rounded-[10px] inline-flex items-center gap-2">
             <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#fd8883] rounded-full" />
-            <span className="text-[#545454] text-sm md:text-base font-light font-['Work_Sans'] leading-[135%]">
+            <span className="text-[#545454] text-sm md:text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
               STEP BY STEP PROCESS
             </span>
           </div>
@@ -65,7 +65,7 @@ const Steps = () => {
               <div className="w-full flex flex-col items-start gap-2">
                 <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
                   <div className="w-2.5 h-2.5 bg-[#fd8883] rounded-full"></div>
-                  <div className="text-[#545454] text-sm md:text-base font-light font-['Work_Sans'] leading-[1.35]">
+                  <div className="text-[#545454] text-sm md:text-base tracking-wider font-light font-['Work_Sans'] leading-[1.35]">
                     BOOK A DEMO
                   </div>
                 </div>
@@ -73,7 +73,7 @@ const Steps = () => {
                   Let's start with a conversation
                 </h2>
               </div>
-              <p className="w-full text-[#545454] text-lg md:text-xl font-light font-['Work_Sans'] leading-[1.35]">
+              <p className="w-full text-[#545454] text-lg md:text-xl tracking-wider font-light font-['Work_Sans'] leading-[1.35]">
                 You tell us what your organization needs, from specialties and
                 languages to branding and workflows. We'll walk you through our
                 product suite and show how it fits your goals.
@@ -94,7 +94,7 @@ const Steps = () => {
               <div className="w-full flex flex-col items-start gap-2">
                 <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
                   <div className="w-2.5 h-2.5 bg-[#fd8883] rounded-full"></div>
-                  <div className="text-[#545454] text-sm md:text-base font-light font-['Work_Sans'] leading-[1.35]">
+                  <div className="text-[#545454] text-sm md:text-base tracking-wider font-light font-['Work_Sans'] leading-[1.35]">
                     CUSTOMIZE & CONFIGURE
                   </div>
                 </div>
@@ -102,7 +102,7 @@ const Steps = () => {
                   Tailored to your care model
                 </h2>
               </div>
-              <p className="w-full text-[#545454] text-lg md:text-xl font-light font-['Work_Sans'] leading-[1.35]">
+              <p className="w-full text-[#545454] text-lg md:text-xl tracking-wider font-light font-['Work_Sans'] leading-[1.35]">
                 Select the services you want to offer, such as Primary Care,
                 BMM, or Sexual Health and we'll help you configure everything to
                 match. From patient intake forms and communication mechanisms to
@@ -125,7 +125,7 @@ const Steps = () => {
               <div className="w-full flex flex-col items-start gap-2">
                 <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
                   <div className="w-2.5 h-2.5 bg-[#fd8883] rounded-full"></div>
-                  <div className="text-[#545454] text-sm md:text-base font-light font-['Work_Sans'] leading-[1.35]">
+                  <div className="text-[#545454] text-sm md:text-base tracking-wider font-light font-['Work_Sans'] leading-[1.35]">
                     WE BRAND & LAUNCH IT
                   </div>
                 </div>
@@ -133,7 +133,7 @@ const Steps = () => {
                   We build it, You own the experience
                 </h2>
               </div>
-              <p className="w-full text-[#545454] text-lg md:text-xl font-light font-['Work_Sans'] leading-[1.35]">
+              <p className="w-full text-[#545454] text-lg md:text-xl tracking-wider font-light font-['Work_Sans'] leading-[1.35]">
                 We white-label the platform with your logo, colors, domain, and
                 service structure. Your teams receive onboarding and training —
                 then you're ready to go live. Includes:
@@ -157,7 +157,7 @@ const Steps = () => {
               <div className="w-full flex flex-col items-start gap-2">
                 <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
                   <div className="w-2.5 h-2.5 bg-[#fd8883] rounded-full"></div>
-                  <div className="text-[#545454] text-sm md:text-base font-light font-['Work_Sans'] leading-[1.35]">
+                  <div className="text-[#545454] text-sm md:text-base tracking-wider font-light font-['Work_Sans'] leading-[1.35]">
                     ONGOING SUPPORT & UPGRADES
                   </div>
                 </div>
@@ -165,7 +165,7 @@ const Steps = () => {
                   We stay with you, Always
                 </h2>
               </div>
-              <p className="w-full text-[#545454] text-lg md:text-xl font-light font-['Work_Sans'] leading-[1.35]">
+              <p className="w-full text-[#545454] text-lg md:text-xl tracking-wider font-light font-['Work_Sans'] leading-[1.35]">
                 You get 24/7 technical support, compliance monitoring, and
                 continuous feature upgrades — so your care stays modern, secure,
                 and efficient. What we manage:

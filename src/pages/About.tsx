@@ -13,7 +13,7 @@ export default function About() {
             <h2 className="w-full text-center text-[#23586A] text-3xl sm:text-4xl lg:text-6xl font-medium font-['Lora'] leading-[135%] mx-auto">
               Redefining Digital Healthcare Smarter, Faster, Human
             </h2>
-            <p className="w-full text-center text-[#555] text-base sm:text-lg lg:text-xl font-light font-['Work_Sans'] leading-[135%]">
+            <p className="w-full text-center text-[#555] text-base sm:text-lg lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
               At Clinvvo, we believe healthcare should work for people, not the
               other way around. Our platform simplifies clinical workflows,
               speeds up documentation, and enhances the patient experience
@@ -37,7 +37,7 @@ export default function About() {
             <div className="flex flex-col items-center gap-2 w-full">
               <div className="inline-flex items-center gap-1 py-0.5 rounded-[10px]">
                 <div className="w-2.5 h-2.5 bg-[#fd8883] rounded-full"></div>
-                <div className="text-[#545454] text-base font-light font-['Work_Sans'] leading-[1.35]">
+                <div className="text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[1.35]">
                   BUILT WITH PURPOSE
                 </div>
               </div>
@@ -45,7 +45,7 @@ export default function About() {
                 We're Committed to Empowering Better Care
               </h1>
             </div>
-            <p className="w-full max-w-[743px] text-[#545454] text-lg md:text-xl font-light font-['Work_Sans'] leading-[1.35]">
+            <p className="w-full max-w-[743px] text-[#545454] text-lg md:text-xl tracking-wider font-light font-['Work_Sans'] leading-[1.35]">
               We're here to make healthcare simpler and more human, for both
               busy clinicians and patients who need fast, trusted care
             </p>
@@ -55,11 +55,11 @@ export default function About() {
               <div className="w-full flex flex-col gap-4 max-w-[520px]">
                 <div className="inline-flex items-center gap-1 py-0.5 rounded-[10px]">
                   <div className="w-2.5 h-2.5 bg-[#fd8883] rounded-full"></div>
-                  <div className="text-[#545454] text-base font-light font-['Work_Sans'] leading-[1.35]">
+                  <div className="text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[1.35]">
                     OUR MISSION
                   </div>
                 </div>
-                <p className="text-[#545454] text-lg md:text-xl font-light font-['Work_Sans'] leading-[1.35]">
+                <p className="text-[#545454] text-lg md:text-xl tracking-wider font-light font-['Work_Sans'] leading-[1.35]">
                   To build healthcare technology that empowers people,
                   clinicians and patients alike, through intuitive tools, smart
                   automation, and seamless workflows. We aim to reduce admin
@@ -84,11 +84,11 @@ export default function About() {
               <div className="w-full flex flex-col gap-4 max-w-[520px]">
                 <div className="inline-flex items-center gap-1 py-0.5 rounded-[10px]">
                   <div className="w-2.5 h-2.5 bg-[#fd8883] rounded-full"></div>
-                  <div className="text-[#545454] text-base font-light font-['Work_Sans'] leading-[1.35]">
+                  <div className="text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[1.35]">
                     OUR VISION
                   </div>
                 </div>
-                <p className="text-[#545454] text-lg md:text-xl font-light font-['Work_Sans'] leading-[1.35]">
+                <p className="text-[#545454] text-lg md:text-xl tracking-wider font-light font-['Work_Sans'] leading-[1.35]">
                   A healthcare system where technology disappears into the
                   background, making care safer, smarter, and more personal. We
                   envision a future where every clinic, big or small, can
@@ -103,7 +103,7 @@ export default function About() {
           <div className="w-full md:px-20 px-5 flex flex-col gap-9">
             <div className="inline-flex items-center gap-1 py-0.5 rounded-[10px]">
               <div className="w-2.5 h-2.5 bg-[#fd8883] rounded-full"></div>
-              <div className="text-[#545454] text-base font-light font-['Work_Sans'] leading-[1.35]">
+              <div className="text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[1.35]">
                 WHO WE ARE
               </div>
             </div>
@@ -127,7 +127,7 @@ export default function About() {
             <div className="flex flex-col max-w-[514px] items-center gap-2 w-full">
               <div className="inline-flex items-center gap-1 py-0.5 rounded-[10px]">
                 <div className="w-2.5 h-2.5 bg-[#fd8883] rounded-full"></div>
-                <div className="text-[#545454] text-base font-light font-['Work_Sans'] leading-[1.35]">
+                <div className="text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[1.35]">
                   AI THAT WORKS FOR YOU
                 </div>
               </div>
@@ -135,7 +135,7 @@ export default function About() {
                 Let AI Handle the Busywork
               </h1>
             </div>
-            <p className="w-full max-w-[743px] text-[#545454] text-lg md:text-xl font-light font-['Work_Sans'] leading-[1.35]">
+            <p className="w-full max-w-[743px] text-[#545454] text-lg md:text-xl tracking-wider font-light font-['Work_Sans'] leading-[1.35]">
               Our AI capabilities automate tasks like medical transcription and
               summarization, freeing up valuable time for caregivers and
               ensuring a smoother experience for patients. Clinics using Clinvvo

@@ -51,36 +51,36 @@ const featureData = [
 
 export default function Features() {
     return (
-        <div className="w-full px-4 max-w-[998px] mx-auto md:py-24 py-16 flex flex-col items-center gap-8 md:gap-10 lg:gap-12 min-h-screen">
-            <div className="w-full max-w-[616px] flex flex-col items-center gap-2 md:gap-3">
-                <div className="py-1 rounded-[10px] inline-flex items-center gap-2">
-                    <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />
-                    <span className="text-[#555] text-sm md:text-base font-normal font-['Work_Sans'] leading-[135%]">
-                        COMPLETE FEATURE SET
-                    </span>
-                </div>
-                <h2 className="w-full text-center text-[#23586A] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium font-['Lora'] leading-[135%]">
-                    Features That Keep Care Effortless and Connected
-                </h2>
-            </div>
-            <div className="w-full px-5 md:px-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                {featureData.map((item, index) => (
-                    <div
-                        key={index}
-                        className="bg-white rounded-xl shadow-[1.5px_1.5px_3px_0px_rgba(174,174,192,0.40)] hover:border-[1px] hover:border-[#23586A] transition-all duration-200 border-[1px] border-[transparent] cursor-pointer outline-[0.5px] outline-neutral-100 p-4 md:p-6 flex flex-col gap-3"
-                    >
-                        <div className="w-6 h-6 flex items-center justify-center">
-                            <img src={item.img} alt={`Feature ${index + 1}`} />
-                        </div>
-                        <h3 className="text-[#23586A] text-lg md:text-xl font-medium font-['Work_Sans'] leading-[135%]">
-                            {item.title}
-                        </h3>
-                        <p className="text-[#555] text-sm md:text-base font-normal font-['Work_Sans'] leading-[135%]">
-                            {item.desc}
-                        </p>
-                    </div>
-                ))}
-            </div>
+      <div className="w-full px-4 max-w-[998px] mx-auto md:py-24 py-16 flex flex-col items-center gap-8 md:gap-10 lg:gap-12 min-h-screen">
+        <div className="w-full max-w-[616px] flex flex-col items-center gap-2 md:gap-3">
+          <div className="py-1 rounded-[10px] inline-flex items-center gap-2">
+            <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />
+            <span className="text-[#555] text-sm md:text-base tracking-wider font-normal font-['Work_Sans'] leading-[135%]">
+              COMPLETE FEATURE SET
+            </span>
+          </div>
+          <h2 className="w-full text-center text-[#23586A] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium font-['Lora'] leading-[135%]">
+            Features That Keep Care Effortless and Connected
+          </h2>
         </div>
+        <div className="w-full px-5 md:px-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          {featureData.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl shadow-[1.5px_1.5px_3px_0px_rgba(174,174,192,0.40)] hover:border-[1px] hover:border-[#23586A] transition-all duration-200 border-[1px] border-[transparent] cursor-pointer outline-[0.5px] outline-neutral-100 p-4 md:p-6 flex flex-col gap-3"
+            >
+              <div className="w-6 h-6 flex items-center justify-center">
+                <img src={item.img} alt={`Feature ${index + 1}`} />
+              </div>
+              <h3 className="text-[#23586A] text-lg md:text-xl font-medium font-['Work_Sans'] leading-[135%]">
+                {item.title}
+              </h3>
+              <p className="text-[#555] text-sm md:text-base font-light tracking-wider font-['Work_Sans'] leading-[135%]">
+                {item.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
     );
 }
