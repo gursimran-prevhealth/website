@@ -40,23 +40,26 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className="inline-flex flex-col justify-start items-center gap-0.5"
+                className="group inline-flex flex-col justify-start items-center gap-0.5"
               >
                 <div
                   className={cn(
                     "text-sm md:text-base font-normal font-[Work_Sans] leading-snug",
                     isActive
                       ? "text-[#23586A] font-medium"
-                      : "text-[#23586A] hover:text-rose-500 transition",
+                      : "text-[#23586A]  transition",
                     "py-1"
                   )}
                 >
                   {item.label}
                 </div>
+
                 <div
                   className={cn(
-                    "h-0.5 rounded-lg transition-all duration-400",
-                    isActive ? "bg-[#FD8883] w-full" : "w-0 bg-[#FD8883]"
+                    "h-0.5 rounded-lg bg-[#FD8883] transition-transform duration-500 origin-center",
+                    isActive
+                      ? "w-full scale-x-100"
+                      : "w-full scale-x-0 group-hover:scale-x-100"
                   )}
                 />
               </Link>
@@ -65,7 +68,10 @@ const Navbar = () => {
         </nav>
 
         <div className="flex items-center gap-1.5 sm:gap-3">
-          <Button className="hidden md:inline-flex" onClick={() => navigate('/contact-us')}>
+          <Button
+            className="hidden md:inline-flex"
+            onClick={() => navigate("/contact-us")}
+          >
             Contact Us
           </Button>
           {/* <div className="hidden md:inline-flex items-center px-3 sm:px-8 py-1.5 sm:py-3 rounded-full outline-1 outline-slate-400 gap-[3px] cursor-pointer">
@@ -81,15 +87,16 @@ const Navbar = () => {
               onClick={toggleMobileMenu}
             >
               <div
-                className={`shrink-0 h-0.5 w-8 bg-[#23586A] rounded-sm transform transition duration-300 ease-in-out ${isMobileMenuOpen ? "rotate-45 translate-y-2" : ""
-                  }`}
+                className={`shrink-0 h-0.5 w-6 bg-[#23586A] rounded-sm transform transition duration-300 ease-in-out ${
+                  isMobileMenuOpen ? "rotate-45 translate-y-2" : ""
+                }`}
               />
               <div
-                className={`shrink-0 h-0.5 w-8 bg-[#23586A] rounded-sm transform transition duration-300 ease-in-out ${isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
-                  }`}
+                className={`shrink-0 h-0.5 w-6 bg-[#23586A] rounded-sm transform transition duration-300 ease-in-out ${
+                  isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
+                }`}
               />
             </button>
-
           </div>
         </div>
 
@@ -103,8 +110,10 @@ const Navbar = () => {
                     key={item.path}
                     to={item.path}
                     className={cn(
-                      "font-[Work_Sans] transition text-[32px] leading-[140%]",
-                      isActive ? "text-[#fd8883] font-semibold" : "text-[#23586A] hover:text-[#fd8883]"
+                      "font-[Work_Sans] transition text-[32px] leading-[140%] font-light",
+                      isActive
+                        ? "text-[#fd8883] "
+                        : "text-[#23586A] hover:text-[#fd8883]"
                     )}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -112,11 +121,18 @@ const Navbar = () => {
                   </Link>
                 );
               })}
-              <Button className="mt-auto" onClick={() => { navigate('/contact-us'); setIsMobileMenuOpen(false) }}>Contact Us</Button>
+              <Button
+                className="mt-auto"
+                onClick={() => {
+                  navigate("/contact-us");
+                  setIsMobileMenuOpen(false);
+                }}
+              >
+                Contact Us
+              </Button>
             </nav>
           </div>
         )}
-
       </div>
     </header>
   );

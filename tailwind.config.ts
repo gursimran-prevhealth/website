@@ -1,8 +1,10 @@
 export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        "work-sans": ['"Work Sans"', "sans-serif"],
+        worksans: ['"Work Sans"', "sans-serif"],
+        lora: ["Lora", "sans-serif"],
       },
     },
   },

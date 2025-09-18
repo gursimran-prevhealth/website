@@ -1,3 +1,6 @@
+
+@tailwind utilities;
+
 @import "tailwindcss";
 @custom-variant hover (&:hover);
 @import "swiper/css";
