@@ -8,14 +8,14 @@ function Care() {
           <div className="w-full max-w-[579px] flex flex-col items-center gap-3 md:gap-4 text-center">
             <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
               <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />
-              <span className="text-sm md:text-base text-[#555] tracking-wider font-light font-worksans leading-[135%]">
+              <span className="text-sm md:text-base text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 PLATFORM FEATURES
               </span>
             </div>
             <h2 className="text-3xl md:text-5xl text-[#23586A] font-medium font-[Lora] leading-[135%]">
               Designed to Support Both Sides of Care
             </h2>
-            <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-worksans leading-[135%]">
+            <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
               We empower both doctors and patients with seamless, time-saving
               features all in one customizable platform
             </p>
@@ -24,10 +24,10 @@ function Care() {
             <div className="w-full flex md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 p-5">
               <div className="bg-white md:min-w-[unset] min-w-full rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] p-4 md:p-6 flex flex-col md:flex-row gap-4 md:col-span-2 overflow-hidden">
                 <div className="flex flex-col gap-4 w-full">
-                  <h3 className="text-xl md:text-3xl text-neutral-700 font-medium font-worksans leading-[135%]">
+                  <h3 className="text-xl md:text-3xl text-neutral-700 font-medium font-['Work_Sans'] leading-[135%]">
                     Centralized Doctor Dashboard
                   </h3>
-                  <p className="text-base text-[#555] tracking-wider font-light font-worksans leading-[135%]">
+                  <p className="text-base text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                     One secure place for everything, from patient information to
                     consultations, so you can focus more on care and less on
                     clicking around.
@@ -43,10 +43,10 @@ function Care() {
               </div>
 
               <div className="bg-white md:min-w-[unset] min-w-full rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] p-4 md:p-6 flex flex-col gap-4">
-                <h3 className="text-xl md:text-3xl text-neutral-700 font-medium font-worksans leading-[135%]">
+                <h3 className="text-xl md:text-3xl text-neutral-700 font-medium font-['Work_Sans'] leading-[135%]">
                   Guided Questionnaires
                 </h3>
-                <p className="text-base text-[#555] tracking-wider font-light font-worksans leading-[135%]">
+                <p className="text-base text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                   Just follow a few simple steps and we'll help you share
                   exactly what your doctor needs to know.
                 </p>
@@ -59,10 +59,10 @@ function Care() {
 
               <div className="bg-white md:min-w-[unset] min-w-full rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] p-4 md:p-6 flex flex-col gap-0 overflow-hidden">
                 <div className="w-full">
-                  <h3 className="text-xl md:text-3xl text-neutral-700 font-medium font-worksans leading-[135%] pb-4">
+                  <h3 className="text-xl md:text-3xl text-neutral-700 font-medium font-['Work_Sans'] leading-[135%] pb-4">
                     AI Enabled Transcription & Summarization
                   </h3>
-                  <p className="text-base text-[#555] tracking-wider font-light font-worksans leading-[135%]">
+                  <p className="text-base text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                     Make changes to notes hands-free — just speak and it
                     updates.
                   </p>
@@ -85,10 +85,10 @@ function Care() {
                   />
                 </div>
                 <div className="w-full pb-5">
-                  <h3 className="text-xl md:text-3xl text-neutral-700 font-medium font-worksans leading-[135%] pb-4">
+                  <h3 className="text-xl md:text-3xl text-neutral-700 font-medium font-['Work_Sans'] leading-[135%] pb-4">
                     Digital Consults: Chat, Audio & Video
                   </h3>
-                  <p className="text-base text-[#555] tracking-wider font-light font-worksans leading-[135%]">
+                  <p className="text-base text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                     Patients connect easily. Doctors respond quickly — anytime,
                     anywhere.
                   </p>
@@ -96,10 +96,10 @@ function Care() {
               </div>
 
               <div className="bg-white md:min-w-[unset] min-w-full rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] p-4 md:p-6 flex flex-col gap-4 overflow-hidden">
-                <h3 className="text-xl md:text-3xl text-neutral-700 font-medium font-worksans leading-[135%]">
+                <h3 className="text-xl md:text-3xl text-neutral-700 font-medium font-['Work_Sans'] leading-[135%]">
                   Quick Service Selection
                 </h3>
-                <p className="text-base text-[#555] tracking-wider font-light font-worksans leading-[135%]">
+                <p className="text-base text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                   Choose your region and health need in seconds.
                 </p>
                 <div className="relative w-full flex justify-center h-full">

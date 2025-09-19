@@ -12,7 +12,7 @@ export default function Home() {
             <h1 className="text-center text-[#23586A] font-medium tracking-wide font-[Lora] leading-[135%] text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
               The Operating System for Modern Healthcare
             </h1>
-            <p className="text-center text-[#555]  font-[300] font-worksans text-base sm:text-lg md:text-xl leading-[135%] tracking-wider max-w-[975px]">
+            <p className="text-center text-[#555]  font-[300] font-['Work_Sans'] text-base sm:text-lg md:text-xl leading-[135%] tracking-wider max-w-[975px]">
               We’ve reimagined care to be smarter, faster, and more human.
               Clinvvo provides the tools that help care teams stay connected and
               focused on the patient, so care happens naturally, when and where
@@ -24,7 +24,7 @@ export default function Home() {
               <a
                 href="https://calendly.com/prevhealth/30min"
                 target="_blank"
-                className="font-workSans tracking-wider"
+                className="font-['Work_Sans'] tracking-wider"
               >
                 Book a Demo
               </a>
@@ -48,26 +48,26 @@ export default function Home() {
         <div className="w-full max-w-[1560px] mx-auto md:min-h-[384px] min-h-[633px] bg-[#F7FDFF] overflow-hidden flex items-center justify-center p-6 pt-0">
           <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-32">
             <div className="max-w-64 w-full flex flex-col items-center gap-3">
-              <div className="text-7xl md:text-8xl font-semibold font-worksans text-[#23586A] leading-[135%]">
+              <div className="text-7xl md:text-8xl font-semibold font-['Work_Sans'] text-[#23586A] leading-[135%]">
                 x5
               </div>
-              <div className="text-base md:text-xl font-light tracking-wider font-worksans text-[#555] leading-[135%] text-center">
+              <div className="text-base md:text-xl font-light tracking-wider font-['Work_Sans'] text-[#555] leading-[135%] text-center">
                 Increase in Caregiver Productivity
               </div>
             </div>
             <div className="max-w-72 w-full flex flex-col items-center gap-3">
-              <div className="text-7xl md:text-8xl font-semibold font-worksans text-[#23586A] leading-[135%]">
+              <div className="text-7xl md:text-8xl font-semibold font-['Work_Sans'] text-[#23586A] leading-[135%]">
                 500K+
               </div>
-              <div className="text-base md:text-xl font-light tracking-wider font-worksans text-[#555] leading-[135%] text-center">
+              <div className="text-base md:text-xl font-light tracking-wider font-['Work_Sans'] text-[#555] leading-[135%] text-center">
                 Patients served in First year of operations
               </div>
             </div>
             <div className="max-w-64 w-full flex flex-col items-center gap-3">
-              <div className="text-7xl md:text-8xl font-semibold font-worksans text-[#23586A] leading-[135%]">
+              <div className="text-7xl md:text-8xl font-semibold font-['Work_Sans'] text-[#23586A] leading-[135%]">
                 &gt;40%
               </div>
-              <div className="text-base md:text-xl font-light tracking-wider font-worksans text-[#555] leading-[135%] text-center">
+              <div className="text-base md:text-xl font-light tracking-wider font-['Work_Sans'] text-[#555] leading-[135%] text-center">
                 Operating Cost Reduction
               </div>
             </div>
@@ -77,14 +77,14 @@ export default function Home() {
           <div className="w-full max-w-[937px] mx-auto flex flex-col items-center gap-3 md:gap-4 px-4">
             <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
               <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />
-              <div className="text-sm md:text-base text-[#555] tracking-wider font-light font-worksans leading-tight md:leading-snug">
+              <div className="text-sm md:text-base text-[#555] tracking-wider font-light font-['Work_Sans'] leading-tight md:leading-snug">
                 CARE THAT WORKS FOR EVERYONE
               </div>
             </div>
             <h2 className="text-3xl md:text-5xl text-[#23586A]  font-medium font-[Lora] leading-10 md:leading-[62.40px] text-center">
               Built for Doctors. Designed for Patients. Powered by Smart AI.
             </h2>
-            <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-worksans leading-snug md:leading-7 text-center">
+            <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-['Work_Sans'] leading-snug md:leading-7 text-center">
               Whether you're treating patients or looking for care yourself,
               Clinvvo brings everything together in one place—faster consults,
               smarter tools, and tech that stays out of the way but keeps
@@ -98,14 +98,14 @@ export default function Home() {
               <div className="w-full lg:max-w-[579px] flex flex-col items-start gap-3 md:gap-4">
                 <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
                   <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />
-                  <span className="text-sm md:text-base text-[#555] tracking-wider font-light font-worksans leading-[135%]">
+                  <span className="text-sm md:text-base text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                     FOR DOCTORS
                   </span>
                 </div>
                 <h2 className="text-3xl md:text-5xl text-[#23586A] font-medium font-[Lora] leading-[135%]">
                   Less Admin. More Time for Real Care.
                 </h2>
-                <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-worksans leading-[135%]">
+                <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                   Clinvvo helps doctors focus on what matters. With AI-generated
                   notes, smart intake summaries, and a unified dashboard, you
                   can spend less time on administrative work and more time
@@ -127,14 +127,14 @@ export default function Home() {
               <div className="w-full lg:max-w-[579px] flex flex-col items-start gap-3 md:gap-4">
                 <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
                   <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />
-                  <span className="text-sm md:text-base text-[#555] tracking-wider font-light font-worksans leading-[135%]">
+                  <span className="text-sm md:text-base text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                     FOR PATIENTS
                   </span>
                 </div>
                 <h2 className="text-3xl md:text-5xl text-[#23586A] font-medium font-[Lora] leading-[135%]">
                   Faster Answers. Happier Outcomes
                 </h2>
-                <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-worksans leading-[135%]">
+                <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                   Clinvvo helps your patients get care without the friction - no
                   crowded waiting rooms, no clunky intake. They choose their
                   service, fill out a short guided form, and connect with your
@@ -158,14 +158,14 @@ export default function Home() {
               <div className="w-full lg:max-w-[579px] flex flex-col items-start gap-3 md:gap-4">
                 <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
                   <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />
-                  <span className="text-sm md:text-base text-[#555] tracking-wider font-light font-worksans leading-[135%]">
+                  <span className="text-sm md:text-base text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                     POWERED BY AI
                   </span>
                 </div>
                 <h2 className="text-3xl md:text-5xl text-[#23586A] font-medium font-[Lora] leading-[135%]">
                   AI That Listens & Lightens the Load
                 </h2>
-                <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-worksans leading-[135%]">
+                <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                   Clinvvo's AI handles the busywork, transcribing consults,
                   generating medical notes, transferring to EHR, so your
                   clinicians can focus on care. For patients, it means faster
@@ -232,14 +232,14 @@ export default function Home() {
           <div className="w-full max-w-[609px] flex flex-col items-center gap-3 md:gap-4 text-center">
             <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
               <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />
-              <span className="text-sm md:text-base text-[#555] tracking-wider font-light font-worksans leading-[135%]">
+              <span className="text-sm md:text-base text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 OUR CORE VALUES
               </span>
             </div>
             <h2 className="text-3xl md:text-5xl text-[#23586A] font-medium font-[Lora] leading-[135%]">
               What Drives Us
             </h2>
-            <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-worksans leading-[135%]">
+            <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
               At our core, we're here to bridge the gap between access and
               quality with modern care that works for everyone.
             </p>
@@ -292,7 +292,7 @@ export default function Home() {
                     {item.title}
                   </h3>
                 </div>
-                <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-worksans leading-[135%] text-center">
+                <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%] text-center">
                   {item.desc}
                 </p>
               </div>
