@@ -3,132 +3,137 @@ import { Navigation } from 'swiper/modules';
 import { useState } from 'react';
 import SwiperCore from 'swiper';
 import { testimonial, testimonialPerson1,testimonialPerson2} from '../../assets';
+import { useTranslation } from "react-i18next";
 
 const Testimonials = () => {
-    const [activeIndex, setActiveIndex] = useState(0);
-    const [swiperInstance, setSwiperInstance] = useState<SwiperCore | null>(null);
+  const { t } = useTranslation();
 
-    const testimonials = [
-        {
-            id: 1,
-            quote: "Clinvvo’s system and app have revolutionized our workflow and significantly enhanced the patient experience. It has simplified patient contact for our midwives and doctors, leading to substantial cost savings for our organization. Thanks to Clinvvo’s solution, our operations are more efficient and effective.",
-            name: "Hugo Lewné",
-            role: "CEO, Prima Vård AB",
-            image: testimonial,
-            image1:testimonialPerson1
-        },
-        {
-            id: 2,
-            quote: "Clinvvo’s platform has transformed the way we work, streamlining communication and making patient interactions smoother than ever. Our clinicians save valuable time, while patients experience faster and more personalized care. The result is both improved efficiency and measurable cost reductions across the organization.",
-            name: "Sofie Andresen",
-            role: "Affärsområdeschef Barn & Kvinnohälsa",
-            desc:"VD Barnbördhuset Stockholm och Verksamhetschef BB Stockholm Family",
-            image: testimonial,
-            image1:testimonialPerson2
-        },
-        // {
-        //     id: 3,
-        //     quote: "Clinvvo’s system and app have revolutionized our workflow and significantly enhanced the patient experience. It has simplified patient contact for our midwives and doctors, leading to substantial cost savings for our organization. Thanks to Clinvvo’s solution, our operations are more efficient and effective.",
-        //     name: "Third Person",
-        //     role: "Their Position",
-        //     image: testimonial
-        // }
-    ];
+  const testimonials = t("testimonials.list", { returnObjects: true });
+  const images = [testimonialPerson1, testimonialPerson2];
+  const image = testimonial;
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [swiperInstance, setSwiperInstance] = useState<SwiperCore | null>(null);
 
-    return (
-      <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-24 py-12 flex flex-col items-center gap-8 md:gap-12 min-h-screen">
-        <div className="w-full max-w-[657px] flex flex-col items-center gap-3 md:gap-4 text-center">
-          <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
-            <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />
-            <span className="text-sm md:text-base text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
-              TESTIMONIALS
-            </span>
-          </div>
-          <h2 className="text-3xl md:text-5xl text-[#23586A] font-medium font-[Lora] leading-[135%]">
-            From Those Who Use It Daily
-          </h2>
-          <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
-            See how we're making care easier, faster, and more human directly
-            from those who've felt the difference
-          </p>
+  // const testimonials = [
+  //     {
+  //         id: 1,
+  //         quote: "Clinvvo’s system and app have revolutionized our workflow and significantly enhanced the patient experience. It has simplified patient contact for our midwives and doctors, leading to substantial cost savings for our organization. Thanks to Clinvvo’s solution, our operations are more efficient and effective.",
+  //         name: "Hugo Lewné",
+  //         role: "CEO, Prima Vård AB",
+  //         image: testimonial,
+  //         image1:testimonialPerson1
+  //     },
+  //     {
+  //         id: 2,
+  //         quote: "Clinvvo’s platform has transformed the way we work, streamlining communication and making patient interactions smoother than ever. Our clinicians save valuable time, while patients experience faster and more personalized care. The result is both improved efficiency and measurable cost reductions across the organization.",
+  //         name: "Sofie Andresen",
+  //         role: "Affärsområdeschef Barn & Kvinnohälsa",
+  //         desc:"VD Barnbördhuset Stockholm och Verksamhetschef BB Stockholm Family",
+  //         image: testimonial,
+  //         image1:testimonialPerson2
+  //     },
+  //     // {
+  //     //     id: 3,
+  //     //     quote: "Clinvvo’s system and app have revolutionized our workflow and significantly enhanced the patient experience. It has simplified patient contact for our midwives and doctors, leading to substantial cost savings for our organization. Thanks to Clinvvo’s solution, our operations are more efficient and effective.",
+  //     //     name: "Third Person",
+  //     //     role: "Their Position",
+  //     //     image: testimonial
+  //     // }
+  // ];
+
+  return (
+    <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-24 py-12 flex flex-col items-center gap-8 md:gap-12 min-h-screen">
+      <div className="w-full max-w-[900px] flex flex-col items-center gap-3 md:gap-4 text-center">
+        <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
+          <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />
+          <span className="text-sm md:text-base text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
+            {t("testimonials.sectionTag")}
+          </span>
         </div>
-        <div className="w-full">
-          <Swiper
-            modules={[Navigation]}
-            spaceBetween={24}
-            slidesPerView={1}
-            onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-            onSwiper={(swiper) => setSwiperInstance(swiper)}
-            breakpoints={{
-              768: {
-                slidesPerView: 1,
-                spaceBetween: 40,
-              },
-              1024: {
-                slidesPerView: 1,
-                spaceBetween: 56,
-              },
-            }}
-            className="w-full"
-          >
-            {testimonials.map((testimonial) => (
-              <SwiperSlide key={testimonial.id} className="h-full">
-                <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-14 items-center h-full">
-                  <div className="w-full lg:w-1/2">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-full h-64 md:h-96 object-cover rounded-[20px]"
-                    />
-                  </div>
-                  <div className="w-full lg:w-1/2 flex flex-col gap-6 md:gap-8 h-full">
-                    <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
-                      {testimonial.quote}
-                    </p>
+        <h2 className="text-3xl md:text-5xl text-[#23586A] font-medium font-[Lora] leading-[135%] w-full">
+          {t("testimonials.sectionTitle")}
+        </h2>
+        <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%] max-w-[657px]">
+          {t("testimonials.sectionDesc")}
+        </p>
+      </div>
+      <div className="w-full">
+        <Swiper
+          modules={[Navigation]}
+          spaceBetween={24}
+          slidesPerView={1}
+          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+          onSwiper={(swiper) => setSwiperInstance(swiper)}
+          breakpoints={{
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 1,
+              spaceBetween: 56,
+            },
+          }}
+          className="w-full"
+        >
+          {testimonials.map((testimonial, index) => (
+            <SwiperSlide key={testimonial.name} className="h-full">
+              <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-14 items-center h-full">
+                <div className="w-full lg:w-1/2">
+                  <img
+                    src={image}
+                    alt={testimonial.name}
+                    className="w-full h-64 md:h-96 object-cover rounded-[20px]"
+                  />
+                </div>
+                <div className="w-full lg:w-1/2 flex flex-col gap-6 md:gap-8 h-full">
+                  <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
+                    {testimonial.quote}
+                  </p>
 
-                    <div className="flex items-center gap-4">
-                      <div className="w-14 h-14 bg-zinc-300 rounded-full overflow-hidden">
-                        <img
-                          src={testimonial.image1}
-                          className="size-full object-cover"
-                          alt=""
-                        />
-                      </div>
-                      <div>
-                        <h4 className="text-base md:text-lg text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
-                          {testimonial.name}
-                        </h4>
-                        <p className="text-sm md:text-base text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
-                          {testimonial.role}
-                        </p>
-                        <p className="text-sm md:text-base text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
-                          {testimonial.desc}
-                        </p>
-                      </div>
+                  <div className="flex items-center gap-4">
+                    <div className="w-14 h-14 bg-zinc-300 rounded-full overflow-hidden">
+                      <img
+                        src={images[index]}
+                        className="size-full object-cover"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <h4 className="text-base md:text-lg text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
+                        {testimonial.name}
+                      </h4>
+                      <p className="text-sm md:text-base text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
+                        {testimonial.role}
+                      </p>
+                      <p className="text-sm md:text-base text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
+                        {testimonial.desc}
+                      </p>
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
-          <div className="flex justify-start items-center gap-2.5 lg:-mt-8 mt-8 lg:pl-7 relative z-[1] lg:w-1/2 lg:ml-auto">
-            {testimonials.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => swiperInstance?.slideTo(index)}
-                className={`h-1 transition-all duration-300 rounded-full cursor-pointer ${
-                  index === activeIndex
-                    ? "w-[60px] bg-[#23586A]"
-                    : "w-10 bg-[#D9D9D9]"
-                }`}
-                aria-label={`Go to testimonial ${index + 1}`}
-              />
-            ))}
-          </div>
+        <div className="flex justify-start items-center gap-2.5 lg:-mt-8 mt-8 lg:pl-7 relative z-[1] lg:w-1/2 lg:ml-auto">
+          {testimonials.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => swiperInstance?.slideTo(index)}
+              className={`h-1 transition-all duration-300 rounded-full cursor-pointer ${
+                index === activeIndex
+                  ? "w-[60px] bg-[#23586A]"
+                  : "w-10 bg-[#D9D9D9]"
+              }`}
+              aria-label={`Go to testimonial ${index + 1}`}
+            />
+          ))}
         </div>
       </div>
-    );
+    </div>
+  );
 };
 
 export default Testimonials;

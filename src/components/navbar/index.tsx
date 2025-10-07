@@ -3,27 +3,49 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { cn } from "../../lib";
 import { logo } from "../../assets";
 import Button from "../button";
-
-const navItems = [
-  { label: "AI Features", path: "/ai-features" },
-  { label: "For Doctors", path: "/for-doctors" },
-  { label: "For Patients", path: "/for-patients" },
-  { label: "About Us", path: "/about" },
-];
+import Dropdown, { type DropdownOption } from "../ui/Dropdown";
+import i18n from "../../i18n";
+import { LANGUAGES } from "../../lib/utils/cn";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { t } = useTranslation();
+
+  const navItems = [
+    { label: t("nav.aiFeatures"), path: "/ai-features" },
+    { label: t("nav.forDoctors"), path: "/for-doctors" },
+    { label: t("nav.forPatients"), path: "/for-patients" },
+    { label: t("nav.aboutUs"), path: "/about" },
+  ];
   const location = useLocation();
   const currentPath = location.pathname;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+  const [selectedLanguage, setSelectedLanguage] =
+    useState<DropdownOption | null>(null);
+  useEffect(() => {
+    document.body.style.overflow = isMobileMenuOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMobileMenuOpen]);
+
+  const handleSetLanguage = (language: DropdownOption) => {
+    const { value } = language;
+    i18n.changeLanguage(value);
+    localStorage.setItem("language", value);
+    setSelectedLanguage(language);
+  };
 
   useEffect(() => {
-    document.body.style.overflow = isMobileMenuOpen ? "hidden" : ""
-    return () => { document.body.style.overflow = "" };
-  }, [isMobileMenuOpen])
+    const saved = localStorage.getItem("language") || i18n.language;
+    setSelectedLanguage(
+      LANGUAGES.find((l) => l.value === saved) || LANGUAGES[0]
+    );
+  }, []);
 
   return (
     <header className="w-full bg-white shadow-sm fixed top-0 z-[100]">
@@ -35,7 +57,6 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center gap-6 lg:gap-8">
           {navItems.map((item) => {
             const isActive = currentPath === item.path;
-
             return (
               <Link
                 key={item.path}
@@ -68,18 +89,38 @@ const Navbar = () => {
         </nav>
 
         <div className="flex items-center gap-1.5 sm:gap-3">
-          <Button
-            className="hidden md:inline-flex tracking-wider"
-            onClick={() => navigate("/contact-us")}
-          >
-            Contact Us
-          </Button>
-          {/* <div className="hidden md:inline-flex items-center px-3 sm:px-8 py-1.5 sm:py-3 rounded-full outline-1 outline-slate-400 gap-[3px] cursor-pointer">
-            <img src={globe} alt="Globe" className="w-4 sm:w-5 h-4 sm:h-5 object-contain" />
-            <span className="text-[#23586A] text-xs sm:text-sm font-medium font-[Work_Sans] leading-snug">
-              English
-            </span>
-          </div> */}
+          <div className="hidden md:inline-flex justify-end rounded-full cursor-pointer w-full gap-2">
+            <Button
+              className="hidden md:inline-flex tracking-wider"
+              onClick={() => navigate("/contact-us")}
+            >
+              {t("nav.contactUs")}
+            </Button>
+            <Dropdown
+              icon={
+                <img
+                  src={"/images/language.svg"}
+                  alt="Language"
+                  className="w-5 h-5"
+                />
+              }
+              label={selectedLanguage ? "" : t("dropdown.selectLanguage")}
+              defaultValue={
+                selectedLanguage ? selectedLanguage.value : undefined
+              }
+              onSelect={handleSetLanguage}
+              options={LANGUAGES}
+              arrowIcon={
+                <img
+                  src={"/images/up-arrow.svg"}
+                  alt="Select"
+                  className="w-4 h-4"
+                />
+              }
+              buttonClassName="!bg-[#F5F5F5] hidden md:inline-flex"
+              buttonVariant="outline"
+            />
+          </div>
 
           <div className="md:hidden">
             <button
@@ -121,15 +162,42 @@ const Navbar = () => {
                   </Link>
                 );
               })}
-              <Button
-                className="mt-auto"
-                onClick={() => {
-                  navigate("/contact-us");
-                  setIsMobileMenuOpen(false);
-                }}
-              >
-                Contact Us
-              </Button>
+              <div className="flex flex-col gap-4 justify-start">
+                <Dropdown
+                  icon={
+                    <img
+                      src={"/images/language.svg"}
+                      alt="Language"
+                      className="w-5 h-5"
+                    />
+                  }
+                  label={selectedLanguage ? "" : t("dropdown.selectLanguage")}
+                  defaultValue={
+                    selectedLanguage ? selectedLanguage.value : undefined
+                  }
+                  onSelect={handleSetLanguage}
+                  options={LANGUAGES}
+                  arrowIcon={
+                    <img
+                      src={"/images/up-arrow.svg"}
+                      alt="Select"
+                      className="w-4 h-4"
+                    />
+                  }
+                  buttonClassName="!bg-[#F5F5F5]"
+                  buttonVariant="outline"
+                />
+
+                <Button
+                  className="mt-auto"
+                  onClick={() => {
+                    navigate("/contact-us");
+                    setIsMobileMenuOpen(false);
+                  }}
+                >
+                  {t("nav.contactUs")}
+                </Button>
+              </div>
             </nav>
           </div>
         )}

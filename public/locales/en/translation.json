@@ -1,0 +1,270 @@
+{
+  "nav": {
+    "aiFeatures": "AI Features",
+    "forDoctors": "For Doctors",
+    "forPatients": "For Patients",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us"
+  },
+  "dropdown": {
+    "selectLanguage": "Select language",
+    "noOptions": "No options available"
+  },
+  "home": {
+    "hero": {
+      "title": "The Operating System for Modern Healthcare",
+      "desc": "We’ve reimagined care to be smarter, faster, and more human. Clinvvo provides the tools that help care teams stay connected and focused on the patient, so care happens naturally, when and where it’s needed most.",
+      "bookDemo": "Book a Demo"
+    },
+    "stats": {
+      "productivity": "Increase in Caregiver Productivity",
+      "patients": "Patients served in First year of operations",
+      "cost": "Operating Cost Reduction"
+    },
+    "care": {
+      "subTitle": "CARE THAT WORKS FOR EVERYONE",
+      "title": "Built for Doctors. Designed for Patients. Powered by Smart AI.",
+      "desc": "Whether you're treating patients or looking for care yourself, Clinvvo brings everything together in one place—faster consults, smarter tools, and tech that stays out of the way but keeps everything running smoothly"
+    },
+    "sections": {
+      "doctors": {
+        "label": "FOR DOCTORS",
+        "title": "Less Admin. More Time for Real Care.",
+        "desc": "Clinvvo helps doctors focus on what matters. With AI-generated notes, smart intake summaries, and a unified dashboard, you can spend less time on administrative work and more time connecting with patients.",
+        "button": "Explore More"
+      },
+      "patients": {
+        "label": "FOR PATIENTS",
+        "title": "Faster Answers. Happier Outcomes",
+        "desc": "Clinvvo helps your patients get care without the friction - no crowded waiting rooms, no clunky intake. They choose their service, fill out a short guided form, and connect with your providers through secure chat, call, or video. Follow-ups and updates are built in, so they feel supported every step of the way.",
+        "button": "Explore More"
+      },
+      "ai": {
+        "label": "POWERED BY AI",
+        "title": "AI That Listens & Lightens the Load",
+        "desc": "Clinvvo's AI handles the busywork, transcribing consults, generating medical notes, transferring to EHR, so your clinicians can focus on care. For patients, it means faster appointments, fewer forms, and a more connected experience, all quietly powered behind the scenes.",
+        "button": "Explore More"
+      }
+    },
+    "about": {
+      "label": "WHO WE ARE",
+      "title": "Smarter Care. Stronger Connections.",
+      "desc1": "Clinvvo is a B2B SaaS platform built by European medical professionals and technologists who believe that better healthcare starts with better tools.",
+      "desc2": "We offer an end-to-end suite of features, from appointment booking and video consultations to AI-powered medical notes and EHR integration, that helps clinics digitize their services under their own brand.",
+      "button": "More About Us"
+    },
+    "values": {
+      "subTitle": "OUR CORE VALUES",
+      "title": "What Drives Us",
+      "desc": "At our core, we're here to bridge the gap between access and quality with modern care that works for everyone.",
+      "cards": [
+        {
+          "title": "Efficiency that Empowers",
+          "desc": "Freeing up doctor's time so they can focus on care, not clicks"
+        },
+        {
+          "title": "Clarity for Patients",
+          "desc": "Helping people navigate care with confidence and ease"
+        },
+        {
+          "title": "Technology with a Purpose",
+          "desc": "Using smart systems that seamlessly enhance every interaction"
+        }
+      ]
+    }
+  },
+  "care": {
+    "section": {
+      "subTitle": "PLATFORM FEATURES",
+      "title": "Designed to Support Both Sides of Care",
+      "desc": "We empower both doctors and patients with seamless, time-saving features all in one customizable platform"
+    },
+    "features": {
+      "dashboard": {
+        "title": "Centralized Doctor Dashboard",
+        "desc": "One secure place for everything, from patient information to consultations, so you can focus more on care and less on clicking around.",
+        "alt": "Doctor Dashboard"
+      },
+      "questionnaires": {
+        "title": "Guided Questionnaires",
+        "desc": "Just follow a few simple steps and we'll help you share exactly what your doctor needs to know.",
+        "alt": "Guided Questionnaires"
+      },
+      "aiTranscription": {
+        "title": "AI Enabled Transcription & Summarization",
+        "desc": "Make changes to notes hands-free — just speak and it updates.",
+        "alt": "AI Enabled Transcription & Summarization"
+      },
+      "digitalConsultation": {
+        "title": "Digital Consults: Chat, Audio & Video",
+        "desc": "Patients connect easily. Doctors respond quickly — anytime, anywhere.",
+        "alt": "Digital Consults"
+      },
+      "templateDropdown": {
+        "title": "Quick Service Selection",
+        "desc": "Choose your region and health need in seconds.",
+        "alt": "Dropdown Template"
+      }
+    }
+  },
+  "aifeatures": {
+    "heroSection": {
+      "heading": "Everything you need for faster, Smarter care",
+      "description": "Explore how Clinvvo's AI works quietly in the background to streamline care, reduce clicks, and empower providers and patients alike.",
+      "buttonText": "Book a Demo"
+    },
+    "coreFeatures": {
+      "heading": "Your AI Assistant in Every Consultation",
+      "title": "CORE AI FEATURES",
+      "subtitle": "Trusted by care teams across Europe, Clinvvo's AI creates structured medical notes in seconds, fitting smoothly into your workflow so you can review and send to the journal system with one click."
+    },
+    "featuresList-1": {
+      "title": "Easy Medical Note Generation",
+      "description": "Clinvvo listens, transcribes, and converts your consultation into structured, clinically accurate notes—ready to review or send in seconds.",
+      "points": {
+        "list-1": "Auto-generated transcription and medical notes",
+        "list-2": "Works seamlessly for both in-person and digital consultation",
+        "list-3": "Structured output tailored to match your journal templates"
+      }
+    },
+    "featuresList-2": {
+      "title": "Start Smart with Preloaded Templates",
+      "description": "We instantly load templates tailored to your clinical context—no setup, no formatting, just seamless documentation."
+    },
+    "featuresList-3": {
+      "title": "One Click Document Transfer",
+      "description": "Doctors can send structured medical notes to their journal system instantly, no extra steps, no workflow interruptions.",
+      "points": {
+        "list-1": "Supports all major web-based journal systems",
+        "list-2": "Compatible with your existing templates, making transfers fast and seamless"
+      }
+    },
+    "featuresList-4": {
+      "title": "Edit Notes, Hands Free",
+      "description": "Make changes just by speaking. Add, remove, or rephrase with natural voice commands. No training needed"
+    },
+    "featuresList-5": {
+      "title": "Built for Trust & Security",
+      "description": "Clinvvo is GDPR-compliant and offers secure login with BankID, SITHS via Net iD, and SITHS via eID—keeping patient data protected at all times"
+    },
+    "featuresList-6": {
+      "title": "Multilingual Transcription",
+      "description": "Speak in one language, get notes in another. Clinvvo supports multilingual consultations and transcribes everything in your preferred clinical language"
+    },
+    "featuresList-7": {
+      "title": "Effortless ICD-10 Coding",
+      "description": "No more digging through code lists. As you document, Clinvvo surfaces the most relevant ICD-10 codes right next to your notes, ready when you need them"
+    }
+  },
+  "features": {
+    "sectionTag": "COMPLETE FEATURE SET",
+    "sectionTitle": "Features That Keep Care Effortless and Connected",
+    "list": [
+      {
+        "title": "Quick Service Selection",
+        "desc": "Choose your location and care type (e.g., Primary Care, Psychiatry, Gynaecology) in just a few taps."
+      },
+      {
+        "title": "Centralized Dashboard",
+        "desc": "Access all transcriptions & medical notes in one place, streamlining documentation & saving time."
+      },
+      {
+        "title": "AI-Powered Clinical Notes",
+        "desc": "Real-time transcription & intelligent summarization of consults, no more manual note-taking."
+      },
+      {
+        "title": "Smart Dictation",
+        "desc": "Just speak into a blank template after your consultation, and Clinvvo takes care of the rest."
+      },
+      {
+        "title": "Diagnosis Codes",
+        "desc": "Clinvvo suggests relevant codes as you speak or type, so you can focus on care, not coding."
+      },
+      {
+        "title": "AI Speech Recognition",
+        "desc": "Dictate freely or directly into fields, Clinvvo transcribes it all with built-in speech recognition."
+      },
+      {
+        "title": "Automatic Clinical Language",
+        "desc": "Say it your way, Clinvvo translates it into clear, professional clinical phrasing automatically."
+      },
+      {
+        "title": "One Click Transfer",
+        "desc": "Once your medical note is ready, Clinvvo seamlessly transfers it to your medical journal system."
+      },
+      {
+        "title": "Text Input",
+        "desc": "Use existing notes to auto-generate structured clinical documents."
+      }
+    ]
+  },
+  "workflow": {
+    "sectionTag": "HOW THIS PROCESS WORKS",
+    "sectionTitle": "AI That Listens, Writes, and Fits Into Your Workflow",
+    "steps": [
+      {
+        "title": "Set Up Your Consult",
+        "desc": "Select the region, department, preferred template & configure microphone settings, then start your session with the patient."
+      },
+      {
+        "title": "You Talk, AI Writes",
+        "desc": "After the consultation, our AI transcribes the recording and creates a structured medical note—clear, accurate, and ready to use."
+      },
+      {
+        "title": "Review & Finalize",
+        "desc": "Edit by voice or text, make any changes, then transfer the note to the patient's medical journal."
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionTag": "TESTIMONIALS",
+    "sectionTitle": "From Those Who Use It Daily",
+    "sectionDesc": "See how we're making care easier, faster, and more human directly from those who've felt the difference",
+    "list": [
+      {
+        "quote": "Clinvvo’s system and app have revolutionized our workflow and significantly enhanced the patient experience. It has simplified patient contact for our midwives and doctors, leading to substantial cost savings for our organization. Thanks to Clinvvo’s solution, our operations are more efficient and effective.",
+        "name": "Hugo Lewné",
+        "role": "CEO, Prima Vård AB"
+      },
+      {
+        "quote": "Clinvvo’s platform has transformed the way we work, streamlining communication and making patient interactions smoother than ever. Our clinicians save valuable time, while patients experience faster and more personalized care. The result is both improved efficiency and measurable cost reductions across the organization.",
+        "name": "Sofie Andresen",
+        "role": "Affärsområdeschef Barn & Kvinnohälsa",
+        "desc": "VD Barnbördhuset Stockholm och Verksamhetschef BB Stockholm Family"
+      }
+    ]
+  },
+  "faq": {
+    "headingTag": "FAQS",
+    "headingTitle": "Your Questions Answered",
+    "list": [
+      {
+        "question": "What kind of healthcare providers is Clinvvo built for?",
+        "answer": "Clinvvo is designed for clinics, hospitals, and digital health providers offering services across any speciality. From primary care and sexual health to psychiatry and speech therapy - our flexible modules adapt to your care model."
+      },
+      {
+        "question": "How does Clinvvo improve clinical efficiency?",
+        "answer": "Clinvvo is an end-to-end platform, from digital triage and patient communication to clinical workflows and AI-powered documentation. We don't just offer isolated AI tools; we support the full care journey with integrated solutions that reduce administrative burden and let providers focus on what matters most: delivering care."
+      },
+      {
+        "question": "Is Clinvvo compliant with European regulations?",
+        "answer": "Yes, Clinvvo is fully GDPR-compliant and built to meet regional healthcare requirements, including secure data storage, patient consent workflows, and integrations with national EHRs."
+      },
+      {
+        "question": "Does Clinvvo support different languages and localizations?",
+        "answer": "Yes, Clinvvo supports region and language specific configurations. We currently serve providers across Sweden and broader Europe."
+      },
+      {
+        "question": "How long does it take to go live with Clinvvo?",
+        "answer": "Depending on your scope and configuration needs, providers can typically launch within 2 to 6 weeks. Our team supports onboarding, customization, and training every step of the way."
+      }
+    ]
+  },
+  "footer": {
+    "alt": "Contact Banner",
+    "title": "Still have questions?",
+    "subtitle": "Let's Talk",
+    "button": "Contact Us",
+    "copyright": "©2025, Clinvvo, All Rights Reserved"
+  }
+}

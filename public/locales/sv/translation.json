@@ -1,0 +1,270 @@
+{
+  "nav": {
+    "aiFeatures": "AI-funktioner",
+    "forDoctors": "För läkare",
+    "forPatients": "För patienter",
+    "aboutUs": "Om oss",
+    "contactUs": "Kontakta oss"
+  },
+  "dropdown": {
+    "selectLanguage": "Välj språk",
+    "noOptions": "Inga alternativ tillgängliga"
+  },
+  "home": {
+    "hero": {
+      "title": "Operativsystemet för Modern Vårdgivning",
+      "desc": "Vi har omdefinierat vård för att vara smartare, snabbare och mer mänsklig. Clinvvo tillhandahåller verktygen som hjälper vårdteam att hålla kontakt och fokusera på patienten, så att vård sker naturligt, när och där den behövs mest.",
+      "bookDemo": "Boka en Demo"
+    },
+    "stats": {
+      "productivity": "Ökning av vårdgivares produktivitet",
+      "patients": "Patienter som fått vård under det första verksamhetsåret",
+      "cost": "Reducerade driftkostnader"
+    },
+    "care": {
+      "subTitle": "VÅRD SOM FUNGERAR FÖR ALLA",
+      "title": "Byggt för läkare. Designat för patienter. Drivet av smart AI.",
+      "desc": "Oavsett om du behandlar patienter eller söker vård själv, samlar Clinvvo allt på ett ställe – snabbare konsultationer, smartare verktyg och teknik som inte stör men håller allt igång smidigt."
+    },
+    "sections": {
+      "doctors": {
+        "label": "FÖR LÄKARE",
+        "title": "Mindre administration. Mer tid för riktig vård.",
+        "desc": "Clinvvo hjälper läkare att fokusera på det som är viktigt. Med AI-genererade anteckningar, smarta intagsöversikter och en samlad dashboard kan du spendera mindre tid på administrativt arbete och mer tid med patienter.",
+        "button": "Utforska mer"
+      },
+      "patients": {
+        "label": "FÖR PATIENTER",
+        "title": "Snabbare svar. Bättre resultat",
+        "desc": "Clinvvo hjälper dina patienter att få vård utan hinder – inga trånga väntrum, inget krångligt intag. De väljer sin tjänst, fyller i ett kort vägledande formulär och kontaktar dina vårdgivare via säker chatt, samtal eller video. Uppföljningar och uppdateringar är inbyggda, så de känner sig stöttade hela vägen.",
+        "button": "Utforska mer"
+      },
+      "ai": {
+        "label": "DRIVS AV AI",
+        "title": "AI som lyssnar & underlättar arbetet",
+        "desc": "Clinvvos AI hanterar rutinuppgifter, transkriberar konsultationer, genererar medicinska anteckningar och överför till EHR, så att dina vårdgivare kan fokusera på vården. För patienter innebär det snabbare möten, färre formulär och en mer sammanhängande upplevelse, allt tyst i bakgrunden.",
+        "button": "Utforska mer"
+      }
+    },
+    "about": {
+      "label": "VEM VI ÄR",
+      "title": "Smartare vård. Starkare kopplingar.",
+      "desc1": "Clinvvo är en B2B SaaS-plattform byggd av europeiska medicinska experter och teknologer som tror att bättre vård börjar med bättre verktyg.",
+      "desc2": "Vi erbjuder en komplett uppsättning funktioner, från bokning av möten och videokonsultationer till AI-genererade medicinska anteckningar och EHR-integration, som hjälper kliniker att digitalisera sina tjänster under sitt eget varumärke.",
+      "button": "Mer om oss"
+    },
+    "values": {
+      "subTitle": "VÅRA KÄRNVÄRDEN",
+      "title": "Vad som driver oss",
+      "desc": "I grunden är vi här för att överbrygga gapet mellan tillgång och kvalitet med modern vård som fungerar för alla.",
+      "cards": [
+        {
+          "title": "Effektivitet som stärker",
+          "desc": "Frigör läkares tid så att de kan fokusera på vården, inte klick"
+        },
+        {
+          "title": "Klarhet för patienter",
+          "desc": "Hjälper människor navigera vården med trygghet och lätthet"
+        },
+        {
+          "title": "Teknik med syfte",
+          "desc": "Använder smarta system som sömlöst förbättrar varje interaktion"
+        }
+      ]
+    }
+  },
+  "care": {
+    "section": {
+      "subTitle": "PLATTFORMSFUNKTIONER",
+      "title": "Designad för att stödja båda sidor av vården",
+      "desc": "Vi ger både läkare och patienter sömlösa, tidsbesparande funktioner i en anpassningsbar plattform"
+    },
+    "features": {
+      "dashboard": {
+        "title": "Centraliserad Läkarpanel",
+        "desc": "Ett säkert ställe för allt, från patientinformation till konsultationer, så att du kan fokusera mer på vård och mindre på att klicka runt.",
+        "alt": "Läkarpanel"
+      },
+      "questionnaires": {
+        "title": "Guidade Frågeformulär",
+        "desc": "Följ bara några enkla steg och vi hjälper dig att dela exakt vad din läkare behöver veta.",
+        "alt": "Guidade Frågeformulär"
+      },
+      "aiTranscription": {
+        "title": "AI-drivna transkriptioner & sammanfattningar",
+        "desc": "Gör ändringar i anteckningar utan händer — tala bara så uppdateras de.",
+        "alt": "AI-drivna transkriptioner & sammanfattningar"
+      },
+      "digitalConsultation": {
+        "title": "Digitala konsultationer: Chatt, Ljud & Video",
+        "desc": "Patienter ansluter enkelt. Läkare svarar snabbt – när som helst, var som helst.",
+        "alt": "Digitala konsultationer"
+      },
+      "templateDropdown": {
+        "title": "Snabb tjänsteval",
+        "desc": "Välj din region och hälsobehov på några sekunder.",
+        "alt": "Dropdown-mall"
+      }
+    }
+  },
+  "aifeatures": {
+    "heroSection": {
+      "heading": "Allt du behöver för snabbare, smartare vård",
+      "description": "Utforska hur Clinvvos AI arbetar tyst i bakgrunden för att effektivisera vården, minska klick och stärka vårdgivare och patienter.",
+      "buttonText": "Boka en demo"
+    },
+    "coreFeatures": {
+      "heading": "Din AI-assistent i varje konsultation",
+      "title": "KÄRN-AI-FUNKTIONER",
+      "subtitle": "Betrodd av vårdteam över hela Europa, skapar Clinvvos AI strukturerade medicinska anteckningar på några sekunder, smidigt integrerat i ditt arbetsflöde så att du kan granska och skicka till journalsystemet med ett klick."
+    },
+    "featuresList-1": {
+      "title": "Enkel medicinsk anteckningsgenerering",
+      "description": "Clinvvo lyssnar, transkriberar och omvandlar din konsultation till strukturerade, kliniskt korrekta anteckningar — redo att granska eller skicka på några sekunder.",
+      "points": [
+        "Automatiskt genererad transkription och medicinska anteckningar",
+        "Fungerar sömlöst för både personliga och digitala konsultationer",
+        "Strukturerat resultat anpassat för dina journalmallar"
+      ]
+    },
+    "featuresList-2": {
+      "title": "Börja smart med förladdade mallar",
+      "description": "Vi laddar direkt mallar anpassade till din kliniska kontext — ingen installation, ingen formatering, bara sömlös dokumentation."
+    },
+    "featuresList-3": {
+      "title": "Dokumentöverföring med ett klick",
+      "description": "Läkare kan skicka strukturerade medicinska anteckningar till sitt journalsystem direkt, inga extra steg, inga avbrott i arbetsflödet.",
+      "points": {
+        "list-1": "Stöder alla större webbaserade journalsystem",
+        "list-2": "Kompatibel med dina befintliga mallar, vilket gör överföring snabb och smidig"
+      }
+    },
+    "featuresList-4": {
+      "title": "Redigera anteckningar handsfree",
+      "description": "Gör ändringar genom att tala. Lägg till, ta bort eller omformulera med naturliga röstkommandon. Ingen träning behövs"
+    },
+    "featuresList-5": {
+      "title": "Byggd för förtroende och säkerhet",
+      "description": "Clinvvo följer GDPR och erbjuder säker inloggning med BankID, SITHS via Net iD och SITHS via eID — vilket skyddar patientdata hela tiden"
+    },
+    "featuresList-6": {
+      "title": "Flerspråkig transkribering",
+      "description": "Tala på ett språk, få anteckningar på ett annat. Clinvvo stöder flerspråkiga konsultationer och transkriberar allt på ditt föredragna kliniska språk"
+    },
+    "featuresList-7": {
+      "title": "Enkel ICD-10-kodning",
+      "description": "Slipp leta i kodlistor. När du dokumenterar visar Clinvvo de mest relevanta ICD-10-koderna bredvid dina anteckningar, redo när du behöver dem"
+    }
+  },
+  "features": {
+    "sectionTag": "KOMPLETT FUNKTIONSUPPSÄTTNING",
+    "sectionTitle": "Funktioner som gör vården enkel och sammanlänkad",
+    "list": [
+      {
+        "title": "Snabbt val av tjänst",
+        "desc": "Välj din plats och vårdtyp (t.ex. primärvård, psykiatri, gynekologi) med bara några tryck."
+      },
+      {
+        "title": "Centraliserad instrumentpanel",
+        "desc": "Få tillgång till alla transkriptioner och medicinska anteckningar på ett ställe – effektiviserar dokumentationen och sparar tid."
+      },
+      {
+        "title": "AI-drivna kliniska anteckningar",
+        "desc": "Realtidstranskription och intelligent sammanfattning av konsultationer – inget mer manuellt antecknande."
+      },
+      {
+        "title": "Smart diktering",
+        "desc": "Prata bara i en tom mall efter din konsultation – Clinvvo sköter resten."
+      },
+      {
+        "title": "Diagnoskoder",
+        "desc": "Clinvvo föreslår relevanta koder medan du pratar eller skriver, så att du kan fokusera på vården istället för kodning."
+      },
+      {
+        "title": "AI-taligenkänning",
+        "desc": "Diktera fritt eller direkt i fält – Clinvvo transkriberar allt med inbyggd taligenkänning."
+      },
+      {
+        "title": "Automatiskt kliniskt språk",
+        "desc": "Säg det på ditt sätt – Clinvvo översätter det automatiskt till tydligt, professionellt kliniskt språk."
+      },
+      {
+        "title": "Ett klick för överföring",
+        "desc": "När din medicinska anteckning är klar överför Clinvvo den sömlöst till ditt journalsystem."
+      },
+      {
+        "title": "Textinmatning",
+        "desc": "Använd befintliga anteckningar för att automatiskt generera strukturerade kliniska dokument."
+      }
+    ]
+  },
+  "workflow": {
+    "sectionTag": "SÅ HÄR FUNGERAR PROCESSEN",
+    "sectionTitle": "AI som lyssnar, skriver och passar in i ditt arbetsflöde",
+    "steps": [
+      {
+        "title": "Ställ in din konsultation",
+        "desc": "Välj region, avdelning, önskad mall och konfigurera mikrofoninställningar, starta sedan din session med patienten."
+      },
+      {
+        "title": "Du pratar, AI skriver",
+        "desc": "Efter konsultationen transkriberar vår AI inspelningen och skapar en strukturerad medicinsk anteckning – tydlig, korrekt och redo att användas."
+      },
+      {
+        "title": "Granska och slutför",
+        "desc": "Redigera med röst eller text, gör eventuella ändringar och överför sedan anteckningen till patientens journal."
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionTag": "OMDÖMEN",
+    "sectionTitle": "Från dem som använder det varje dag",
+    "sectionDesc": "Se hur vi gör vården enklare, snabbare och mer mänsklig – direkt från dem som har upplevt skillnaden",
+    "list": [
+      {
+        "quote": "Clinvvos system och app har revolutionerat vårt arbetsflöde och avsevärt förbättrat patientupplevelsen. Det har förenklat patientkontakten för våra barnmorskor och läkare, vilket lett till betydande kostnadsbesparingar för vår organisation. Tack vare Clinvvos lösning är våra processer mer effektiva och smidiga.",
+        "name": "Hugo Lewné",
+        "role": "VD, Prima Vård AB"
+      },
+      {
+        "quote": "Clinvvos plattform har förändrat hur vi arbetar, effektiviserat kommunikationen och gjort patientinteraktioner smidigare än någonsin. Våra kliniker sparar värdefull tid, medan patienterna får snabbare och mer personlig vård. Resultatet är ökad effektivitet och mätbara kostnadsminskningar i hela organisationen.",
+        "name": "Sofie Andresen",
+        "role": "Affärsområdeschef Barn & Kvinnohälsa",
+        "desc": "VD Barnbördhuset Stockholm och Verksamhetschef BB Stockholm Family"
+      }
+    ]
+  },
+  "faq": {
+    "headingTag": "FAQ",
+    "headingTitle": "Dina frågor besvarade",
+    "list": [
+      {
+        "question": "Vilka typer av vårdgivare är Clinvvo byggt för?",
+        "answer": "Clinvvo är utformat för kliniker, sjukhus och digitala vårdgivare som erbjuder tjänster inom alla specialiteter. Från primärvård och sexuell hälsa till psykiatri och logopedi – våra flexibla moduler anpassar sig efter din vårdmodell."
+      },
+      {
+        "question": "Hur förbättrar Clinvvo den kliniska effektiviteten?",
+        "answer": "Clinvvo är en helhetsplattform – från digital triagering och patientkommunikation till kliniska arbetsflöden och AI-driven dokumentation. Vi erbjuder inte bara isolerade AI-verktyg; vi stödjer hela vårdresan med integrerade lösningar som minskar administrativ börda och låter vårdpersonalen fokusera på det som är viktigast: att ge vård."
+      },
+      {
+        "question": "Är Clinvvo förenligt med europeiska regler?",
+        "answer": "Ja, Clinvvo är helt GDPR-kompatibelt och byggt för att uppfylla regionala krav, inklusive säker datalagring, patientgodkännande och integrationer med nationella journalsystem."
+      },
+      {
+        "question": "Stöder Clinvvo olika språk och lokaliseringar?",
+        "answer": "Ja, Clinvvo stöder regions- och språkspecifika konfigurationer. Vi betjänar för närvarande vårdgivare i Sverige och övriga Europa."
+      },
+      {
+        "question": "Hur lång tid tar det att börja använda Clinvvo?",
+        "answer": "Beroende på omfattning och konfigurationsbehov kan vårdgivare vanligtvis lansera inom 2–6 veckor. Vårt team erbjuder stöd för onboarding, anpassning och utbildning hela vägen."
+      }
+    ]
+  },
+  "footer": {
+    "alt": "Kontaktbanner",
+    "title": "Har du fortfarande frågor?",
+    "subtitle": "Låt oss prata",
+    "button": "Kontakta oss",
+    "copyright": "©2025, Clinvvo, Alla rättigheter förbehållna"
+  }
+}

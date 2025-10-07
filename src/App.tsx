@@ -2,8 +2,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import { About, AiFeatures, ContactUs, ForDoctors, ForPatients, Home, NotFound } from './pages'
-import { Footer, Navbar } from './components'
-
+import { Footer, Navbar } from "./components";
 function App() {
 
   return (

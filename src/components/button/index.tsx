@@ -25,7 +25,19 @@ const Button = ({
         "text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-4 leading-[135%]";
 
     const variants = {
-        green: "bg-[#23586A] text-white hover:bg-[#23586A]/90",
+      green: "bg-[#23586A] text-white hover:bg-[#23586A]/90",
+      primary: `bg-primary !text-white hover:bg-primary-dark
+        focus:ring-primary focus:ring-2 focus:ring-offset-0 
+        w-full`,
+
+      outline: `bg-transparent border border-[#DADADA] text-primary-dark 
+        hover:border-primary-dark hover:bg-orange-100 
+        focus:ring-primary-dark focus:ring-2 focus:ring-offset-0 
+        w-full`,
+
+      secondary: `bg-[#F5F5F5] !text-gray-text hover:bg-[#E0E0E0]
+        focus:ring-[#F5F5F5] focus:ring-2 focus:ring-offset-0 
+        w-full`,
     };
 
     const variantStyles = variants[variant];
