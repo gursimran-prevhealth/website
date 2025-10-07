@@ -357,6 +357,116 @@
       }
     ]
   },
+  "forPatients": {
+    "hero": {
+      "title": "Care That Meets You Where You Are",
+      "desc": "Clinvvo enables secure, seamless conversations between patients and licensed healthcare professionals—no delays, no distractions.",
+      "button": "Book a Demo"
+    },
+    "whatPatientsGetSection": {
+      "subTitle": "WHAT YOUR PATIENTS GET",
+      "title": "Everything You Need to Get Care Fast, Simple, and Secure",
+      "desc": "Clinvvo makes it easy to get care on your patients terms. From quick symptom forms to group sessions and a personal dashboard, everything’s built to save their time and stress.",
+      "features": {
+        "regionService": {
+          "title": "Region & Service Selection",
+          "desc": "Get started by selecting your region and area of concern OBGYN, Sexual Health, BMM, or BVC. We guide your patients to the right care.",
+          "alt": "Patient Need"
+        },
+        "aiClinicalNotes": {
+          "title": "AI-Powered Clinical Notes",
+          "desc": "We provide secure options for chat, audio, or video consults, so your patients can connect in the way that suits you best.",
+          "alt": "Patient Need"
+        },
+        "smartIntake": {
+          "title": "Smart Intake Summaries",
+          "desc": "We eliminate paperwork by enabling patients to fill out brief, smart forms ahead of time, so doctors receive clear, focused insights before every consult.",
+          "alt": "Patient Need"
+        },
+        "voiceNotes": {
+          "title": "Voice-Based Note Editing",
+          "desc": "Join digital health sessions led by medical experts. Ideal for shared topics and time-saving consults.",
+          "alt": "Patient Need"
+        },
+        "resourceSharing": {
+          "title": "In-Consult Resource Sharing",
+          "desc": "Manage appointments, review consult history, and access letters all in one place.",
+          "alt": "Patient Need"
+        },
+        "groupSession": {
+          "title": "Group Session Hosting",
+          "desc": "Keep your patients informed with wellness tips, regular updates, and curated health content, delivered straight to their inbox.",
+          "alt": "Patient Need"
+        }
+      }
+    },
+    "careWithoutComplicationsSection": {
+      "subTitle": "CARE WITHOUT THE COMPLICATIONS",
+      "title": "Easy Access, Fast Support",
+      "desc": "An experience that feels simple and personal.",
+      "features": {
+        "chooseNeed": {
+          "title": "Choose What You Need",
+          "desc": "Patients select their region and type of care, right from the app or web platform.",
+          "alt": "Fast Access"
+        },
+        "shareSymptoms": {
+          "title": "Share Symptoms Easily",
+          "desc": "Fill out a quick form so your doctor’s ready to help.",
+          "alt": "Smart Workflow"
+        },
+        "connectDoctor": {
+          "title": "Connect with a Doctor, Fast",
+          "desc": "Connect with a doctor instantly via chat, call, or video.",
+          "alt": "Smart Workflow"
+        }
+      },
+      "button": "Book a Demo Today"
+    }
+  },
+  "steps": {
+    "subTitle": "STEP BY STEP PROCESS",
+    "title": "Delivered from Demo to Live",
+    "stepsList": {
+      "demo": {
+        "tag": "BOOK A DEMO",
+        "title": "Let's start with a conversation",
+        "desc": "You tell us what your organization needs, from specialties and languages to branding and workflows. We'll walk you through our product suite and show how it fits your goals."
+      },
+      "customize": {
+        "tag": "CUSTOMIZE & CONFIGURE",
+        "title": "Tailored to your care model",
+        "desc": "Select the services you want to offer, such as Primary Care, BMM, or Sexual Health and we'll help you configure everything to match. From patient intake forms and communication mechanisms to triage workflows, your setup is fully customizable. You decide:",
+        "points": {
+          "list-1": "Specialties & services",
+          "list-2": "Patient flows & intake forms",
+          "list-3": "Clinical documentation workflows",
+          "list-4": "Region and language preferences"
+        }
+      },
+      "launch": {
+        "tag": "WE BRAND & LAUNCH IT",
+        "title": "We build it, You own the experience",
+        "desc": "We white-label the platform with your logo, colors, domain, and service structure. Your teams receive onboarding and training — then you're ready to go live. Includes:",
+        "points": {
+          "list-1": "• Branded interface & domain",
+          "list-2": "• Team onboarding & support",
+          "list-3": "• Optional integrations"
+        }
+      },
+      "support": {
+        "tag": "ONGOING SUPPORT & UPGRADES",
+        "title": "We stay with you, Always",
+        "desc": "You get 24/7 technical support, compliance monitoring, and continuous feature upgrades — so your care stays modern, secure, and efficient. What we manage:",
+        "points": {
+          "list-1": "• Hosting & updates",
+          "list-2": "• AI features & platform upgrades",
+          "list-3": "• Compliance & data security",
+          "list-4": "• Fast-response support"
+        }
+      }
+    }
+  },
   "faq": {
     "headingTag": "FAQS",
     "headingTitle": "Your Questions Answered",

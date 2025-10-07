@@ -155,7 +155,7 @@ function ForDoctors() {
         </div>
       </section>
       <section className="w-full sm:min-h-screen flex flex-col items-center gap-12 md:px-20 px-5 md:py-24">
-        <div className="w-full max-w-[475px] flex flex-col items-center gap-2.5 ">
+        <div className="w-full max-w-[475px] md:max-w-[900px] flex flex-col items-center gap-2.5 ">
           <div className="rounded-[10px] inline-flex items-center gap-2">
             <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#fd8883] rounded-full" />
             <span className="text-[#545454] text-sm md:text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">

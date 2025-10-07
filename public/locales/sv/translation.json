@@ -356,6 +356,116 @@
       }
     ]
   },
+  "forPatients": {
+    "hero": {
+      "title": "Vård som möter dig där du är",
+      "desc": "Clinvvo möjliggör säkra och sömlösa konversationer mellan patienter och legitimerade vårdpersonal—inga förseningar, inga störningar.",
+      "button": "Boka en demo"
+    },
+    "whatPatientsGetSection": {
+      "subTitle": "DET FÅR DINA PATIENTER",
+      "title": "Allt du behöver för att få vård snabbt, enkelt och säkert",
+      "desc": "Clinvvo gör det enkelt att få vård på patienternas villkor. Från snabba symptomformulär till gruppsessioner och en personlig dashboard, allt är byggt för att spara tid och minska stress.",
+      "features": {
+        "regionService": {
+          "title": "Region- & Tjänsteval",
+          "desc": "Börja med att välja din region och ditt område av intresse OBGYN, Sexualhälsa, BMM eller BVC. Vi vägleder dina patienter till rätt vård.",
+          "alt": "Patientbehov"
+        },
+        "aiClinicalNotes": {
+          "title": "AI-drivna kliniska anteckningar",
+          "desc": "Vi erbjuder säkra alternativ för chatt, ljud eller video, så att dina patienter kan ansluta på det sätt som passar dem bäst.",
+          "alt": "Patientbehov"
+        },
+        "smartIntake": {
+          "title": "Smarta intagsöversikter",
+          "desc": "Vi eliminerar pappersarbete genom att låta patienter fylla i korta, smarta formulär i förväg, så att läkare får tydliga och fokuserade insikter inför varje konsultation.",
+          "alt": "Patientbehov"
+        },
+        "voiceNotes": {
+          "title": "Röstbaserad anteckningsredigering",
+          "desc": "Delta i digitala hälsosessioner ledda av medicinska experter. Perfekt för gemensamma ämnen och tidsbesparande konsultationer.",
+          "alt": "Patientbehov"
+        },
+        "resourceSharing": {
+          "title": "Resursdelning under konsultation",
+          "desc": "Hantera bokningar, granska konsultationshistorik och få tillgång till brev på ett och samma ställe.",
+          "alt": "Patientbehov"
+        },
+        "groupSession": {
+          "title": "Gruppsessioner",
+          "desc": "Håll dina patienter informerade med hälsotips, regelbundna uppdateringar och kuraterat innehåll, direkt till deras inkorg.",
+          "alt": "Patientbehov"
+        }
+      }
+    },
+    "careWithoutComplicationsSection": {
+      "subTitle": "VÅRD UTAN KOMPLIKATIONER",
+      "title": "Enkel åtkomst, snabb support",
+      "desc": "En upplevelse som känns enkel och personlig.",
+      "features": {
+        "chooseNeed": {
+          "title": "Välj det du behöver",
+          "desc": "Patienter väljer region och typ av vård direkt från appen eller webben.",
+          "alt": "Snabb åtkomst"
+        },
+        "shareSymptoms": {
+          "title": "Dela symtom enkelt",
+          "desc": "Fyll i ett kort formulär så att din läkare är redo att hjälpa.",
+          "alt": "Smarta arbetsflöden"
+        },
+        "connectDoctor": {
+          "title": "Anslut med en läkare snabbt",
+          "desc": "Anslut med en läkare direkt via chatt, samtal eller video.",
+          "alt": "Smarta arbetsflöden"
+        }
+      },
+      "button": "Boka en demo idag"
+    }
+  },
+  "steps": {
+    "subTitle": "STEG FÖR STEG-PROCESS",
+    "title": "Levererat från demo till live",
+    "stepsList": {
+      "demo": {
+        "tag": "BOKA EN DEMO",
+        "title": "Låt oss börja med ett samtal",
+        "desc": "Du berättar vad din organisation behöver — från specialiteter och språk till varumärke och arbetsflöden. Vi visar dig vår produktportfölj och hur den kan anpassas till dina mål."
+      },
+      "customize": {
+        "tag": "ANPASSA & KONFIGURERA",
+        "title": "Skräddarsytt efter din vårdmodell",
+        "desc": "Välj de tjänster du vill erbjuda, till exempel primärvård, BMM eller sexuell hälsa, så hjälper vi dig att konfigurera allt därefter. Från patientformulär och kommunikationskanaler till triageflöden – allt är helt anpassningsbart. Du bestämmer:",
+        "points": {
+          "list-1": "Specialiteter & tjänster",
+          "list-2": "Patientflöden & formulär",
+          "list-3": "Klinisk dokumentation",
+          "list-4": "Region- och språkpreferenser"
+        }
+      },
+      "launch": {
+        "tag": "VI BRANDAR & LANSERAR DET",
+        "title": "Vi bygger det, du äger upplevelsen",
+        "desc": "Vi vitmärker plattformen med din logotyp, färger, domän och tjänstestruktur. Ditt team får onboarding och utbildning — sedan är ni redo att gå live. Inkluderar:",
+        "points": {
+          "list-1": "• Varumärkesanpassat gränssnitt & domän",
+          "list-2": "• Team-onboarding & support",
+          "list-3": "• Valfria integrationer"
+        }
+      },
+      "support": {
+        "tag": "LÖPANDE SUPPORT & UPPGRADERINGAR",
+        "title": "Vi finns med dig, alltid",
+        "desc": "Du får dygnet runt-support, efterlevnadsövervakning och kontinuerliga funktionsuppdateringar — så att din vård alltid är modern, säker och effektiv. Vi hanterar:",
+        "points": {
+          "list-1": "• Hosting & uppdateringar",
+          "list-2": "• AI-funktioner & plattformsuppgraderingar",
+          "list-3": "• Efterlevnad & datasäkerhet",
+          "list-4": "• Snabb support"
+        }
+      }
+    }
+  },
   "faq": {
     "headingTag": "FAQ",
     "headingTitle": "Dina frågor besvarade",
