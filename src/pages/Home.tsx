@@ -214,14 +214,14 @@ export default function Home() {
           <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
             <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />
             <span className="text-sm md:text-base text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
-              {t("home.sections.values.label")}
+              {t("home.values.subTitle")}
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl text-[#23586A] font-medium font-[Lora] leading-[135%]">
-            {t("home.sections.values.title")}
+            {t("home.values.title")}
           </h2>
           <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
-            {t("home.sections.values.desc")}
+            {t("home.values.desc")}
           </p>
         </div>
         <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-18">

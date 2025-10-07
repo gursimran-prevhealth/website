@@ -466,6 +466,53 @@
       }
     }
   },
+  "aboutus": {
+    "hero": {
+      "title": "Omdefinierar digital vård – smartare, snabbare, mänskligare",
+      "description": "På Clinvvo tror vi att vården ska fungera för människor, inte tvärtom. Vår plattform förenklar kliniska arbetsflöden, snabbar upp dokumentationen och förbättrar patientupplevelsen."
+    },
+    "builtWithPurpose": {
+      "badge": "BYGGT MED SYFTE",
+      "title": "Vi är engagerade i att möjliggöra bättre vård",
+      "description": "Vi vill göra vården enklare och mer mänsklig – både för upptagna kliniker och för patienter som behöver snabb och pålitlig vård."
+    },
+    "mission": {
+      "badge": "VÅRT UPPDRAG",
+      "text": "Att bygga vårdteknologi som stärker både vårdgivare och patienter genom intuitiva verktyg, smart automation och smidiga arbetsflöden. Vi vill minska den administrativa bördan, förbättra vårdresultaten och låta vårdpersonal fokusera på det som betyder mest – den mänskliga kontakten."
+    },
+    "vision": {
+      "badge": "VÅR VISION",
+      "text": "Ett vårdsystem där tekniken finns i bakgrunden och gör vården säkrare, smartare och mer personlig. Vi ser en framtid där varje klinik, stor som liten, kan erbjuda världsledande digital vård med hjälp av moderna verktyg som bara fungerar."
+    },
+    "whoWeAre": {
+      "badge": "VILKA VI ÄR",
+      "points": {
+        "list-1": "Clinvvo är en B2B SaaS-plattform skapad av europeiska vårdproffs och teknologer som tror att bättre vård börjar med bättre verktyg.",
+        "list-2": "Vi erbjuder en komplett uppsättning funktioner – från bokning och videokonsultationer till AI-drivna journaler och EHR-integration – som hjälper kliniker att digitalisera sina tjänster under sitt eget varumärke."
+      }
+    },
+    "aiSection": {
+      "badge": "AI SOM ARBETAR FÖR DIG",
+      "title": "Låt AI hantera det tidskrävande arbetet",
+      "description": "Våra AI-funktioner automatiserar uppgifter som medicinsk transkribering och sammanfattning, vilket frigör värdefull tid för vårdgivare och förbättrar patientupplevelsen. Kliniker som använder Clinvvo får snabbare dokumentation, bättre effektivitet och en smidigare vårdprocess."
+    }
+  },
+  "contactus": {
+    "hero": {
+      "title": "Redo att komma igång?",
+      "description1": "Har du frågor?",
+      "description2": "Hör av dig, så börjar vi samtalet."
+    },
+    "form": {
+      "namePlaceholder": "Namn",
+      "emailPlaceholder": "E-post",
+      "phonePlaceholder": "Telefonnummer",
+      "messagePlaceholder": "Något mer du vill att vi ska veta?",
+      "button": "Låt oss prata",
+      "success": "Tack för ditt intresse för Clinvvo! Vi har tagit emot din förfrågan och återkommer snart.",
+      "error": "Misslyckades med att skicka formuläret"
+    }
+  },
   "faq": {
     "headingTag": "FAQ",
     "headingTitle": "Dina frågor besvarade",

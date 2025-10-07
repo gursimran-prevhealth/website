@@ -467,6 +467,53 @@
       }
     }
   },
+  "aboutus": {
+    "hero": {
+      "title": "Redefining Digital Healthcare Smarter, Faster, Human",
+      "description": "At Clinvvo, we believe healthcare should work for people, not the other way around. Our platform simplifies clinical workflows, speeds up documentation, and enhances the patient experience."
+    },
+    "builtWithPurpose": {
+      "badge": "BUILT WITH PURPOSE",
+      "title": "We're Committed to Empowering Better Care",
+      "description": "We're here to make healthcare simpler and more human, for both busy clinicians and patients who need fast, trusted care."
+    },
+    "mission": {
+      "badge": "OUR MISSION",
+      "text": "To build healthcare technology that empowers people, clinicians and patients alike, through intuitive tools, smart automation, and seamless workflows. We aim to reduce admin burden, improve care outcomes, and help healthcare professionals focus on what matters most: the human connection."
+    },
+    "vision": {
+      "badge": "OUR VISION",
+      "text": "A healthcare system where technology disappears into the background, making care safer, smarter, and more personal. We envision a future where every clinic, big or small, can deliver world-class digital care, powered by modern tools that just work."
+    },
+    "whoWeAre": {
+      "badge": "WHO WE ARE",
+      "points": {
+        "list-1": "Clinvvo is a B2B SaaS platform built by European medical professionals and technologists who believe that better healthcare starts with better tools.",
+        "list-2": "We offer an end-to-end suite of features, from appointment booking and video consultations to AI-powered medical notes and EHR integration, that helps clinics digitize their services under their own brand."
+      }
+    },
+    "aiSection": {
+      "badge": "AI THAT WORKS FOR YOU",
+      "title": "Let AI Handle the Busywork",
+      "description": "Our AI capabilities automate tasks like medical transcription and summarization, freeing up valuable time for caregivers and ensuring a smoother experience for patients. Clinics using Clinvvo see faster documentation, improved efficiency, and better care delivery, every step of the way."
+    }
+  },
+  "contactus": {
+    "hero": {
+      "title": "Ready to Get Started?",
+      "description1": "Have questions?",
+      "description2": "Reach out, and let's start the conversation."
+    },
+    "form": {
+      "namePlaceholder": "Name",
+      "emailPlaceholder": "Email",
+      "phonePlaceholder": "Phone Number",
+      "messagePlaceholder": "Anything else you’d like us to know?",
+      "button": "Let’s Talk",
+      "success": "Thank you for your interest in Clinvvo! We have received your request and will get back to you soon.",
+      "error": "Failed to send form data"
+    }
+  },
   "faq": {
     "headingTag": "FAQS",
     "headingTitle": "Your Questions Answered",

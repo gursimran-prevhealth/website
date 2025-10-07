@@ -154,7 +154,7 @@ function AiFeatures() {
             </div>
             <div className="w-full md:p-6 p-4 rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)] md:col-span-2 flex md:flex-row flex-col">
               <div className="w-full">
-                <div className="max-w-[235px] justify-start text-[#343434] md:text-[28px] text-2xl font-medium font-['Work_Sans'] leading-[135%]">
+                <div className="max-w-[235px] md:max-w-[300px] justify-start text-[#343434] md:text-[28px] text-2xl font-medium font-['Work_Sans'] leading-[135%]">
                   {t("aifeatures.featuresList-5.title")}
                 </div>
                 <p className="text-[#555] font-['Work_Sans'] text-base font-light tracking-wider leading-[135%] pt-2 max-w-[460px]">
