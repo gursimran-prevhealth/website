@@ -234,6 +234,129 @@
       }
     ]
   },
+
+  "forDoctors": {
+    "hero": {
+      "title": "Better Care Starts with Better Tools",
+      "desc": "We bring together everything modern healthcare needs, from AI-enhanced workflows to personalized patient journeys. Fully white-labeled and built to scale, just for you.",
+      "button": "Book a Demo"
+    },
+    "ecosystemSection": {
+      "subTitle": "WHAT YOU GET",
+      "title": "All-in-One Healthcare Ecosystem",
+      "desc": "Built for providers, doctors and patients. Designed to save time and streamline care.",
+      "features": {
+        "dashboard": {
+          "title": "Unified Dashboard",
+          "desc": "Manage patients, track consult notes, monitor group sessions, and schedule, all from one intuitive interface.",
+          "alt": "Ecosystem"
+        },
+        "aiNotes": {
+          "title": "AI-Powered Clinical Notes",
+          "desc": "We automatically transcribe and summarize your consults, saving you time and cutting down on manual entry.",
+          "alt": "Ecosystem"
+        },
+        "smartIntake": {
+          "title": "Smart Intake Summaries",
+          "desc": "Receive pre-filled, structured patient info before each consult. No more back-and-forth, just the details you need, upfront.",
+          "alt": "Ecosystem"
+        },
+        "voiceNotes": {
+          "title": "Voice-Based Note Editing",
+          "desc": "Need to change something? Just speak. Your edits are applied directly into the summary, hands-free.",
+          "alt": "Microphone",
+          "micText": "Add or Change"
+        },
+        "resourceSharing": {
+          "title": "In-Consult Resource Sharing",
+          "desc": "Easily send test results, documents, or links during a live consult, keeping everything within the session flow.",
+          "alt": "Ecosystem"
+        },
+        "groupSession": {
+          "title": "Group Session Hosting",
+          "desc": "Host multiple patients at once for common concerns or follow-ups, saving time and increasing reach.",
+          "alt": "Ecosystem"
+        }
+      }
+    },
+    "workflowSection": {
+      "subTitle": "BUILT FOR HOW YOU WORK",
+      "title": "Seamless, Smart Workflows",
+      "desc": "Give your teams tools that actually save time.",
+      "steps": {
+        "login": {
+          "title": "Log In & Get Ready",
+          "desc": "Securely access your dashboard with BankID or SITHS & review smart intake summaries filled out by patients",
+          "alt": "Smart Workflow"
+        },
+        "connectConsult": {
+          "title": "Connect & Consult",
+          "desc": "Start 1:1 or group consults via chat, audio, or video, with everything tailored to your specialty & settings",
+          "alt": "Smart Workflow"
+        },
+        "aiNotes": {
+          "title": "Let AI Handle the Notes",
+          "desc": "Consults are transcribed and summarized in real time. Just review, edit if needed, and transfer directly to the journal",
+          "alt": "Smart Workflow"
+        }
+      }
+    },
+    "launchSection": {
+      "subTitle": "HOW IT WORKS",
+      "title": "How You Launch With Clinvvo",
+      "features": {
+        "demo": {
+          "title": "Book a Demo",
+          "desc": "Let's talk. You tell us what your organization needs, we'll show you how it all works.",
+          "alt": "Demo"
+        },
+        "customize": {
+          "title": "Customize Your Platform",
+          "desc": "Pick the services, language options and features that can support your patients and care teams.",
+          "alt": "Customize"
+        },
+        "brandLaunch": {
+          "title": "We Brand & Launch",
+          "desc": "We design and deliver the platform under your brand. Your team gets trained. You go live, fast.",
+          "alt": "Rocket"
+        },
+        "support": {
+          "title": "Support & Upgrade",
+          "desc": "We handle maintenance, updates, and compliance. You focus on growing care, we've got the tech.",
+          "alt": "Support"
+        }
+      },
+      "button": "Book a Demo Today"
+    },
+    "securitySection": {
+      "subTitle": "SECURITY & COMPLIANCE",
+      "title": "Secure, Compliant, Trusted",
+      "features": {
+        "gdpr": "GDPR Compliant",
+        "encryption": "Data encryption at rest and in transit",
+        "bankId": "SITHS, BankID based login",
+        "cloud": "Secure cloud infrastructure"
+      }
+    }
+  },
+  "stakeholder": {
+    "whoWeHelp": "WHO WE HELP",
+    "title": "Built for Every Healthcare Stakeholder",
+    "cards": [
+      {
+        "heading": "For Doctors",
+        "description": "Less admin, more care. AI assists with medical notes."
+      },
+      {
+        "heading": "For Patients",
+        "description": "Easy access to services, appointments, and answers, wherever they are."
+      },
+      {
+        "heading": "AI for Healthcare Providers",
+        "description": "Scalable, cost-saving digital health infrastructure branded for your organization."
+      }
+    ]
+  },
   "faq": {
     "headingTag": "FAQS",
     "headingTitle": "Your Questions Answered",

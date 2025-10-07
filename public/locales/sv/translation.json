@@ -234,6 +234,128 @@
       }
     ]
   },
+  "forDoctors": {
+    "hero": {
+      "title": "Bättre vård börjar med bättre verktyg",
+      "desc": "Vi samlar allt som modern sjukvård behöver, från AI-förbättrade arbetsflöden till personliga patientresor. Fullt white-labeled och byggt för att skala, bara för dig.",
+      "button": "Boka en demo"
+    },
+    "ecosystemSection": {
+      "subTitle": "DET FÅR DU",
+      "title": "Allt-i-ett vårdekoystem",
+      "desc": "Byggt för vårdgivare, läkare och patienter. Designat för att spara tid och effektivisera vården.",
+      "features": {
+        "dashboard": {
+          "title": "Enhetlig dashboard",
+          "desc": "Hantera patienter, spåra konsultationsanteckningar, övervaka gruppsessioner och schemaläggning, allt från ett intuitivt gränssnitt.",
+          "alt": "Eko-system"
+        },
+        "aiNotes": {
+          "title": "AI-drivna kliniska anteckningar",
+          "desc": "Vi transkriberar och sammanfattar automatiskt dina konsultationer, sparar tid och minskar manuella inskrivningar.",
+          "alt": "Eko-system"
+        },
+        "smartIntake": {
+          "title": "Smarta intagsöversikter",
+          "desc": "Få förifylld, strukturerad patientinformation före varje konsultation. Inget fram och tillbaka, bara detaljerna du behöver direkt.",
+          "alt": "Eko-system"
+        },
+        "voiceNotes": {
+          "title": "Röstbaserad anteckningsredigering",
+          "desc": "Behöver du ändra något? Säg bara till. Dina ändringar appliceras direkt i sammanfattningen, hands-free.",
+          "alt": "Mikrofon",
+          "micText": "Lägg till eller ändra"
+        },
+        "resourceSharing": {
+          "title": "Resursdelning under konsultation",
+          "desc": "Skicka enkelt testresultat, dokument eller länkar under en live-konsultation, allt hålls inom sessionen.",
+          "alt": "Eko-system"
+        },
+        "groupSession": {
+          "title": "Gruppsessioner",
+          "desc": "Värd flera patienter samtidigt för vanliga frågor eller uppföljningar, sparar tid och ökar räckvidden.",
+          "alt": "Eko-system"
+        }
+      }
+    },
+    "workflowSection": {
+      "subTitle": "BYGGT FÖR SÅ HÄR DU ARBETAR",
+      "title": "Sömlösa, smarta arbetsflöden",
+      "desc": "Ge dina team verktyg som verkligen sparar tid.",
+      "steps": {
+        "login": {
+          "title": "Logga in & Kom igång",
+          "desc": "Säkert tillgång till dashboard med BankID eller SITHS & granska smarta intagsöversikter ifyllda av patienter",
+          "alt": "Smart arbetsflöde"
+        },
+        "connectConsult": {
+          "title": "Anslut & Konsultera",
+          "desc": "Starta 1:1 eller gruppkonsultationer via chatt, ljud eller video, med allt anpassat till din specialitet och inställningar",
+          "alt": "Smart arbetsflöde"
+        },
+        "aiNotes": {
+          "title": "Låt AI hantera anteckningarna",
+          "desc": "Konsultationer transkriberas och sammanfattas i realtid. Granska, redigera vid behov och överför direkt till journalen",
+          "alt": "Smart arbetsflöde"
+        }
+      }
+    },
+    "launchSection": {
+      "subTitle": "SÅ FUNGERAR DET",
+      "title": "Så här lanserar du med Clinvvo",
+      "features": {
+        "demo": {
+          "title": "Boka en demo",
+          "desc": "Vi pratar. Du berättar vad din organisation behöver, vi visar hur allt fungerar.",
+          "alt": "Demo"
+        },
+        "customize": {
+          "title": "Anpassa plattformen",
+          "desc": "Välj tjänster, språkval och funktioner som kan stödja dina patienter och vårdteam.",
+          "alt": "Anpassa"
+        },
+        "brandLaunch": {
+          "title": "Vi varumärker & lanserar",
+          "desc": "Vi designar och levererar plattformen under ditt varumärke. Ditt team får utbildning. Du går live, snabbt.",
+          "alt": "Rocket"
+        },
+        "support": {
+          "title": "Support & Uppdateringar",
+          "desc": "Vi hanterar underhåll, uppdateringar och efterlevnad. Du fokuserar på vård, vi tar hand om tekniken.",
+          "alt": "Support"
+        }
+      },
+      "button": "Boka en demo idag"
+    },
+    "securitySection": {
+      "subTitle": "SÄKERHET & EFTERLEVNAD",
+      "title": "Säker, efterlevande, pålitlig",
+      "features": {
+        "gdpr": "GDPR-kompatibel",
+        "encryption": "Datakryptering vid vila och under överföring",
+        "bankId": "SITHS, BankID-baserad inloggning",
+        "cloud": "Säker molninfrastruktur"
+      }
+    }
+  },
+  "stakeholder": {
+    "whoWeHelp": "VEM VI HJÄLPER",
+    "title": "Byggt för alla vårdintressenter",
+    "cards": [
+      {
+        "heading": "För läkare",
+        "description": "Mindre administration, mer vård. AI hjälper med medicinska anteckningar."
+      },
+      {
+        "heading": "För patienter",
+        "description": "Enkel tillgång till tjänster, möten och svar, var de än befinner sig."
+      },
+      {
+        "heading": "AI för vårdgivare",
+        "description": "Skalbar, kostnadsbesparande digital hälsoinfrastruktur märkt för din organisation."
+      }
+    ]
+  },
   "faq": {
     "headingTag": "FAQ",
     "headingTitle": "Dina frågor besvarade",
