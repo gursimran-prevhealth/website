@@ -14,33 +14,6 @@ const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [swiperInstance, setSwiperInstance] = useState<SwiperCore | null>(null);
 
-  // const testimonials = [
-  //     {
-  //         id: 1,
-  //         quote: "Clinvvo’s system and app have revolutionized our workflow and significantly enhanced the patient experience. It has simplified patient contact for our midwives and doctors, leading to substantial cost savings for our organization. Thanks to Clinvvo’s solution, our operations are more efficient and effective.",
-  //         name: "Hugo Lewné",
-  //         role: "CEO, Prima Vård AB",
-  //         image: testimonial,
-  //         image1:testimonialPerson1
-  //     },
-  //     {
-  //         id: 2,
-  //         quote: "Clinvvo’s platform has transformed the way we work, streamlining communication and making patient interactions smoother than ever. Our clinicians save valuable time, while patients experience faster and more personalized care. The result is both improved efficiency and measurable cost reductions across the organization.",
-  //         name: "Sofie Andresen",
-  //         role: "Affärsområdeschef Barn & Kvinnohälsa",
-  //         desc:"VD Barnbördhuset Stockholm och Verksamhetschef BB Stockholm Family",
-  //         image: testimonial,
-  //         image1:testimonialPerson2
-  //     },
-  //     // {
-  //     //     id: 3,
-  //     //     quote: "Clinvvo’s system and app have revolutionized our workflow and significantly enhanced the patient experience. It has simplified patient contact for our midwives and doctors, leading to substantial cost savings for our organization. Thanks to Clinvvo’s solution, our operations are more efficient and effective.",
-  //     //     name: "Third Person",
-  //     //     role: "Their Position",
-  //     //     image: testimonial
-  //     // }
-  // ];
-
   return (
     <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-24 py-12  md:mt-0 flex flex-col items-center gap-8 md:gap-12 min-h-screen">
       <div className="w-full max-w-[900px] flex flex-col items-center gap-3 md:gap-4 text-center">
