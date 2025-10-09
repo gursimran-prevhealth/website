@@ -1,13 +1,17 @@
 import { useTranslation } from "react-i18next";
 import { stakeAi, stakeDoctor, stakePatient } from "../../assets";
 
-function StakeHolder() {
+function StakeHolder({ appLanguage }) {
   const { t } = useTranslation();
   const cardList = t("stakeholder.cards", { returnObjects: true });
   const images = [stakeDoctor, stakePatient, stakeAi];
   return (
     <section className="w-full flex flex-col items-center gap-12 md:px-20 px-5 md:py-24 md:min-h-screen">
-      <div className="w-full max-w-[541px] flex flex-col items-center gap-2.5">
+      <div
+        className={`w-full ${
+          appLanguage === "de" ? " max-w-[40rem]" : " max-w-[34rem]"
+        } flex flex-col items-center gap-2.5`}
+      >
         <div className="rounded-[10px] inline-flex items-center gap-2">
           <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#fd8883] rounded-full" />
           <span className="text-[#545454] text-sm md:text-base font-light tracking-wider font-['Work_Sans'] leading-[135%]">

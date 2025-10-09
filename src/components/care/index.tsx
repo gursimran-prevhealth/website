@@ -7,12 +7,16 @@ import {
   templateDropdown,
 } from "../../assets";
 
-function Care() {
+function Care({ appLanguage }) {
   const { t } = useTranslation();
   return (
     <section className="w-full md:py-36 md:px-20 py-16 px-5 max-w-[1560px] mx-auto min-h-screen">
       <div className="w-full max-w-[1280px] mx-auto flex flex-col items-center gap-8 md:gap-14">
-        <div className="w-full max-w-[579px] flex flex-col items-center gap-3 md:gap-4 text-center">
+        <div
+          className={`w-full ${
+            appLanguage === "de" ? "max-w-[42rem]" : "max-w-[36rem]"
+          } flex flex-col items-center gap-3 md:gap-4 text-center`}
+        >
           <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
             <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />
             <span className="text-sm md:text-base text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">

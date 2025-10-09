@@ -2,11 +2,21 @@ import { useEffect } from "react";
 import { digitalConsultation, fastAccess, heroPatient, patientNeed1, patientNeed2, patientNeed3, patientNeed4, patientNeed5, templateDropdown } from "../assets";
 import { Button, Contact, Faq, StakeHolder, Steps } from "../components";
 import { useTranslation } from "react-i18next";
+import { useDispatch, useSelector } from "react-redux";
+import { setAppLanguage } from "../store/slices/generalSlice";
 
 function ForPatients() {
   const { t } = useTranslation();
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+  const dispatch = useDispatch();
+  const { appLanguage } = useSelector((state) => state.general);
+  useEffect(() => {
+    const save = localStorage.getItem("language") || "en";
+    if (save) {
+      dispatch(setAppLanguage(save));
+    }
   }, []);
   return (
     <div className="w-full">
@@ -189,14 +199,22 @@ function ForPatients() {
         </div>
       </section>
       <section className="w-full md:min-h-screen flex flex-col items-center gap-12 md:px-20 px-5 md:py-24">
-        <div className="w-full max-w-[445px] flex flex-col items-center gap-2.5">
+        <div
+          className={`w-full ${
+            appLanguage === "de" ? "max-w-[33rem]" : "max-w-[27rem] "
+          } flex flex-col items-center gap-2.5`}
+        >
           <div className="rounded-[10px] inline-flex items-center gap-2">
             <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#fd8883] rounded-full" />
             <span className="text-[#545454] text-sm md:text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
               {t("forPatients.careWithoutComplicationsSection.subTitle")}
             </span>
           </div>
-          <h2 className="w-full max-w-[381px] mx-auto pt-1.5 text-center text-[#23586a] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium font-['Lora'] leading-[135%]">
+          <h2
+            className={`w-full ${
+              appLanguage === "de" ? "max-w-[33rem]" : "max-w-[23rem] "
+            }  mx-auto pt-1.5 text-center text-[#23586a] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium font-['Lora'] leading-[135%]`}
+          >
             {t("forPatients.careWithoutComplicationsSection.title")}
           </h2>
           <p className="w-full text-center text-[#545454] text-sm md:text-base lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
@@ -292,7 +310,7 @@ function ForPatients() {
         </Button>
       </section>
       <Steps />
-      <StakeHolder />
+      <StakeHolder appLanguage={appLanguage} />
       <Faq />
       <Contact />
     </div>

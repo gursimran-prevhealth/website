@@ -1,14 +1,18 @@
 import { useTranslation } from "react-i18next";
 import { workflow1, workflow2, workflow3 } from "../../assets";
 
-function Workflow() {
+function Workflow({ appLanguage }: { appLanguage: string }) {
   const { t } = useTranslation();
   const steps = t("workflow.steps", { returnObjects: true });
   const images = [workflow1, workflow2, workflow3];
   return (
     <section className="w-full lg:px-20 md:px-10 px-5 md:py-24 py-16 min-h-screen">
       <div className="w-full flex flex-col items-center gap-8 md:gap-10 lg:gap-14">
-        <div className="w-full max-w-[672px] flex flex-col items-center gap-2 md:gap-3">
+        <div
+          className={`w-full ${
+            appLanguage == "de" ? "max-w-[45rem]" : "max-w-[42rem]"
+          } flex flex-col items-center gap-2 md:gap-3`}
+        >
           <div className="py-1 flex items-center gap-2">
             <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#fd8883] rounded-full" />
             <span className="text-[#545454] text-sm md:text-base tracking-wider font-normal font-['Work_Sans'] leading-snug">

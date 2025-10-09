@@ -1,0 +1,549 @@
+{
+  "nav": {
+    "aiFeatures": "KI-Funktionen",
+    "forDoctors": "Für Ärzte",
+    "forPatients": "Für Patienten",
+    "aboutUs": "Über Uns",
+    "contactUs": "Kontakt"
+  },
+  "dropdown": {
+    "selectLanguage": "Sprache wählen",
+    "noOptions": "Keine Optionen verfügbar"
+  },
+  "home": {
+    "hero": {
+      "title": "Das Betriebssystem für das moderne Gesundheitswesen",
+      "desc": "Wir haben die Versorgung neu gedacht – smarter, schneller und menschlicher. Clinvvo bietet Tools, die Pflegeteams helfen, in Verbindung zu bleiben und sich auf den Patienten zu konzentrieren. So geschieht Versorgung natürlich, wann und wo sie am meisten gebraucht wird.",
+      "bookDemo": "Demo buchen"
+    },
+    "stats": {
+      "productivity": "Steigerung der Produktivität des Pflegepersonals",
+      "patients": "Patienten im ersten Betriebsjahr versorgt",
+      "cost": "Reduzierung der Betriebskosten"
+    },
+    "care": {
+      "subTitle": "VERSORGUNG, DIE FÜR ALLE FUNKTIONIERT",
+      "title": "Gebaut für Ärzte. Entwickelt für Patienten. Angetrieben von smarter KI.",
+      "desc": "Ob Sie Patienten behandeln oder selbst nach Versorgung suchen, Clinvvo vereint alles an einem Ort – schnellere Konsultationen, intelligentere Tools und Technologie, die im Hintergrund alles reibungslos am Laufen hält, ohne im Weg zu sein."
+    },
+    "sections": {
+      "doctors": {
+        "label": "FÜR ÄRZTE",
+        "title": "Weniger Verwaltungsaufwand. Mehr Zeit für echte Pflege.",
+        "desc": "Clinvvo hilft Ärzten, sich auf das Wesentliche zu konzentrieren. Mit KI-generierten Notizen, intelligenten Aufnahme-Zusammenfassungen und einem einheitlichen Dashboard verbringen Sie weniger Zeit mit der Verwaltung und mehr Zeit mit dem Patienten.",
+        "button": "Mehr erfahren"
+      },
+      "patients": {
+        "label": "FÜR PATIENTEN",
+        "title": "Schnellere Antworten. Bessere Ergebnisse",
+        "desc": "Clinvvo hilft Ihren Patienten, Versorgung ohne Reibungsverluste zu erhalten – keine überfüllten Wartezimmer, keine umständliche Aufnahme. Sie wählen ihren Service, füllen ein kurzes, geführtes Formular aus und verbinden sich mit Ihren Anbietern per sicherem Chat, Anruf oder Video. Nachkontrollen und Updates sind integriert, damit sie sich jederzeit unterstützt fühlen.",
+        "button": "Mehr erfahren"
+      },
+      "ai": {
+        "label": "POWERED BY KI",
+        "title": "KI, die zuhört & die Last erleichtert",
+        "desc": "Die KI von Clinvvo übernimmt die Routineaufgaben: Konsultationen transkribieren, medizinische Notizen erstellen und an die EHR übertragen. So können sich Ihre Kliniker auf die Versorgung konzentrieren. Für Patienten bedeutet dies schnellere Termine, weniger Formulare und eine besser vernetzte Erfahrung, alles geräuschlos im Hintergrund gesteuert.",
+        "button": "Mehr erfahren"
+      }
+    },
+    "about": {
+      "label": "WER WIR SIND",
+      "title": "Smartere Versorgung. Stärkere Verbindungen.",
+      "desc1": "Clinvvo ist eine B2B-SaaS-Plattform, die von europäischen Medizinern und Technologen entwickelt wurde, die daran glauben, dass bessere Gesundheitsversorgung mit besseren Tools beginnt.",
+      "desc2": "Wir bieten eine End-to-End-Suite von Funktionen, von Terminbuchung und Video-Konsultationen bis hin zu KI-gestützten medizinischen Notizen und EHR-Integration, die Kliniken dabei unterstützt, ihre Dienstleistungen unter ihrer eigenen Marke zu digitalisieren.",
+      "button": "Mehr über uns"
+    },
+    "values": {
+      "subTitle": "UNSERE GRUNDWERTE",
+      "title": "Was uns antreibt",
+      "desc": "Im Kern sind wir dazu da, die Lücke zwischen Zugang und Qualität mit moderner Versorgung zu schließen, die für alle funktioniert.",
+      "cards": [
+        {
+          "title": "Effizienz, die stärkt",
+          "desc": "Die Zeit des Arztes freigeben, damit er sich auf die Versorgung konzentrieren kann, nicht auf Klicks"
+        },
+        {
+          "title": "Klarheit für Patienten",
+          "desc": "Menschen helfen, sich mit Zuversicht und Leichtigkeit in der Versorgung zurechtzufinden"
+        },
+        {
+          "title": "Technologie mit Zweck",
+          "desc": "Nutzung intelligenter Systeme, die jede Interaktion nahtlos verbessern"
+        }
+      ]
+    }
+  },
+  "care": {
+    "section": {
+      "subTitle": "PLATTFORM-FUNKTIONEN",
+      "title": "Entwickelt, um beide Seiten der Pflege zu unterstützen",
+      "desc": "Wir stärken sowohl Ärzte als auch Patienten mit nahtlosen, zeitsparenden Funktionen, alles auf einer anpassbaren Plattform."
+    },
+    "features": {
+      "dashboard": {
+        "title": "Zentralisiertes Ärzte-Dashboard",
+        "desc": "Ein sicherer Ort für alles, von Patienteninformationen bis zu Konsultationen. So können Sie sich mehr auf die Versorgung konzentrieren und weniger auf das Herumklicken.",
+        "alt": "Arzt-Dashboard"
+      },
+      "questionnaires": {
+        "title": "Geführte Fragebögen",
+        "desc": "Folgen Sie einfach ein paar einfachen Schritten, und wir helfen Ihnen dabei, genau das mitzuteilen, was Ihr Arzt wissen muss.",
+        "alt": "Geführte Fragebögen"
+      },
+      "aiTranscription": {
+        "title": "KI-gestützte Transkription & Zusammenfassung",
+        "desc": "Notizen freihändig ändern – sprechen Sie einfach, und sie werden aktualisiert.",
+        "alt": "KI-gestützte Transkription & Zusammenfassung"
+      },
+      "digitalConsultation": {
+        "title": "Digitale Konsultationen: Chat, Audio & Video",
+        "desc": "Patienten verbinden sich einfach. Ärzte antworten schnell – jederzeit, überall.",
+        "alt": "Digitale Konsultationen"
+      },
+      "templateDropdown": {
+        "title": "Schnelle Service-Auswahl",
+        "desc": "Wählen Sie Ihre Region und Ihr gesundheitliches Anliegen in Sekundenschnelle.",
+        "alt": "Dropdown-Vorlage"
+      }
+    }
+  },
+  "aifeatures": {
+    "heroSection": {
+      "heading": "Alles, was Sie für eine schnellere, smartere Versorgung brauchen",
+      "description": "Erfahren Sie, wie die KI von Clinvvo leise im Hintergrund arbeitet, um die Versorgung zu rationalisieren, Klicks zu reduzieren und sowohl Anbieter als auch Patienten zu stärken.",
+      "buttonText": "Demo buchen"
+    },
+    "coreFeatures": {
+      "heading": "Ihr KI-Assistent in jeder Konsultation",
+      "title": "KERN-KI-FUNKTIONEN",
+      "subtitle": "Von Pflegeteams in ganz Europa geschätzt, erstellt die KI von Clinvvo strukturierte medizinische Notizen in Sekundenschnelle und fügt sich nahtlos in Ihren Arbeitsablauf ein, sodass Sie sie mit einem Klick überprüfen und an das Journal-System senden können."
+    },
+    "featuresList-1": {
+      "title": "Einfache Erstellung medizinischer Notizen",
+      "description": "Clinvvo hört zu, transkribiert und wandelt Ihre Konsultation in strukturierte, klinisch genaue Notizen um – in Sekundenschnelle bereit zum Überprüfen oder Versenden.",
+      "points": {
+        "list-1": "Automatisch generierte Transkription und medizinische Notizen",
+        "list-2": "Funktioniert nahtlos bei persönlichen und digitalen Konsultationen",
+        "list-3": "Strukturierte Ausgabe, die auf Ihre Journal-Vorlagen zugeschnitten ist"
+      }
+    },
+    "featuresList-2": {
+      "title": "Smart starten mit vorgeladenen Vorlagen",
+      "description": "Wir laden sofort Vorlagen, die auf Ihren klinischen Kontext zugeschnitten sind – keine Einrichtung, keine Formatierung, nur nahtlose Dokumentation."
+    },
+    "featuresList-3": {
+      "title": "Dokumentenübertragung mit einem Klick",
+      "description": "Ärzte können strukturierte medizinische Notizen sofort an ihr Journal-System senden, ohne zusätzliche Schritte, ohne Unterbrechung des Arbeitsablaufs.",
+      "points": {
+        "list-1": "Unterstützt alle gängigen webbasierten Journal-Systeme",
+        "list-2": "Kompatibel mit Ihren bestehenden Vorlagen, was die Übertragung schnell und nahtlos macht"
+      }
+    },
+    "featuresList-4": {
+      "title": "Notizen freihändig bearbeiten",
+      "description": "Änderungen einfach durch Sprechen vornehmen. Hinzufügen, Entfernen oder Umformulieren mit natürlichen Sprachbefehlen. Keine Schulung erforderlich."
+    },
+    "featuresList-5": {
+      "title": "Gebaut für Vertrauen & Sicherheit",
+      "description": "Clinvvo ist DSGVO-konform und bietet eine sichere Anmeldung mit BankID, SITHS über Net iD und SITHS über eID – Patientendaten sind jederzeit geschützt."
+    },
+    "featuresList-6": {
+      "title": "Mehrsprachige Transkription",
+      "description": "Sprechen Sie in einer Sprache, erhalten Sie Notizen in einer anderen. Clinvvo unterstützt mehrsprachige Konsultationen und transkribiert alles in Ihrer bevorzugten klinischen Sprache."
+    },
+    "featuresList-7": {
+      "title": "Mühelose ICD-10-Kodierung",
+      "description": "Kein langes Suchen in Codelisten mehr. Während Sie dokumentieren, zeigt Clinvvo die relevantesten ICD-10-Codes direkt neben Ihren Notizen an, bereit, wenn Sie sie brauchen."
+    }
+  },
+  "features": {
+    "sectionTag": "VOLLSTÄNDIGER FUNKTIONSSATZ",
+    "sectionTitle": "Funktionen, die die Versorgung mühelos und verbunden halten",
+    "list": [
+      {
+        "title": "Schnelle Service-Auswahl",
+        "desc": "Wählen Sie Ihren Standort und Ihre Versorgungsart (z. B. Grundversorgung, Psychiatrie, Gynäkologie) mit nur wenigen Klicks."
+      },
+      {
+        "title": "Zentralisiertes Dashboard",
+        "desc": "Greifen Sie auf alle Transkriptionen und medizinischen Notizen an einem Ort zu, um die Dokumentation zu optimieren und Zeit zu sparen."
+      },
+      {
+        "title": "KI-gestützte klinische Notizen",
+        "desc": "Echtzeit-Transkription und intelligente Zusammenfassung von Konsultationen, kein manuelles Notieren mehr."
+      },
+      {
+        "title": "Smarte Diktierfunktion",
+        "desc": "Sprechen Sie einfach nach Ihrer Konsultation in eine leere Vorlage, und Clinvvo erledigt den Rest."
+      },
+      {
+        "title": "Diagnose-Codes",
+        "desc": "Clinvvo schlägt relevante Codes vor, während Sie sprechen oder tippen, sodass Sie sich auf die Versorgung und nicht auf die Kodierung konzentrieren können."
+      },
+      {
+        "title": "KI-Spracherkennung",
+        "desc": "Diktieren Sie frei oder direkt in Felder, Clinvvo transkribiert alles mit integrierter Spracherkennung."
+      },
+      {
+        "title": "Automatische klinische Sprache",
+        "desc": "Sagen Sie es auf Ihre Weise, Clinvvo übersetzt es automatisch in eine klare, professionelle klinische Formulierung."
+      },
+      {
+        "title": "Übertragung mit einem Klick",
+        "desc": "Sobald Ihre medizinische Notiz fertig ist, überträgt Clinvvo sie nahtlos in Ihr medizinisches Journal-System."
+      },
+      {
+        "title": "Texteingabe",
+        "desc": "Verwenden Sie bestehende Notizen, um strukturierte klinische Dokumente automatisch zu generieren."
+      }
+    ]
+  },
+  "workflow": {
+    "sectionTag": "WIE DIESER PROZESS FUNKTIONIERT",
+    "sectionTitle": "KI, die zuhört, schreibt und sich in Ihren Workflow einfügt",
+    "steps": [
+      {
+        "title": "Ihre Konsultation einrichten",
+        "desc": "Wählen Sie Region, Abteilung, bevorzugte Vorlage und konfigurieren Sie die Mikrofoneinstellungen, dann starten Sie Ihre Sitzung mit dem Patienten."
+      },
+      {
+        "title": "Sie sprechen, KI schreibt",
+        "desc": "Nach der Konsultation transkribiert unsere KI die Aufzeichnung und erstellt eine strukturierte medizinische Notiz – klar, genau und sofort einsatzbereit."
+      },
+      {
+        "title": "Überprüfen & Finalisieren",
+        "desc": "Bearbeiten Sie per Sprache oder Text, nehmen Sie alle Änderungen vor und übertragen Sie die Notiz dann in das medizinische Journal des Patienten."
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionTag": "TESTIMONIALS",
+    "sectionTitle": "Von denen, die es täglich nutzen",
+    "sectionDesc": "Sehen Sie direkt von denen, die den Unterschied gespürt haben, wie wir die Versorgung einfacher, schneller und menschlicher machen",
+    "list": [
+      {
+        "quote": "Das System und die App von Clinvvo haben unseren Workflow revolutioniert und das Patientenerlebnis deutlich verbessert. Es hat den Patientenkontakt für unsere Hebammen und Ärzte vereinfacht, was zu erheblichen Kosteneinsparungen für unsere Organisation geführt hat. Dank der Lösung von Clinvvo sind unsere Abläufe effizienter und effektiver.",
+        "name": "Hugo Lewné",
+        "role": "CEO, Prima Vård AB"
+      },
+      {
+        "quote": "Die Plattform von Clinvvo hat unsere Arbeitsweise verändert, die Kommunikation optimiert und Patienteninteraktionen reibungsloser denn je gemacht. Unsere Kliniker sparen wertvolle Zeit, während Patienten eine schnellere und persönlichere Versorgung erfahren. Das Ergebnis ist sowohl eine verbesserte Effizienz als auch messbare Kostensenkungen in der gesamten Organisation.",
+        "name": "Sofie Andresen",
+        "role": "Affärsområdeschef Barn & Kvinnohälsa",
+        "desc": "VD Barnbördhuset Stockholm und Verksamhetschef BB Stockholm Family"
+      }
+    ]
+  },
+  "forDoctors": {
+    "hero": {
+      "title": "Bessere Versorgung beginnt mit besseren Tools",
+      "desc": "Wir vereinen alles, was das moderne Gesundheitswesen braucht, von KI-verbesserten Workflows bis hin zu personalisierten Patientenpfaden. Vollständig White-Label und für die Skalierung gebaut, nur für Sie.",
+      "button": "Demo buchen"
+    },
+    "ecosystemSection": {
+      "subTitle": "WAS SIE ERHALTEN",
+      "title": "All-in-One Gesundheits-Ökosystem",
+      "desc": "Gebaut für Anbieter, Ärzte und Patienten. Entwickelt, um Zeit zu sparen und die Versorgung zu optimieren.",
+      "features": {
+        "dashboard": {
+          "title": "Vereinheitlichtes Dashboard",
+          "desc": "Patienten verwalten, Konsultationsnotizen verfolgen, Gruppensitzungen überwachen und planen, alles über eine intuitive Oberfläche.",
+          "alt": "Ökosystem"
+        },
+        "aiNotes": {
+          "title": "KI-gestützte klinische Notizen",
+          "desc": "Wir transkribieren und fassen Ihre Konsultationen automatisch zusammen, was Ihnen Zeit spart und manuelle Eingaben reduziert.",
+          "alt": "Ökosystem"
+        },
+        "smartIntake": {
+          "title": "Smarte Aufnahme-Zusammenfassungen",
+          "desc": "Erhalten Sie vorausgefüllte, strukturierte Patienteninformationen vor jeder Konsultation. Kein Hin und Her mehr, nur die Details, die Sie brauchen, im Voraus.",
+          "alt": "Ökosystem"
+        },
+        "voiceNotes": {
+          "title": "Sprachbasierte Notizen-Bearbeitung",
+          "desc": "Müssen Sie etwas ändern? Sprechen Sie einfach. Ihre Bearbeitungen werden direkt in die Zusammenfassung übernommen, freihändig.",
+          "alt": "Mikrofon",
+          "micText": "Hinzufügen oder Ändern"
+        },
+        "resourceSharing": {
+          "title": "Ressourcen-Sharing während der Konsultation",
+          "desc": "Senden Sie einfach Testergebnisse, Dokumente oder Links während einer Live-Konsultation und halten Sie alles im Ablauf der Sitzung.",
+          "alt": "Ökosystem"
+        },
+        "groupSession": {
+          "title": "Hosting von Gruppensitzungen",
+          "desc": "Nehmen Sie mehrere Patienten gleichzeitig für gemeinsame Anliegen oder Nachkontrollen auf, sparen Sie Zeit und erhöhen Sie die Reichweite.",
+          "alt": "Ökosystem"
+        }
+      }
+    },
+    "workflowSection": {
+      "subTitle": "GEBAUT FÜR IHRE ARBEITSWEISE",
+      "title": "Nahtlose, smarte Workflows",
+      "desc": "Geben Sie Ihren Teams Tools, die tatsächlich Zeit sparen.",
+      "steps": {
+        "login": {
+          "title": "Anmelden & Bereit machen",
+          "desc": "Sicherer Zugriff auf Ihr Dashboard mit BankID oder SITHS & Überprüfung der smarten Aufnahme-Zusammenfassungen, die von Patienten ausgefüllt wurden",
+          "alt": "Smarter Workflow"
+        },
+        "connectConsult": {
+          "title": "Verbinden & Konsultieren",
+          "desc": "Starten Sie 1:1- oder Gruppenkonsultationen per Chat, Audio oder Video, wobei alles auf Ihre Spezialität und Einstellungen zugeschnitten ist",
+          "alt": "Smarter Workflow"
+        },
+        "aiNotes": {
+          "title": "Überlassen Sie der KI die Notizen",
+          "desc": "Konsultationen werden in Echtzeit transkribiert und zusammengefasst. Einfach überprüfen, bei Bedarf bearbeiten und direkt in das Journal übertragen",
+          "alt": "Smarter Workflow"
+        }
+      }
+    },
+    "launchSection": {
+      "subTitle": "WIE ES FUNKTIONIERT",
+      "title": "Ihr Start mit Clinvvo",
+      "features": {
+        "demo": {
+          "title": "Demo buchen",
+          "desc": "Lassen Sie uns reden. Sie sagen uns, was Ihre Organisation braucht, wir zeigen Ihnen, wie alles funktioniert.",
+          "alt": "Demo"
+        },
+        "customize": {
+          "title": "Ihre Plattform anpassen",
+          "desc": "Wählen Sie die Dienste, Sprachoptionen und Funktionen, die Ihre Patienten und Pflegeteams unterstützen können.",
+          "alt": "Anpassen"
+        },
+        "brandLaunch": {
+          "title": "Wir branden & starten",
+          "desc": "Wir gestalten und liefern die Plattform unter Ihrer Marke. Ihr Team wird geschult. Sie gehen schnell live.",
+          "alt": "Rakete"
+        },
+        "support": {
+          "title": "Support & Upgrade",
+          "desc": "Wir kümmern uns um Wartung, Updates und Compliance. Sie konzentrieren sich auf den Ausbau der Versorgung, wir haben die Technik.",
+          "alt": "Support"
+        }
+      },
+      "button": "Buchen Sie noch heute eine Demo"
+    },
+    "securitySection": {
+      "subTitle": "SICHERHEIT & COMPLIANCE",
+      "title": "Sicher, compliant, vertrauenswürdig",
+      "features": {
+        "gdpr": "DSGVO-konform",
+        "encryption": "Datenverschlüsselung bei Speicherung und Übertragung",
+        "bankId": "Anmeldung über SITHS, BankID-basiert",
+        "cloud": "Sichere Cloud-Infrastruktur"
+      }
+    }
+  },
+  "stakeholder": {
+    "whoWeHelp": "WEM WIR HELFEN",
+    "title": "Gebaut für jeden Akteur im Gesundheitswesen",
+    "cards": [
+      {
+        "heading": "Für Ärzte",
+        "description": "Weniger Verwaltung, mehr Versorgung. KI unterstützt bei medizinischen Notizen."
+      },
+      {
+        "heading": "Für Patienten",
+        "description": "Einfacher Zugang zu Diensten, Terminen und Antworten, wo immer sie sind."
+      },
+      {
+        "heading": "KI für Gesundheitsanbieter",
+        "description": "Skalierbare, kostensparende digitale Gesundheitsinfrastruktur, gebrandet für Ihre Organisation."
+      }
+    ]
+  },
+  "forPatients": {
+    "hero": {
+      "title": "Versorgung, die Sie dort abholt, wo Sie sind",
+      "desc": "Clinvvo ermöglicht sichere, nahtlose Gespräche zwischen Patienten und lizenzierten Gesundheitsfachkräften – ohne Verzögerungen, ohne Ablenkungen.",
+      "button": "Demo buchen"
+    },
+    "whatPatientsGetSection": {
+      "subTitle": "WAS IHRE PATIENTEN ERHALTEN",
+      "title": "Alles, was Sie brauchen, um schnell, einfach und sicher versorgt zu werden",
+      "desc": "Clinvvo macht es einfach, Versorgung zu den Bedingungen Ihrer Patienten zu erhalten. Von schnellen Symptomformularen über Gruppensitzungen bis hin zu einem persönlichen Dashboard ist alles darauf ausgelegt, ihre Zeit und ihren Stress zu sparen.",
+      "features": {
+        "regionService": {
+          "title": "Auswahl von Region & Service",
+          "desc": "Beginnen Sie mit der Auswahl Ihrer Region und Ihres Anliegens Gynäkologie, Sexualgesundheit, BMM oder BVC. Wir leiten Ihre Patienten zur richtigen Versorgung.",
+          "alt": "Patientenbedarf"
+        },
+        "aiClinicalNotes": {
+          "title": "Sichere digitale Konsultationen",
+          "desc": "Wir bieten sichere Optionen für Chat-, Audio- oder Video-Konsultationen, damit sich Ihre Patienten so verbinden können, wie es Ihnen am besten passt.",
+          "alt": "Patientenbedarf"
+        },
+        "smartIntake": {
+          "title": "Smarte Aufnahme-Zusammenfassungen",
+          "desc": "Wir eliminieren Papierkram, indem wir Patienten ermöglichen, kurze, smarte Formulare im Voraus auszufüllen, sodass Ärzte vor jeder Konsultation klare, fokussierte Einblicke erhalten.",
+          "alt": "Patientenbedarf"
+        },
+        "voiceNotes": {
+          "title": "Gruppensitzungen",
+          "desc": "Nehmen Sie an digitalen Gesundheitssitzungen teil, die von medizinischen Experten geleitet werden. Ideal für gemeinsame Themen und zeitsparende Konsultationen.",
+          "alt": "Patientenbedarf"
+        },
+        "resourceSharing": {
+          "title": "Digitales Patienten-Dashboard",
+          "desc": "Termine verwalten, Konsultationshistorie überprüfen und Briefe an einem Ort abrufen.",
+          "alt": "Patientenbedarf"
+        },
+        "groupSession": {
+          "title": "Wellness-Tipps & Updates",
+          "desc": "Halten Sie Ihre Patienten mit Wellness-Tipps, regelmäßigen Updates und kuratierten Gesundheitsinhalten auf dem Laufenden, direkt in ihren Posteingang geliefert.",
+          "alt": "Patientenbedarf"
+        }
+      }
+    },
+    "careWithoutComplicationsSection": {
+      "subTitle": "VERSORGUNG OHNE KOMPLIKATIONEN",
+      "title": "Einfacher Zugang, schneller Support",
+      "desc": "Eine Erfahrung, die sich einfach und persönlich anfühlt.",
+      "features": {
+        "chooseNeed": {
+          "title": "Wählen Sie, was Sie brauchen",
+          "desc": "Patienten wählen ihre Region und Art der Versorgung, direkt über die App oder Webplattform.",
+          "alt": "Schneller Zugang"
+        },
+        "shareSymptoms": {
+          "title": "Symptome einfach teilen",
+          "desc": "Füllen Sie ein kurzes Formular aus, damit Ihr Arzt bereit ist zu helfen.",
+          "alt": "Smarter Workflow"
+        },
+        "connectDoctor": {
+          "title": "Schnell mit einem Arzt verbinden",
+          "desc": "Sofortige Verbindung mit einem Arzt per Chat, Anruf oder Video.",
+          "alt": "Smarter Workflow"
+        }
+      },
+      "button": "Buchen Sie noch heute eine Demo"
+    }
+  },
+  "steps": {
+    "subTitle": "SCHRITT-FÜR-SCHRITT-PROZESS",
+    "title": "Von der Demo bis zum Live-Betrieb",
+    "stepsList": {
+      "demo": {
+        "tag": "DEMO BUCHEN",
+        "title": "Beginnen wir mit einem Gespräch",
+        "desc": "Sie sagen uns, was Ihre Organisation braucht, von Fachgebieten und Sprachen bis hin zu Branding und Workflows. Wir führen Sie durch unsere Produktsuite und zeigen Ihnen, wie sie zu Ihren Zielen passt."
+      },
+      "customize": {
+        "tag": "ANPASSEN & KONFIGURIEREN",
+        "title": "Zugeschnitten auf Ihr Versorgungsmodell",
+        "desc": "Wählen Sie die Dienste aus, die Sie anbieten möchten, wie z. B. Grundversorgung, BMM oder Sexualgesundheit, und wir helfen Ihnen bei der Konfiguration, damit alles übereinstimmt. Von Patientenaufnahmeformularen und Kommunikationsmechanismen bis hin zu Triage-Workflows ist Ihre Einrichtung vollständig anpassbar. Sie entscheiden:",
+        "points": {
+          "list-1": "Fachgebiete & Dienstleistungen",
+          "list-2": "Patientenpfade & Aufnahmeformulare",
+          "list-3": "Workflows zur klinischen Dokumentation",
+          "list-4": "Präferenzen für Region und Sprache"
+        }
+      },
+      "launch": {
+        "tag": "WIR BRANDEN & STARTEN ES",
+        "title": "Wir bauen es, Sie besitzen die Erfahrung",
+        "desc": "Wir versehen die Plattform mit Ihrem Logo, Ihren Farben, Ihrer Domain und Servicestruktur. Ihre Teams erhalten Onboarding und Schulung – dann sind Sie bereit, schnell live zu gehen. Beinhaltet:",
+        "points": {
+          "list-1": "• Gebrandete Oberfläche & Domain",
+          "list-2": "• Team-Onboarding & Support",
+          "list-3": "• Optionale Integrationen"
+        }
+      },
+      "support": {
+        "tag": "LAUFENDER SUPPORT & UPGRADES",
+        "title": "Wir bleiben bei Ihnen, immer",
+        "desc": "Sie erhalten technischen Support rund um die Uhr, Compliance-Überwachung und kontinuierliche Feature-Upgrades – damit Ihre Versorgung modern, sicher und effizient bleibt. Was wir verwalten:",
+        "points": {
+          "list-1": "• Hosting & Updates",
+          "list-2": "• KI-Funktionen & Plattform-Upgrades",
+          "list-3": "• Compliance & Datensicherheit",
+          "list-4": "• Schneller Support"
+        }
+      }
+    }
+  },
+  "aboutus": {
+    "hero": {
+      "title": "Das digitale Gesundheitswesen neu definieren: Smarter, Schneller, Menschlich",
+      "description": "Bei Clinvvo glauben wir, dass das Gesundheitswesen für die Menschen arbeiten sollte, nicht umgekehrt. Unsere Plattform vereinfacht klinische Workflows, beschleunigt die Dokumentation und verbessert das Patientenerlebnis."
+    },
+    "builtWithPurpose": {
+      "badge": "MIT ZWECK GEBAUT",
+      "title": "Wir engagieren uns für die Stärkung besserer Versorgung",
+      "description": "Wir sind hier, um das Gesundheitswesen einfacher und menschlicher zu gestalten, sowohl für vielbeschäftigte Kliniker als auch für Patienten, die schnelle, vertrauenswürdige Versorgung benötigen."
+    },
+    "mission": {
+      "badge": "UNSERE MISSION",
+      "text": "Technologie für das Gesundheitswesen zu entwickeln, die Menschen, Kliniker und Patienten gleichermaßen durch intuitive Tools, smarte Automatisierung und nahtlose Workflows stärkt. Unser Ziel ist es, den Verwaltungsaufwand zu reduzieren, die Behandlungsergebnisse zu verbessern und Gesundheitsfachkräften zu helfen, sich auf das Wichtigste zu konzentrieren: die menschliche Verbindung."
+    },
+    "vision": {
+      "badge": "UNSERE VISION",
+      "text": "Ein Gesundheitssystem, in dem Technologie im Hintergrund verschwindet und die Versorgung sicherer, smarter und persönlicher macht. Wir stellen uns eine Zukunft vor, in der jede Klinik, ob groß oder klein, erstklassige digitale Versorgung liefern kann, angetrieben von modernen Tools, die einfach funktionieren."
+    },
+    "whoWeAre": {
+      "badge": "WER WIR SIND",
+      "points": {
+        "list-1": "Clinvvo ist eine B2B-SaaS-Plattform, die von europäischen Medizinern und Technologen entwickelt wurde, die daran glauben, dass bessere Gesundheitsversorgung mit besseren Tools beginnt.",
+        "list-2": "Wir bieten eine End-to-End-Suite von Funktionen, von Terminbuchung und Video-Konsultationen bis hin zu KI-gestützten medizinischen Notizen und EHR-Integration, die Kliniken dabei unterstützt, ihre Dienstleistungen unter ihrer eigenen Marke zu digitalisieren."
+      }
+    },
+    "aiSection": {
+      "badge": "KI, DIE FÜR SIE ARBEITET",
+      "title": "Überlassen Sie der KI die Routineaufgaben",
+      "description": "Unsere KI-Funktionen automatisieren Aufgaben wie medizinische Transkription und Zusammenfassung, wodurch wertvolle Zeit für Pflegekräfte frei wird und ein reibungsloseres Erlebnis für Patienten gewährleistet wird. Kliniken, die Clinvvo nutzen, erleben schnellere Dokumentation, verbesserte Effizienz und eine bessere Versorgungsbereitstellung bei jedem Schritt."
+    }
+  },
+  "contactus": {
+    "hero": {
+      "title": "Bereit zum Start?",
+      "description1": "Haben Sie Fragen?",
+      "description2": "Melden Sie sich, und lassen Sie uns das Gespräch beginnen."
+    },
+    "form": {
+      "namePlaceholder": "Name",
+      "emailPlaceholder": "E-Mail",
+      "phonePlaceholder": "Telefonnummer",
+      "messagePlaceholder": "Möchten Sie uns sonst noch etwas mitteilen?",
+      "button": "Lassen Sie uns reden",
+      "success": "Vielen Dank für Ihr Interesse an Clinvvo! Wir haben Ihre Anfrage erhalten und werden uns in Kürze bei Ihnen melden.",
+      "error": "Fehler beim Senden der Formulardaten"
+    }
+  },
+  "faq": {
+    "headingTag": "FAQS",
+    "headingTitle": "Ihre Fragen beantwortet",
+    "list": [
+      {
+        "question": "Für welche Art von Gesundheitsanbietern ist Clinvvo konzipiert?",
+        "answer": "Clinvvo ist für Kliniken, Krankenhäuser und digitale Gesundheitsanbieter konzipiert, die Dienstleistungen in jedem Fachgebiet anbieten. Von der Grundversorgung über Sexualgesundheit bis hin zu Psychiatrie und Sprachtherapie – unsere flexiblen Module passen sich Ihrem Versorgungsmodell an."
+      },
+      {
+        "question": "Wie verbessert Clinvvo die klinische Effizienz?",
+        "answer": "Clinvvo ist eine End-to-End-Plattform, von der digitalen Triage und Patientenkommunikation bis hin zu klinischen Workflows und KI-gestützter Dokumentation. Wir bieten nicht nur isolierte KI-Tools; wir unterstützen den gesamten Versorgungsweg mit integrierten Lösungen, die den Verwaltungsaufwand reduzieren und es Anbietern ermöglichen, sich auf das Wesentliche zu konzentrieren: die Bereitstellung von Versorgung."
+      },
+      {
+        "question": "Ist Clinvvo konform mit europäischen Vorschriften?",
+        "answer": "Ja, Clinvvo ist vollständig DSGVO-konform und so gebaut, dass es regionale Gesundheitsanforderungen erfüllt, einschließlich sicherer Datenspeicherung, Patienten-Einwilligungs-Workflows und Integrationen mit nationalen EHRs."
+      },
+      {
+        "question": "Unterstützt Clinvvo verschiedene Sprachen und Lokalisierungen?",
+        "answer": "Ja, Clinvvo unterstützt regions- und sprachspezifische Konfigurationen. Wir betreuen derzeit Anbieter in Schweden und ganz Europa."
+      },
+      {
+        "question": "Wie lange dauert es, mit Clinvvo live zu gehen?",
+        "answer": "Abhängig von Ihrem Umfang und Ihren Konfigurationsanforderungen können Anbieter typischerweise innerhalb von 2 bis 6 Wochen starten. Unser Team unterstützt das Onboarding, die Anpassung und die Schulung bei jedem Schritt."
+      }
+    ]
+  },
+  "footer": {
+    "alt": "Kontakt-Banner",
+    "title": "Haben Sie noch Fragen?",
+    "subtitle": "Lassen Sie uns reden",
+    "button": "Kontakt",
+    "copyright": "©2025, Clinvvo, Alle Rechte vorbehalten"
+  }
+}

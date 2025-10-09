@@ -1,12 +1,38 @@
 import { useEffect } from "react";
-import { consult1, consult2, consult3, consult4, consult5, consult6, consult7, consult8, heroAi, heroAIMobile } from "../assets";
-import { Button, Contact, Faq, Features, Testimonials, Workflow } from "../components";
+import {
+  consult1,
+  consult2,
+  consult3,
+  consult4,
+  consult5,
+  consult6,
+  consult7,
+  consult8,
+  heroAi,
+  heroAIMobile,
+} from "../assets";
+import {
+  Button,
+  Contact,
+  Faq,
+  Features,
+  Testimonials,
+  Workflow,
+} from "../components";
 import { useTranslation } from "react-i18next";
+import { useDispatch, useSelector } from "react-redux";
+import { setAppLanguage } from "../store/slices/generalSlice";
 
 function AiFeatures() {
   const { t } = useTranslation();
+  const dispatch = useDispatch();
+  const { appLanguage } = useSelector((state) => state.general);
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+    const save = localStorage.getItem("language") || "en";
+    if (save) {
+      dispatch(setAppLanguage(save));
+    }
   }, []);
   return (
     <div className="w-full">
@@ -16,7 +42,11 @@ function AiFeatures() {
           className="absolute top-1 w-full h-full -z-10"
           alt=""
         />
-        <div className="w-full flex flex-col justify-start items-center gap-6 md:gap-8 lg:gap-12 max-w-[750px] mx-auto">
+        <div
+          className={`w-full flex flex-col justify-start items-center gap-6 md:gap-8 lg:gap-12 ${
+            appLanguage == "de" ? "max-w-[59rem]" : "max-w-[47rem]"
+          }  mx-auto`}
+        >
           <div className="flex flex-col justify-start items-start gap-3 md:gap-5 w-full">
             <h2 className="w-full text-center text-[#23586A] text-3xl sm:text-4xl lg:text-6xl font-medium font-['Lora'] leading-[135%]">
               {t("aifeatures.heroSection.heading")}
@@ -206,8 +236,8 @@ function AiFeatures() {
           </Button>
         </div>
       </section>
-      <Features />
-      <Workflow />
+      <Features appLanguage={appLanguage} />
+      <Workflow appLanguage={appLanguage} />
       <Testimonials />
       <Faq />
       <Contact />
@@ -216,4 +246,3 @@ function AiFeatures() {
 }
 
 export default AiFeatures;
-

@@ -7,6 +7,8 @@ import Dropdown, { type DropdownOption } from "../ui/Dropdown";
 import i18n from "../../i18n";
 import { LANGUAGES } from "../../lib/utils/cn";
 import { useTranslation } from "react-i18next";
+import { useDispatch } from "react-redux";
+import { setAppLanguage } from "../../store/slices/generalSlice";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -26,6 +28,7 @@ const Navbar = () => {
   };
   const [selectedLanguage, setSelectedLanguage] =
     useState<DropdownOption | null>(null);
+  const dispatch = useDispatch();
   useEffect(() => {
     document.body.style.overflow = isMobileMenuOpen ? "hidden" : "";
     return () => {
@@ -38,6 +41,7 @@ const Navbar = () => {
     i18n.changeLanguage(value);
     localStorage.setItem("language", value);
     setSelectedLanguage(language);
+    dispatch(setAppLanguage(value));
   };
 
   useEffect(() => {

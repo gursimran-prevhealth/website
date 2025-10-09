@@ -6,4 +6,5 @@ export function cn(...classes: (string | false | null | undefined)[]): string {
 export const LANGUAGES = [
   { label: "English", value: "en" },
   { label: "Svenska", value: "sv" },
+  { label: "Deutsch", value: "de" },
 ];

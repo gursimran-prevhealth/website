@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { cloud, customize, demo, ecosystem1, ecosystem2, ecosystem3, ecosystem5, ecosystem6, gdpr, heroDoctor, heroDoctor1, idSvg, lock, microphone, rocket, support, sWorkFlow1, sWorkFlow2, sWorkFlow3 } from "../assets";
 import { Button, Contact, Faq, StakeHolder } from "../components";
 import { useTranslation } from "react-i18next";
+import { useDispatch, useSelector } from "react-redux";
+import { setAppLanguage } from "../store/slices/generalSlice";
 
 function ForDoctors() {
   const { t } = useTranslation();
@@ -9,14 +11,33 @@ function ForDoctors() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
+  const dispatch = useDispatch();
+  const { appLanguage } = useSelector((state) => state.general);
+  useEffect(() => {
+    const save = localStorage.getItem("language") || "en";
+    if (save) {
+      dispatch(setAppLanguage(save));
+    }
+  }, []);
+
   return (
     <div className="w-full">
       <section className="w-full min-h-screen px-5 overflow-hidden md:pt-[120px] pt-24 pb-20 md:pb-24 max-w-full">
-        <div className="w-full flex flex-col justify-start items-center gap-6 md:gap-8 lg:gap-12 max-w-[743px] mx-auto">
+        <div
+          className={`w-full flex flex-col justify-start items-center gap-6 md:gap-8 lg:gap-12 ${
+            appLanguage === "de" ? " max-w-[55rem]" : "max-w-[46rem]"
+          } mx-auto`}
+        >
           <div className="flex flex-col justify-start items-start gap-3 md:gap-4 w-full">
-            <h2 className="w-full text-center text-[#23586A] text-3xl sm:text-4xl lg:text-6xl font-medium font-['Lora'] leading-[135%] max-w-[632px] mx-auto">
+            <h2
+              className={`w-full text-center text-[#23586A] text-3xl sm:text-4xl lg:text-6xl font-medium font-['Lora'] leading-[135%]  mx-auto ${
+                appLanguage === "de" ? " max-w-[55rem]" : "max-w-[40rem]"
+              }`}
+            >
               {t("forDoctors.hero.title")}
             </h2>
+
             <p className="w-full text-center text-[#555] text-base sm:text-lg lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
               {t("forDoctors.hero.desc")}
             </p>
@@ -49,7 +70,11 @@ function ForDoctors() {
       </section>
 
       <section className="w-full min-h-screen flex flex-col items-center gap-12 md:px-20 px-5 md:py-24 py-16">
-        <div className="w-full max-w-[535px] flex flex-col items-center gap-2.5">
+        <div
+          className={`w-full ${
+            appLanguage === "de" ? "max-w-[37.5rem]" : "max-w-[33.5rem]"
+          } flex flex-col items-center gap-2.5`}
+        >
           <div className="rounded-[10px] inline-flex items-center gap-2">
             <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#fd8883] rounded-full" />
             <span className="text-[#545454] text-sm md:text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
@@ -329,7 +354,7 @@ function ForDoctors() {
           </a>
         </Button>
       </div>
-      <StakeHolder />
+      <StakeHolder appLanguage={appLanguage} />
       <section className="w-full min-h-[60vh] flex flex-col items-center justify-center gap-12 md:px-20 px-5 md:py-24 py-16 max-w-[1063px] mx-auto">
         <div className="w-full max-w-[616px] flex flex-col items-center gap-2.5">
           <div className="rounded-[10px] inline-flex items-center gap-2">
