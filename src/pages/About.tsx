@@ -2,16 +2,30 @@ import { useEffect } from "react";
 import { aboutDoctor, aboutPatient, ourmission, ourvision, work } from "../assets";
 import { Contact } from "../components";
 import { useTranslation } from "react-i18next";
+import { useDispatch, useSelector } from "react-redux";
+import { setAppLanguage } from "../store/slices/generalSlice";
 
 export default function About() {
   const { t } = useTranslation();
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+  const dispatch = useDispatch();
+  const { appLanguage } = useSelector((state) => state.general);
+  useEffect(() => {
+    const save = localStorage.getItem("language") || "en";
+    if (save) {
+      dispatch(setAppLanguage(save));
+    }
+  }, []);
   return (
     <div className="w-full">
       <section className="w-full min-h-screen px-5 overflow-hidden md:pt-[120px] pt-24 pb-20 md:pb-24 max-w-[1440px] flex flex-col items-center gap-12 mx-auto">
-        <div className="flex flex-col justify-center items-center gap-3 md:gap-4 w-full max-w-[980px]">
+        <div
+          className={`flex flex-col justify-center items-center gap-3 md:gap-4 w-full ${
+            appLanguage === "de" ? " max-w-[75rem]" : " max-w-[62rem]"
+          }`}
+        >
           <h2 className="w-full text-center text-[#23586A] text-3xl sm:text-4xl lg:text-6xl font-medium font-['Lora'] leading-[135%] mx-auto">
             {t("aboutus.hero.title")}
           </h2>

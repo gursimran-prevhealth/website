@@ -3,9 +3,21 @@ import { aiPowered, charging, forPatient, forPatient1, hero, heroMobile, lens, s
 import { Care, Contact, Faq, Testimonials } from "../components";
 import Button from "../components/button";
 import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setAppLanguage } from "../store/slices/generalSlice";
 
 export default function Home() {
   const { t } = useTranslation();
+  const dispatch = useDispatch();
+  const { appLanguage } = useSelector((state) => state.general);
+  useEffect(() => {
+    const save = localStorage.getItem("language") || "en";
+    if (save) {
+      dispatch(setAppLanguage(save));
+    }
+  }, []);
+
   const valueList = t("home.values.cards", { returnObjects: true });
   const images = [charging, lens, technology];
   return (
@@ -93,7 +105,9 @@ export default function Home() {
       <section className="w-full min-h-screen flex flex-col gap-24 md:px-20 px-5 max-w-[1560px] mx-auto pt-15 overflow-hidden">
         <div className="w-full flex lg:flex-row flex-col-reverse gap-6 h-full">
           <div className="w-full h-full flex items-end justify-start mt-auto">
-            <div className="w-full lg:max-w-[579px] flex flex-col items-start gap-3 md:gap-4">
+            <div
+              className={`w-full lg:max-w-[36.5rem] flex flex-col items-start gap-3 md:gap-4 `}
+            >
               <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
                 <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />
                 <span className="text-sm md:text-base text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
@@ -170,7 +184,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Care />
+      <Care appLanguage={appLanguage} />
       <section className="w-full  px-5 sm:px-10 lg:px-20 py-5 md:py-16  overflow-hidden max-w-[1560px] mx-auto">
         <div className="w-full flex flex-col lg:flex-row justify-start items-center gap-8 lg:gap-20">
           <div className="w-full lg:w-[613px] flex flex-col justify-start items-start gap-6 lg:gap-8">

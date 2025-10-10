@@ -10,7 +10,7 @@ i18n
   .use(LanguageDetector) // Detect user language
   .use(initReactI18next) // Pass the i18n instance to react-i18next
   .init({
-    supportedLngs: ["sv", "en"], // ✅ use ISO codes (English, German)
+    supportedLngs: ["en", "sv", "de"],
     fallbackLng: "en",
     defaultNS: "translation",
 
