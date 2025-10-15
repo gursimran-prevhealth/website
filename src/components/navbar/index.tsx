@@ -100,7 +100,7 @@ const Navbar = () => {
             >
               {t("nav.contactUs")}
             </Button>
-            {/* <Dropdown
+            <Dropdown
               icon={
                 <img
                   src={"/images/language.svg"}
@@ -123,7 +123,7 @@ const Navbar = () => {
               }
               buttonClassName="!bg-[#F5F5F5] hidden md:inline-flex"
               buttonVariant="outline"
-            /> */}
+            />
           </div>
 
           <div className="md:hidden">
@@ -167,7 +167,7 @@ const Navbar = () => {
                 );
               })}
               <div className="flex flex-col gap-4 justify-start">
-                {/* <Dropdown
+                <Dropdown
                   icon={
                     <img
                       src={"/images/language.svg"}
@@ -190,7 +190,7 @@ const Navbar = () => {
                   }
                   buttonClassName="!bg-[#F5F5F5]"
                   buttonVariant="outline"
-                /> */}
+                />
 
                 <Button
                   className="mt-auto"
