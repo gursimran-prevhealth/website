@@ -38,10 +38,10 @@ const Navbar = () => {
 
   const handleSetLanguage = (language: DropdownOption) => {
     const { value } = language;
-    i18n.changeLanguage(value);
-    localStorage.setItem("language", value);
+    i18n.changeLanguage(String(value));
+    localStorage.setItem("language", String(value));
     setSelectedLanguage(language);
-    dispatch(setAppLanguage(value));
+    dispatch(setAppLanguage(String(value)));
   };
 
   useEffect(() => {

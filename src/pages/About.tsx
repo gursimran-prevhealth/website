@@ -4,6 +4,7 @@ import { Contact } from "../components";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { setAppLanguage } from "../store/slices/generalSlice";
+import type { RootState } from "../store/store";
 
 export default function About() {
   const { t } = useTranslation();
@@ -11,7 +12,7 @@ export default function About() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
   const dispatch = useDispatch();
-  const { appLanguage } = useSelector((state) => state.general);
+  const { appLanguage } = useSelector((state: RootState) => state.general);
   useEffect(() => {
     const save = localStorage.getItem("language") || "en";
     if (save) {

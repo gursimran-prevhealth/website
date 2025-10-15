@@ -3,7 +3,11 @@ import { workflow1, workflow2, workflow3 } from "../../assets";
 
 function Workflow({ appLanguage }: { appLanguage: string }) {
   const { t } = useTranslation();
-  const steps = t("workflow.steps", { returnObjects: true });
+  const steps =
+    (t("workflow.steps", { returnObjects: true }) as Array<{
+      title: string;
+      desc: string;
+    }>) || [];
   const images = [workflow1, workflow2, workflow3];
   return (
     <section className="w-full lg:px-20 md:px-10 px-5 md:py-24 py-16 min-h-screen">

@@ -5,10 +5,20 @@ import SwiperCore from 'swiper';
 import { testimonial, testimonialPerson1,testimonialPerson2} from '../../assets';
 import { useTranslation } from "react-i18next";
 
+interface Testimonial {
+  name: string;
+  quote: string;
+  role?: string;
+  desc?: string;
+}
+
 const Testimonials = () => {
   const { t } = useTranslation();
 
-  const testimonials = t("testimonials.list", { returnObjects: true });
+  const rawTestimonials = t("testimonials.list", { returnObjects: true });
+  const testimonials: Testimonial[] = Array.isArray(rawTestimonials)
+    ? rawTestimonials
+    : [];
   const images = [testimonialPerson1, testimonialPerson2];
   const image = testimonial;
   const [activeIndex, setActiveIndex] = useState(0);
@@ -49,7 +59,7 @@ const Testimonials = () => {
           }}
           className="w-full"
         >
-          {testimonials.map((testimonial, index) => (
+          {testimonials.map((testimonial: Testimonial, index: number) => (
             <SwiperSlide key={testimonial.name} className="h-full">
               <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-14 items-center h-full">
                 <div className="w-full lg:w-1/2">

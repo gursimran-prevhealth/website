@@ -6,11 +6,12 @@ import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setAppLanguage } from "../store/slices/generalSlice";
+import type { RootState } from "../store/store";
 
 export default function Home() {
   const { t } = useTranslation();
   const dispatch = useDispatch();
-  const { appLanguage } = useSelector((state) => state.general);
+  const { appLanguage } = useSelector((state: RootState) => state.general);
   useEffect(() => {
     const save = localStorage.getItem("language") || "en";
     if (save) {
@@ -18,7 +19,11 @@ export default function Home() {
     }
   }, []);
 
-  const valueList = t("home.values.cards", { returnObjects: true });
+  const valueList =
+    (t("home.values.cards", { returnObjects: true }) as Array<{
+      title: string;
+      desc: string;
+    }>) || [];
   const images = [charging, lens, technology];
   return (
     <div className="w-full">

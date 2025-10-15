@@ -10,6 +10,7 @@ import {
   feat8,
   feat9,
 } from "../../assets";
+import type { CareProps } from "../../lib/consts";
 
 // const featureData = [
 //     {
@@ -59,9 +60,15 @@ import {
 //     },
 // ];
 
-export default function Features({ appLanguage }) {
+interface FeatureItem {
+  title: string;
+  desc: string;
+}
+export default function Features({ appLanguage }: CareProps) {
   const { t } = useTranslation();
-  const featureData = t("features.list", { returnObjects: true });
+  const featureData = t("features.list", {
+    returnObjects: true,
+  }) as FeatureItem[];
   const images = [
     feat1,
     feat2,
@@ -91,9 +98,9 @@ export default function Features({ appLanguage }) {
         </h2>
       </div>
       <div className="w-full px-5 md:px-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-        {featureData.map((item, index) => (
+        {featureData?.map((item: FeatureItem, index: number) => (
           <div
-            key={item}
+            key={item.title}
             className="bg-white rounded-xl shadow-[1.5px_1.5px_3px_0px_rgba(174,174,192,0.40)] hover:border-[1px] hover:border-[#23586A] transition-all duration-200 border-[1px] border-[transparent] cursor-pointer outline-[0.5px] outline-neutral-100 p-4 md:p-6 flex flex-col gap-3"
           >
             <div className="w-6 h-6 flex items-center justify-center">

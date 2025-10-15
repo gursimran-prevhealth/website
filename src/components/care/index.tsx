@@ -6,8 +6,9 @@ import {
   questionnaires,
   templateDropdown,
 } from "../../assets";
+import type { CareProps } from "../../lib/consts";
 
-function Care({ appLanguage }) {
+function Care({ appLanguage }: CareProps) {
   const { t } = useTranslation();
   return (
     <section className="w-full md:py-36 md:px-20 py-16 px-5 max-w-[1560px] mx-auto min-h-screen">

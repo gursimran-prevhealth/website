@@ -1,9 +1,14 @@
 import { useTranslation } from "react-i18next";
 import { stakeAi, stakeDoctor, stakePatient } from "../../assets";
+import type { CareProps } from "../../lib/consts";
 
-function StakeHolder({ appLanguage }) {
+function StakeHolder({ appLanguage }: CareProps) {
   const { t } = useTranslation();
-  const cardList = t("stakeholder.cards", { returnObjects: true });
+  const cardList =
+    (t("stakeholder.cards", { returnObjects: true }) as Array<{
+      heading: string;
+      description: string;
+    }>) || [];
   const images = [stakeDoctor, stakePatient, stakeAi];
   return (
     <section className="w-full flex flex-col items-center gap-12 md:px-20 px-5 md:py-24 md:min-h-screen">

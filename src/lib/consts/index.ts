@@ -3,6 +3,10 @@ export type FAQItem = {
     answer: string;
 };
 
+export interface CareProps {
+  appLanguage: string;
+}
+
 export const faqData: FAQItem[] = [
     {
         question: "What kind of healthcare providers is PrevHealth built for?",

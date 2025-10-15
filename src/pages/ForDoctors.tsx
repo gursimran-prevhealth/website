@@ -4,6 +4,7 @@ import { Button, Contact, Faq, StakeHolder } from "../components";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { setAppLanguage } from "../store/slices/generalSlice";
+import type { RootState } from "../store/store";
 
 function ForDoctors() {
   const { t } = useTranslation();
@@ -13,7 +14,7 @@ function ForDoctors() {
   }, []);
 
   const dispatch = useDispatch();
-  const { appLanguage } = useSelector((state) => state.general);
+  const { appLanguage } = useSelector((state: RootState) => state.general);
   useEffect(() => {
     const save = localStorage.getItem("language") || "en";
     if (save) {

@@ -17,7 +17,7 @@ interface DropdownProps {
   options: DropdownOption[];
   onSelect?: (option: DropdownOption) => void;
   defaultValue?: string | null | number;
-  buttonVariant?: "primary" | "google" | "outline";
+  buttonVariant?: "green" | "outline" | "primary";
   buttonClassName?: string;
   dropdownClassName?: string;
   optionClassName?: string;
@@ -26,7 +26,6 @@ interface DropdownProps {
   showLabelWhenSelected?: boolean;
   onOpen?: () => void;
   disabled?: boolean;
-  title?: string;
   isProcessing?: boolean;
   disableDropdown?: boolean;
   direction?: "up" | "down";
@@ -47,7 +46,6 @@ const Dropdown = ({
   showLabelWhenSelected = true,
   onOpen,
   disabled,
-  title,
   isProcessing = false,
   direction,
   disableDropdown,
@@ -187,6 +185,8 @@ const Dropdown = ({
     outline: `bg-transparent border border-[#DADADA] text-primary-dark 
     hover:!border-primary-dark !bg-gray-100 hover:!bg-white active:!bg-white focus:!bg-white hover:shadow-md focus:shadow-md active:shadow-md 
     focus:ring-primary-dark font-normal focus:ring-2 focus:ring-offset-0`,
+
+    green: `!bg-green-500 !text-white hover:!bg-green-600 focus:ring-green-500 focus:ring-2 focus:ring-offset-0`,
   };
 
   return (
@@ -201,7 +201,7 @@ const Dropdown = ({
         className={`flex items-center !h-11 md:!h-auto justify-center text-black border-0 focus:!ring-0 ${buttonClasses[buttonVariant]} px-7 h-13 transition duration-200 ${buttonClassName}`}
         onClick={disableDropdown ? () => {} : toggleDropdown}
         disabled={disabled}
-        title={title}
+        // title={title}
       >
         {icon && <span className="mr-2">{icon}</span>}
         <span className="truncate max-w-[200px] ">
