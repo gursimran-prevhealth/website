@@ -95,7 +95,7 @@ const Navbar = () => {
         <div className="flex items-center gap-1.5 sm:gap-3">
           <div className="hidden md:inline-flex justify-end rounded-full cursor-pointer w-full gap-2">
             <Button
-              className="hidden md:inline-flex tracking-wider"
+              className="hidden md:inline-flex tracking-wider !h-11"
               onClick={() => navigate("/contact-us")}
             >
               {t("nav.contactUs")}
@@ -114,14 +114,14 @@ const Navbar = () => {
               }
               onSelect={handleSetLanguage}
               options={LANGUAGES}
-              arrowIcon={
-                <img
-                  src={"/images/up-arrow.svg"}
-                  alt="Select"
-                  className="w-4 h-4"
-                />
-              }
-              buttonClassName="!bg-[#F5F5F5] hidden md:inline-flex"
+              // arrowIcon={
+              //   <img
+              //     src={"/images/up-arrow.svg"}
+              //     alt="Select"
+              //     className="w-4 h-4"
+              //   />
+              // }
+              buttonClassName="!bg-[#F5F5F5] hidden  md:inline-flex !h-11"
               buttonVariant="outline"
             />
           </div>
@@ -188,12 +188,12 @@ const Navbar = () => {
                       className="w-4 h-4"
                     />
                   }
-                  buttonClassName="!bg-[#F5F5F5]"
+                  buttonClassName="!bg-[#F5F5F5] !h-11"
                   buttonVariant="outline"
                 />
 
                 <Button
-                  className="mt-auto"
+                  className="mt-auto !h-11"
                   onClick={() => {
                     navigate("/contact-us");
                     setIsMobileMenuOpen(false);

@@ -41,7 +41,7 @@ const Dropdown = ({
   buttonClassName = "",
   dropdownClassName = "",
   optionClassName = "",
-  arrowIcon,
+  // arrowIcon,
   isTemplate = false,
   showLabelWhenSelected = true,
   onOpen,
@@ -182,11 +182,11 @@ const Dropdown = ({
     primary: `!bg-primary !text-white hover:!bg-primary-dark 
     focus:ring-primary focus:ring-2 focus:ring-offset-0`,
 
-    outline: `bg-transparent border border-[#DADADA] text-primary-dark 
-    hover:!border-primary-dark !bg-gray-100 hover:!bg-white active:!bg-white focus:!bg-white hover:shadow-md focus:shadow-md active:shadow-md 
-    focus:ring-primary-dark font-normal focus:ring-2 focus:ring-offset-0`,
+    outline: `bg-transparent w-full ring-1  ring-[#9DBEB9]
+      hover:!bg-white active:!bg-white focus:!bg-white hover:shadow-md focus:shadow-md active:shadow-md
+    focus:ring-[#9DBEB9] focus:ring-1 focus:ring-offset-0`,
 
-    green: `!bg-green-500 !text-white hover:!bg-green-600 focus:ring-green-500 focus:ring-2 focus:ring-offset-0`,
+    green: "bg-[#23586A] text-white hover:bg-[#23586A]/90",
   };
 
   return (
@@ -197,8 +197,8 @@ const Dropdown = ({
         }}
         ref={buttonRef}
         type="button"
-        variant={buttonVariant}
-        className={`flex items-center !h-11 md:!h-auto justify-center text-black border-0 focus:!ring-0 ${buttonClasses[buttonVariant]} px-7 h-13 transition duration-200 ${buttonClassName}`}
+        variant="outline"
+        className={`flex items-center !text-base justify-center !text-[#23586A] !font-medium  ${buttonClasses[buttonVariant]} px-7 h-13 transition duration-200 ${buttonClassName}`}
         onClick={disableDropdown ? () => {} : toggleDropdown}
         disabled={disabled}
         // title={title}
@@ -207,11 +207,11 @@ const Dropdown = ({
         <span className="truncate max-w-[200px] ">
           {selected
             ? showLabelWhenSelected
-              ? `${label} : ${options.find((o) => o.value === selected)?.label}`
+              ? `${label}   ${options.find((o) => o.value === selected)?.label}`
               : options.find((o) => o.value === selected)?.label
             : label}
         </span>
-        <span className="ml-2 flex items-center justify-center">
+        {/* <span className="ml-2 flex items-center justify-center">
           {arrowIcon ? (
             <span
               className={`inline-block transition-transform duration-300 ${
@@ -238,7 +238,7 @@ const Dropdown = ({
               />
             </svg>
           )}
-        </span>
+        </span> */}
       </Button>
 
       {isOpen && (options.length > 0 || isProcessing) && (
@@ -294,7 +294,9 @@ const Dropdown = ({
                     ) : (
                       <span className="w-4 h-4 mr-3 flex-shrink-0" />
                     )}
-                    <span className="truncate">{option.label}</span>
+                    <span className="truncate text-[#23586A] text-base">
+                      {option.label}
+                    </span>
                   </div>
                 );
               })

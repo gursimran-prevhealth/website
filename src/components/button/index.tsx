@@ -4,7 +4,7 @@ import { cn } from "../../lib";
 type ButtonProps = {
   children: React.ReactNode;
   onClick?: () => void;
-  variant?: "green" | "outline" | "primary";
+  variant?: "green" | "outline";
   className?: string;
   type?: "button" | "submit" | "reset";
   disabled?: boolean;
@@ -24,7 +24,7 @@ const Button = ({
     "cursor-pointer outline-none border-none rounded-full flex items-center justify-center text-center font-medium font-[Work_Sans] transition-colors duration-300 disabled:event-points-none disabled:bg-gray-400";
 
   const sizeStyles =
-    "text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-4 leading-[135%]";
+    "text-sm sm:text-base px-6 py-3 sm:px-7 sm:py-3 leading-[135%]";
 
   const variants = {
     green: "bg-[#23586A] text-white hover:bg-[#23586A]/90",
@@ -32,10 +32,9 @@ const Button = ({
         focus:ring-primary focus:ring-2 focus:ring-offset-0 
         w-full`,
 
-    outline: `bg-transparent border border-[#DADADA] text-primary-dark 
-        hover:border-primary-dark hover:bg-orange-100 
-        focus:ring-primary-dark focus:ring-2 focus:ring-offset-0 
-        w-full`,
+    outline: `bg-transparent 
+      hover:!bg-white active:!bg-white focus:!bg-white hover:shadow-md focus:shadow-md active:shadow-md
+    focus:ring-[#9DBEB9] focus:ring-1 focus:ring-offset-0`,
 
     secondary: `bg-[#F5F5F5] !text-gray-text hover:bg-[#E0E0E0]
         focus:ring-[#F5F5F5] focus:ring-2 focus:ring-offset-0 
