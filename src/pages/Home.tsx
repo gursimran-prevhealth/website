@@ -63,7 +63,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="w-full max-w-[1560px] mx-auto md:min-h-[384px] min-h-[633px] bg-[#F7FDFF] overflow-hidden flex items-center justify-center p-6 pt-0">
+      {/* <div className="w-full max-w-[1560px] mx-auto md:min-h-[384px] min-h-[633px] bg-[#F7FDFF] overflow-hidden flex items-center justify-center p-6 pt-0">
         <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-32">
           <div className="max-w-64 w-full flex flex-col items-center gap-3">
             <div className="text-7xl md:text-8xl font-semibold font-['Work_Sans'] text-[#23586A] leading-[135%]">
@@ -90,7 +90,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <section className="w-full max-w-[1560px] mx-auto md:pt-[122px] md:pb-[70px] pb-[50px] pt-15 bg-white">
         <div className="w-full max-w-[937px] mx-auto flex flex-col items-center gap-3 md:gap-4 px-4">
           <div className="flex items-center gap-1 py-0.5 rounded-[10px]">

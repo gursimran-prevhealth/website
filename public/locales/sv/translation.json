@@ -1,7 +1,7 @@
 {
   "nav": {
     "aiFeatures": "AI-funktioner",
-    "forDoctors": "För läkare",
+    "forDoctors": "För vårdpersonal",
     "forPatients": "För patienter",
     "aboutUs": "Om oss",
     "contactUs": "Kontakta oss"
@@ -12,8 +12,8 @@
   },
   "home": {
     "hero": {
-      "title": "Operativsystemet för moderna vårdgivare",
-      "desc": "Clinvvo effektiviserar vårdens arbetsflöden och skapar förutsättningar för en mer sammanhållen, tillgänglig och patientfokuserad vård. Med våra verktyg kan vårdteam samarbeta smidigt, kommunicera effektivt och lägga mer tid där det gör störst skillnad – hos patienten.",
+      "title": "Vårdplattformen för moderna vårdgivare",
+      "desc": "Clinvvo hjälper vårdgivare att arbeta smartare och mer sammanhållet. Vår plattform gör det enklare för vårdteam att samarbeta, kommunicera med patienter och hantera administration på ett effektivt sätt. Resultatet blir mer tid till det som är viktigast – mötet med patienten och en tryggare, mer tillgänglig vård.",
       "bookDemo": "Boka en Demo"
     },
     "stats": {
@@ -24,25 +24,25 @@
     "care": {
       "subTitle": "VÅRD SOM FUNGERAR FÖR ALLA",
       "title": "Byggt av läkare. Designat för patienter. Drivet av smart AI.",
-      "desc": "Oavsett om du ger vård eller söker den själv samlar Clinvvo allt på ett ställe – för snabbare konsultationer och effektivare arbetsflöd. Resultatet är en smidigare vardag för både vårdpersonal och patienter."
+      "desc": "Oavsett om du ger vård eller söker den själv samlar Clinvvo allt på ett ställe – för snabbare konsultationer och effektivare arbetsflöden. Resultatet är en smidigare vardag för både vårdpersonal och patienter."
     },
     "sections": {
       "doctors": {
-        "label": "FÖR LÄKARE",
+        "label": "FÖR VÅRDPERSONAL",
         "title": "Mindre administration. Mer tid för riktig vård.",
         "desc": "Clinvvo hjälper läkare och vårdpersonal att fokusera på det som är viktigt. Med AI-genererade anteckningar, remisser och sjukskrivningar kan du spendera mindre tid på administrativt arbete och mer tid med dina patienter.",
         "button": "Utforska mer"
       },
       "patients": {
         "label": "FÖR PATIENTER",
-        "title": "Snabbare svar. Bättre resultat",
-        "desc": "Clinvvo hjälper dina patienter att få vård utan hinder – inga trånga väntrum, inget krångligt intag. De väljer sin tjänst, fyller i ett kort vägledande formulär och kontaktar dina vårdgivare via säker chatt, samtal eller video. Uppföljningar och uppdateringar är inbyggda, så de känner sig stöttade hela vägen.",
+        "title": "Delaktighet i vården - under hela vårdförloppet.",
+        "desc": "Clinvvo gör det enkelt för patienter att få vård utan onödiga hinder – inga köer, inga telefonsvarare. Patienten väljer själv vilken hjälp som behövs, fyller i ett kort formulär och får kontakt med vårdgivaren via säker chatt, samtal eller video. Uppföljning sker direkt i plattformen, så patienten känner sig trygg och delaktig hela vägen.",
         "button": "Utforska mer"
       },
       "ai": {
         "label": "DRIVS AV AI",
-        "title": "AI som lyssnar & underlättar arbetet",
-        "desc": "Clinvvos AI hanterar rutinuppgifter, transkriberar konsultationer, genererar medicinska anteckningar, så att vårdpersonalen kan fokusera på vården. För patienter innebär det snabbare möten och mer effektivare möten, färre formulär och en mer sammanhängande upplevelse.",
+        "title": "AI som lyssnar & underlättar arbetet.",
+        "desc": "Clinvvos AI hanterar rutinuppgifter, transkriberar konsultationer, genererar medicinska anteckningar, så att vårdpersonalen kan fokusera på vården. För patienter innebär det snabbare och mer effektiva kontakter, färre formulär och en mer sammanhängande upplevelse.",
         "button": "Utforska mer"
       }
     },
@@ -56,19 +56,19 @@
     "values": {
       "subTitle": "VÅRA KÄRNVÄRDEN",
       "title": "Vad som driver oss",
-      "desc": "I grunden är vi här för att överbrygga gapet mellan tillgång och kvalitet med modern vård som fungerar för alla.",
+      "desc": "Vi gör det enklare att ge och få bra vård. Clinvvo förenar teknik och mänsklighet så att vårdgivare kan patienterna en  snabb, trygg och delaktig vård.",
       "cards": [
         {
           "title": "Effektivitet som stärker",
-          "desc": "Frigör läkares tid så att de kan fokusera på vården, inte klick"
+          "desc": "Frigör läkares tid så att de kan fokusera på vården."
         },
         {
-          "title": "Klarhet för patienter",
-          "desc": "Hjälper människor navigera vården med trygghet och lätthet"
+          "title": "Transparens för patienter",
+          "desc": "Hjälper patienterna att hitta rätt i vården."
         },
         {
           "title": "Teknik med syfte",
-          "desc": "Använder smarta system som sömlöst förbättrar varje interaktion"
+          "desc": "Smarta system som förbättrar vården."
         }
       ]
     }
@@ -77,7 +77,7 @@
     "section": {
       "subTitle": "PLATTFORMSFUNKTIONER",
       "title": "Designad för att stödja båda sidor av vården",
-      "desc": "Vi ger både läkare och patienter sömlösa, tidsbesparande funktioner i en anpassningsbar plattform"
+      "desc": "Vi ger både läkare och patienter sömlösa, tidsbesparande funktioner i en anpassningsbar plattform."
     },
     "features": {
       "dashboard": {
@@ -86,9 +86,9 @@
         "alt": "Läkarpanel"
       },
       "questionnaires": {
-        "title": "Guidade Frågeformulär",
-        "desc": "Följ bara några enkla steg och vi hjälper dig att dela exakt vad din läkare behöver veta.",
-        "alt": "Guidade Frågeformulär"
+        "title": "Smarta formulär",
+        "desc": "Svara på några enkla frågor så får vårdgivaren rätt information direkt. Frågorna kan anpassas av mottagningen efter deras behov och arbetssätt.",
+        "alt": "Smarta formulär"
       },
       "aiTranscription": {
         "title": "AI-drivna transkriptioner & sammanfattningar",
@@ -97,12 +97,12 @@
       },
       "digitalConsultation": {
         "title": "Digitala konsultationer: Chatt, Ljud & Video",
-        "desc": "Patienter ansluter enkelt. Läkare svarar snabbt – när som helst, var som helst.",
+        "desc": "Patienten ansluter enkelt. Läkaren svarar snabbt – när som helst, var som helst.",
         "alt": "Digitala konsultationer"
       },
       "templateDropdown": {
-        "title": "Snabb tjänsteval",
-        "desc": "Välj din region och hälsobehov på några sekunder.",
+        "title": "Snabba tjänsteval",
+        "desc": "Välj din region och och vårdgivare på några sekunder.",
         "alt": "Dropdown-mall"
       }
     }
@@ -222,15 +222,15 @@
     "sectionDesc": "Se hur vi gör vården enklare, snabbare och mer mänsklig – direkt från dem som har upplevt skillnaden",
     "list": [
       {
-        "quote": "Clinvvos system och app har revolutionerat vårt arbetsflöde och avsevärt förbättrat patientupplevelsen. Det har förenklat patientkontakten för våra barnmorskor och läkare, vilket lett till betydande kostnadsbesparingar för vår organisation. Tack vare Clinvvos lösning är våra processer mer effektiva och smidiga.",
-        "name": "Hugo Lewné",
-        "role": "VD, Prima Vård AB"
-      },
-      {
         "quote": "Clinvvos plattform har förändrat hur vi arbetar, effektiviserat kommunikationen och gjort patientinteraktioner smidigare än någonsin. Våra kliniker sparar värdefull tid, medan patienterna får snabbare och mer personlig vård. Resultatet är ökad effektivitet och mätbara kostnadsminskningar i hela organisationen.",
         "name": "Sofie Andresen",
         "role": "Affärsområdeschef Barn & Kvinnohälsa",
         "desc": "VD Barnbördhuset Stockholm och Verksamhetschef BB Stockholm Family"
+      },
+      {
+        "quote": "Clinvvos system och app har revolutionerat vårt arbetsflöde och avsevärt förbättrat patientupplevelsen. Det har förenklat patientkontakten för våra barnmorskor och läkare, vilket lett till betydande kostnadsbesparingar för vår organisation. Tack vare Clinvvos lösning är våra processer mer effektiva och smidiga.",
+        "name": "Hugo Lewné",
+        "role": "VD, Prima Vård AB"
       }
     ]
   },
@@ -343,7 +343,7 @@
     "title": "Byggt för alla vårdintressenter",
     "cards": [
       {
-        "heading": "För läkare",
+        "heading": "För vårdpersonal",
         "description": "Mindre administration, mer vård. AI hjälper med medicinska anteckningar."
       },
       {
@@ -515,14 +515,14 @@
   },
   "faq": {
     "headingTag": "FAQ",
-    "headingTitle": "Dina frågor besvarade",
+    "headingTitle": "Frågor och svar",
     "list": [
       {
         "question": "Vilka typer av vårdgivare är Clinvvo byggt för?",
         "answer": "Clinvvo är utformat för kliniker, sjukhus och digitala vårdgivare som erbjuder tjänster inom alla specialiteter. Från primärvård och sexuell hälsa till psykiatri och logopedi – våra flexibla moduler anpassar sig efter din vårdmodell."
       },
       {
-        "question": "Hur förbättrar Clinvvo den kliniska effektiviteten?",
+        "question": "Hur effektiviserar Clinvvo vården?",
         "answer": "Clinvvo är en helhetsplattform – från digital triagering och patientkommunikation till kliniska arbetsflöden och AI-driven dokumentation. Vi erbjuder inte bara isolerade AI-verktyg; vi stödjer hela vårdresan med integrerade lösningar som minskar administrativ börda och låter vårdpersonalen fokusera på det som är viktigast: att ge vård."
       },
       {
