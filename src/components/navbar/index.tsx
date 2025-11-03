@@ -146,62 +146,66 @@ const Navbar = () => {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="h-screen fixed inset-0 bg-white flex flex-col items-center justify-center z-50 transition-all duration-500 max-sm:px-6 sm:px-8 pt-16 pb-4">
-            <nav className="w-full h-full flex flex-col gap-4">
-              {navItems.map((item) => {
-                const isActive = currentPath === item.path;
-                return (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    className={cn(
-                      "font-[Work_Sans] transition text-[32px] leading-[140%] font-light",
-                      isActive
-                        ? "text-[#fd8883] "
-                        : "text-[#23586A] hover:text-[#fd8883]"
-                    )}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
-                );
-              })}
-            </nav>
-            <div className="flex w-full flex-col gap-4 justify-start">
-              <Button
-                className="mt-auto !h-11"
-                onClick={() => {
-                  navigate("/contact-us");
-                  setIsMobileMenuOpen(false);
-                }}
-              >
-                {t("nav.contactUs")}
-              </Button>
-              <Dropdown
-                icon={
-                  <img
-                    src={"/images/language.svg"}
-                    alt="Language"
-                    className="w-5 h-5"
-                  />
-                }
-                label={selectedLanguage ? "" : t("dropdown.selectLanguage")}
-                defaultValue={
-                  selectedLanguage ? selectedLanguage.value : undefined
-                }
-                onSelect={handleSetLanguage}
-                options={LANGUAGES}
-                arrowIcon={
-                  <img
-                    src={"/images/up-arrow.svg"}
-                    alt="Select"
-                    className="w-4 h-4"
-                  />
-                }
-                buttonClassName="!bg-[#F5F5F5] !h-11"
-                buttonVariant="outline"
-                direction="up"
-              />
+          <div className="fixed inset-0 bg-white flex flex-col z-50 transition-all duration-500 max-sm:px-6 sm:px-8 pt-16 pb-safe">
+            <div className="flex-1 overflow-y-auto flex flex-col justify-between">
+              <nav className="flex flex-col items-start gap-2 py-8">
+                {navItems.map((item) => {
+                  const isActive = currentPath === item.path;
+                  return (
+                    <Link
+                      key={item.path}
+                      to={item.path}
+                      className={cn(
+                        "font-[Work_Sans] transition text-[32px] leading-[140%] font-normal",
+                        isActive
+                          ? "text-[#fd8883]"
+                          : "text-[#23586A] hover:text-[#fd8883]"
+                      )}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  );
+                })}
+              </nav>
+
+              <div className="flex flex-col gap-4 pb-8 px-1">
+                <Button
+                  className="!h-11 mt-auto"
+                  onClick={() => {
+                    navigate("/contact-us");
+                    setIsMobileMenuOpen(false);
+                  }}
+                >
+                  {t("nav.contactUs")}
+                </Button>
+
+                <Dropdown
+                  icon={
+                    <img
+                      src={"/images/language.svg"}
+                      alt="Language"
+                      className="w-5 h-5"
+                    />
+                  }
+                  label={selectedLanguage ? "" : t("dropdown.selectLanguage")}
+                  defaultValue={
+                    selectedLanguage ? selectedLanguage.value : undefined
+                  }
+                  onSelect={handleSetLanguage}
+                  options={LANGUAGES}
+                  arrowIcon={
+                    <img
+                      src={"/images/up-arrow.svg"}
+                      alt="Select"
+                      className="w-4 h-4"
+                    />
+                  }
+                  buttonClassName="!bg-[#F5F5F5] !h-11"
+                  buttonVariant="outline"
+                  direction="up"
+                />
+              </div>
             </div>
           </div>
         )}
