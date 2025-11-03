@@ -1,5 +1,24 @@
 import { useEffect } from "react";
-import { digitalConsultation, fastAccess, heroPatient, patientNeed1, patientNeed2, patientNeed3, patientNeed4, patientNeed5, templateDropdown } from "../assets";
+import {
+  digitalConsultation,
+  digitalConsultationSv,
+  fastAccess,
+  fastAccessSv,
+  heroPatient,
+  heroPatientMobileSv,
+  heroPatientSv,
+  patientNeed1,
+  patientNeed1Sv,
+  patientNeed2,
+  patientNeed2Sv,
+  patientNeed3,
+  patientNeed4,
+  patientNeed4Sv,
+  patientNeed5,
+  patientNeed5Sv,
+  templateDropdown,
+  templateDropdownSv,
+} from "../assets";
 import { Button, Contact, Faq, StakeHolder, Steps } from "../components";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
@@ -43,7 +62,7 @@ function ForPatients() {
         </div>
         <div className="w-full max-w-full md:min-w-[unset]  min-w-screen relative -left-5 md:left-[unset] md:pt-0 pt-18">
           <img
-            src={heroPatient}
+            src={appLanguage === "sv" ? heroPatientSv : heroPatient}
             alt={t("forPatients.hero.title")}
             className="w-full relative mx-auto md:block hidden max-w-[1093px]"
             style={{
@@ -51,7 +70,7 @@ function ForPatients() {
             }}
           />
           <img
-            src={heroPatient}
+            src={appLanguage === "sv" ? heroPatientMobileSv : heroPatient}
             alt={t("forPatients.hero.title")}
             className="w-[calc(100vw+64px)] left-4 relative md:hidden"
             style={{
@@ -79,7 +98,9 @@ function ForPatients() {
           <div className="w-full h-full row-start-1 row-end-4 md:py-5 p-4 rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)] flex flex-col gap-2">
             <div className="w-full bg-[#FAFAFA] rounded-[12px] md:p-8 p-5">
               <img
-                src={templateDropdown}
+                src={
+                  appLanguage === "sv" ? templateDropdownSv : templateDropdown
+                }
                 alt={t(
                   "forPatients.whatPatientsGetSection.features.regionService.alt"
                 )}
@@ -99,7 +120,7 @@ function ForPatients() {
           </div>
           <div className="w-full h-full row-start-1 row-end-3 md:py-5 p-4 rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)] flex flex-col gap-2">
             <img
-              src={patientNeed1}
+              src={appLanguage === "sv" ? patientNeed1Sv : patientNeed1}
               alt={t(
                 "forPatients.whatPatientsGetSection.features.regionService.alt"
               )}
@@ -116,10 +137,15 @@ function ForPatients() {
               )}
             </div>
           </div>
-          <div className="w-full h-full row-start-1 row-end-4 md:py-5 p-4 rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)] flex flex-col gap-2">
-            <div className="w-full md:p-14 bg-white/10 backdrop-blur-[80px] p-6 rounded-[10px]">
+          <div className="w-full  h-full overflow-hidden row-start-1 row-end-4 md:py-5 p-4 rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)] flex flex-col gap-2">
+            <div className="w-full relative  md:p-14 bg-white/10 backdrop-blur-[80px] p-6 rounded-[10px]">
               <img
-                src={patientNeed2}
+                src="blur.png"
+                className="absolute w-full h-full -z-10 -top-20 -right-32"
+                alt=""
+              />
+              <img
+                src={appLanguage === "sv" ? patientNeed2Sv : patientNeed2}
                 alt={t(
                   "forPatients.whatPatientsGetSection.features.regionService.alt"
                 )}
@@ -158,7 +184,7 @@ function ForPatients() {
           <div className="w-full h-full row-start-3 row-end-6 md:py-5 p-4 rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)] flex flex-col gap-2">
             <div className="w-full md:px-16 px-12 bg-[#FAFAFA] pt-4 rounded-[10px]">
               <img
-                src={patientNeed4}
+                src={appLanguage === "sv" ? patientNeed4Sv : patientNeed4}
                 alt={t(
                   "forPatients.whatPatientsGetSection.features.regionService.alt"
                 )}
@@ -179,7 +205,7 @@ function ForPatients() {
           </div>
           <div className="w-full h-full row-start-4 row-end-6 md:py-5 p-4 rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)] flex flex-col gap-2">
             <img
-              src={patientNeed5}
+              src={appLanguage === "sv" ? patientNeed5Sv : patientNeed5}
               alt={t(
                 "forPatients.whatPatientsGetSection.features.regionService.alt"
               )}
@@ -229,7 +255,7 @@ function ForPatients() {
               <div className="w-[300px] md:w-full flex flex-col gap-4  py-4">
                 <div className="w-full rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)] h-[295px] flex justify-center items-center">
                   <img
-                    src={fastAccess}
+                    src={appLanguage === "sv" ? fastAccessSv : fastAccess}
                     alt={t(
                       "forPatients.careWithoutComplicationsSection.features.chooseNeed.alt"
                     )}
@@ -253,7 +279,7 @@ function ForPatients() {
               <div className="w-[300px] md:w-full flex flex-col gap-4  py-4">
                 <div className="w-full rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)] lg:py-9 lg:px-18 p-8 h-[295px] flex justify-center items-center">
                   <img
-                    src={patientNeed2}
+                    src={appLanguage === "sv" ? patientNeed2Sv : patientNeed2}
                     alt={t(
                       "forPatients.careWithoutComplicationsSection.features.shareSymptoms.alt"
                     )}
@@ -277,7 +303,11 @@ function ForPatients() {
               <div className="w-[300px] md:w-full flex flex-col gap-4  py-4">
                 <div className="w-full p-8 rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)] h-[295px] flex justify-center items-center">
                   <img
-                    src={digitalConsultation}
+                    src={
+                      appLanguage === "sv"
+                        ? digitalConsultationSv
+                        : digitalConsultation
+                    }
                     alt={t(
                       "forPatients.careWithoutComplicationsSection.features.connectDoctor.alt"
                     )}
@@ -313,7 +343,7 @@ function ForPatients() {
       <Steps />
       <StakeHolder appLanguage={appLanguage} />
       <Faq />
-      <Contact />
+      <Contact appLanguage={appLanguage} />
     </div>
   );
 }

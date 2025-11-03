@@ -25,7 +25,7 @@ const Testimonials = () => {
   const [swiperInstance, setSwiperInstance] = useState<SwiperCore | null>(null);
 
   return (
-    <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-24 py-12  md:mt-0 flex flex-col items-center gap-8 md:gap-12 min-h-screen">
+    <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-24 py-12  md:mt-20 flex flex-col items-center gap-8 md:gap-12 min-h-screen">
       <div className="w-full max-w-[900px] flex flex-col items-center gap-3 md:gap-4 text-center">
         <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
           <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />

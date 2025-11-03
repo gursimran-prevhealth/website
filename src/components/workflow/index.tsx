@@ -1,5 +1,12 @@
 import { useTranslation } from "react-i18next";
-import { workflow1, workflow2, workflow3 } from "../../assets";
+import {
+  sWorkFlow2Sv,
+  workflow1,
+  workflow1Sv,
+  workflow2,
+  workflow3,
+  workflow3Sv,
+} from "../../assets";
 
 function Workflow({ appLanguage }: { appLanguage: string }) {
   const { t } = useTranslation();
@@ -9,6 +16,7 @@ function Workflow({ appLanguage }: { appLanguage: string }) {
       desc: string;
     }>) || [];
   const images = [workflow1, workflow2, workflow3];
+  const imagesSv = [workflow1Sv, sWorkFlow2Sv, workflow3Sv];
   return (
     <section className="w-full lg:px-20 md:px-10 px-5 md:py-24 py-16 min-h-screen">
       <div className="w-full flex flex-col items-center gap-8 md:gap-10 lg:gap-14">
@@ -30,12 +38,14 @@ function Workflow({ appLanguage }: { appLanguage: string }) {
 
         <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-3">
           {steps.map((step, index) => (
-            <div key={index} className="flex flex-col gap-4 md:gap-5">
-              <img
-                src={images[index]}
-                alt={`Workflow Step ${index + 1}`}
-                className="w-full h-full md:h-76 object-cover rounded-[20px]"
-              />
+            <div key={index} className="flex flex-col gap-4 md:gap-5 ">
+              <div className="w-full bg-neutral-100 rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] overflow-hidden flex flex-col items-center justify-center gap-2">
+                <img
+                  src={appLanguage == "sv" ? imagesSv[index] : images[index]}
+                  alt={`Workflow Step ${index + 1}`}
+                  className="w-full h-full md:h-76 object-cover rounded-[20px]"
+                />
+              </div>
               <div className="flex flex-col gap-1">
                 <h3 className="text-[#343434] text-xl md:text-2xl lg:text-3xl font-medium font-['Work_Sans'] leading-7 md:leading-8 lg:leading-9">
                   {step.title}

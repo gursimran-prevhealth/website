@@ -1,5 +1,13 @@
 import { useEffect } from "react";
-import { aboutDoctor, aboutPatient, ourmission, ourvision, work } from "../assets";
+import {
+  aboutDoctor,
+  aboutPatient,
+  ourmission,
+  ourmissionSv,
+  ourvision,
+  work,
+  workSv,
+} from "../assets";
 import { Contact } from "../components";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
@@ -78,7 +86,7 @@ export default function About() {
               </p>
             </div>
             <img
-              src={ourmission}
+              src={appLanguage === "sv" ? ourmissionSv : ourmission}
               alt={t("aboutus.mission.badge")}
               className="max-w-full w-full"
             />
@@ -140,10 +148,14 @@ export default function About() {
           </p>
         </div>
         <div className="w-full flex justify-center">
-          <img src={work} alt="Work" className="max-w-full rounded-[12px]" />
+          <img
+            src={appLanguage === "sv" ? workSv : work}
+            alt="Work"
+            className="max-w-full rounded-[12px]"
+          />
         </div>
       </section>
-      <Contact />
+      <Contact appLanguage={appLanguage} />
     </div>
   );
 }

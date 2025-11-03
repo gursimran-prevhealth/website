@@ -1,5 +1,34 @@
 import { useEffect } from "react";
-import { cloud, customize, demo, ecosystem1, ecosystem2, ecosystem3, ecosystem5, ecosystem6, gdpr, heroDoctor, heroDoctor1, idSvg, lock, microphone, rocket, support, sWorkFlow1, sWorkFlow2, sWorkFlow3 } from "../assets";
+import {
+  cloud,
+  customize,
+  demo,
+  ecosystem1,
+  ecosystem1Sv,
+  ecosystem2,
+  ecosystem2Sv,
+  ecosystem3,
+  ecosystem3Sv,
+  ecosystem5,
+  ecosystem5Sv,
+  ecosystem6,
+  gdpr,
+  heroDoctor,
+  heroDoctor1,
+  heroDoctor1Sv,
+  heroDoctorSv,
+  idSvg,
+  lock,
+  microphone,
+  rocket,
+  support,
+  sWorkFlow1,
+  sWorkFlow1Sv,
+  sWorkFlow2,
+  sWorkFlow2Sv,
+  sWorkFlow3,
+  sWorkFlow3Sv,
+} from "../assets";
 import { Button, Contact, Faq, StakeHolder } from "../components";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
@@ -55,15 +84,15 @@ function ForDoctors() {
         </div>
         <div className="w-full max-w-full md:min-w-[unset]  min-w-screen relative -left-5 md:left-[unset] md:pt-0 pt-18">
           <img
-            src={heroDoctor}
+            src={appLanguage === "sv" ? heroDoctorSv : heroDoctor}
             alt={t("forDoctors.hero.title")}
-            className="w-full relative mx-auto md:block hidden max-w-[1093px]"
+            className="w-full object-cover relative mx-auto md:block hidden max-w-[1093px]"
             style={{
               filter: "drop-shadow(10px 10px 20px rgba(0,0,0,0.5))",
             }}
           />
           <img
-            src={heroDoctor1}
+            src={appLanguage === "sv" ? heroDoctor1Sv : heroDoctor1}
             alt={t("forDoctors.hero.title")}
             className="w-full relative md:hidden drop-shadow-2xl"
           />
@@ -92,7 +121,7 @@ function ForDoctors() {
         <div className="w-full md:grid flex flex-col md:gap-x-4 md:gap-y-5 gap-10 grid-cols-3 grid-rows-5">
           <div className="w-full h-full row-start-1 row-end-4 md:py-5 p-4 rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)] flex flex-col gap-2">
             <img
-              src={ecosystem1}
+              src={appLanguage === "sv" ? ecosystem1Sv : ecosystem1}
               alt={t("forDoctors.ecosystemSection.features.dashboard.alt")}
               className="max-w-full mx-auto"
             />
@@ -105,7 +134,7 @@ function ForDoctors() {
           </div>
           <div className="w-full h-full row-start-1 row-end-3 md:py-5 p-4 rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)] flex flex-col gap-2">
             <img
-              src={ecosystem2}
+              src={appLanguage === "sv" ? ecosystem2Sv : ecosystem2}
               alt={t("forDoctors.ecosystemSection.features.aiNotes.alt")}
               className="max-w-full mx-auto"
             />
@@ -118,7 +147,7 @@ function ForDoctors() {
           </div>
           <div className="w-full h-full row-start-1 row-end-4 md:py-5 p-4 rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)] flex flex-col gap-2">
             <img
-              src={ecosystem3}
+              src={appLanguage === "sv" ? ecosystem3Sv : ecosystem3}
               alt={t("forDoctors.ecosystemSection.features.smartIntake.alt")}
               className="max-w-full mx-auto"
             />
@@ -148,13 +177,13 @@ function ForDoctors() {
               {t("forDoctors.ecosystemSection.features.voiceNotes.desc")}
             </div>
           </div>
-          <div className="w-full h-full row-start-3 row-end-6 md:py-5 p-4 rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)] flex flex-col gap-2">
+          <div className="w-full h-full row-start-3 row-end-6 md:py-5 p-4 rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)] flex flex-col gap-2 overflow-hidden">
             <img
-              src={ecosystem5}
+              src={appLanguage === "sv" ? ecosystem5Sv : ecosystem5}
               alt={t(
                 "forDoctors.ecosystemSection.features.resourceSharing.alt"
               )}
-              className="max-w-full mx-auto"
+              className="max-w-full mx-auto ml-4"
             />
 
             <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
@@ -202,9 +231,9 @@ function ForDoctors() {
               <div className="w-[300px] md:w-full flex flex-col gap-4">
                 <div className="w-full bg-white rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] overflow-hidden flex items-center justify-center">
                   <img
-                    src={sWorkFlow1}
+                    src={appLanguage === "sv" ? sWorkFlow1Sv : sWorkFlow1}
                     alt={t("forDoctors.workflowSection.steps.login.alt")}
-                    className="w-full max-w-full"
+                    className="w-full object-fill"
                   />
                 </div>
                 <div className="flex flex-col gap-1">
@@ -220,7 +249,7 @@ function ForDoctors() {
               <div className="w-[300px] md:w-full flex flex-col gap-4">
                 <div className="w-full bg-neutral-100 rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] overflow-hidden flex flex-col items-center justify-center gap-2">
                   <img
-                    src={sWorkFlow2}
+                    src={appLanguage === "sv" ? sWorkFlow2Sv : sWorkFlow2}
                     alt={t(
                       "forDoctors.workflowSection.steps.connectConsult.alt"
                     )}
@@ -240,7 +269,7 @@ function ForDoctors() {
               <div className="w-[300px] md:w-full flex flex-col gap-4">
                 <div className="w-full bg-neutral-100 rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] overflow-hidden flex flex-col items-center justify-center gap-2">
                   <img
-                    src={sWorkFlow3}
+                    src={appLanguage === "sv" ? sWorkFlow3Sv : sWorkFlow3}
                     alt={t("forDoctors.workflowSection.steps.aiNotes.alt")}
                     className="w-full max-w-full"
                   />
@@ -396,7 +425,7 @@ function ForDoctors() {
         </div>
       </section>
       <Faq />
-      <Contact />
+      <Contact appLanguage={appLanguage} />
     </div>
   );
 }

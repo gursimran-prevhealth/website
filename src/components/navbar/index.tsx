@@ -166,43 +166,43 @@ const Navbar = () => {
                   </Link>
                 );
               })}
-              <div className="flex flex-col gap-4 justify-start">
-                <Dropdown
-                  icon={
-                    <img
-                      src={"/images/language.svg"}
-                      alt="Language"
-                      className="w-5 h-5"
-                    />
-                  }
-                  label={selectedLanguage ? "" : t("dropdown.selectLanguage")}
-                  defaultValue={
-                    selectedLanguage ? selectedLanguage.value : undefined
-                  }
-                  onSelect={handleSetLanguage}
-                  options={LANGUAGES}
-                  arrowIcon={
-                    <img
-                      src={"/images/up-arrow.svg"}
-                      alt="Select"
-                      className="w-4 h-4"
-                    />
-                  }
-                  buttonClassName="!bg-[#F5F5F5] !h-11"
-                  buttonVariant="outline"
-                />
-
-                <Button
-                  className="mt-auto !h-11"
-                  onClick={() => {
-                    navigate("/contact-us");
-                    setIsMobileMenuOpen(false);
-                  }}
-                >
-                  {t("nav.contactUs")}
-                </Button>
-              </div>
             </nav>
+            <div className="flex w-full flex-col gap-4 justify-start">
+              <Button
+                className="mt-auto !h-11"
+                onClick={() => {
+                  navigate("/contact-us");
+                  setIsMobileMenuOpen(false);
+                }}
+              >
+                {t("nav.contactUs")}
+              </Button>
+              <Dropdown
+                icon={
+                  <img
+                    src={"/images/language.svg"}
+                    alt="Language"
+                    className="w-5 h-5"
+                  />
+                }
+                label={selectedLanguage ? "" : t("dropdown.selectLanguage")}
+                defaultValue={
+                  selectedLanguage ? selectedLanguage.value : undefined
+                }
+                onSelect={handleSetLanguage}
+                options={LANGUAGES}
+                arrowIcon={
+                  <img
+                    src={"/images/up-arrow.svg"}
+                    alt="Select"
+                    className="w-4 h-4"
+                  />
+                }
+                buttonClassName="!bg-[#F5F5F5] !h-11"
+                buttonVariant="outline"
+                direction="up"
+              />
+            </div>
           </div>
         )}
       </div>

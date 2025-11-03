@@ -1,5 +1,10 @@
 import { useTranslation } from "react-i18next";
-import { stakeAi, stakeDoctor, stakePatient } from "../../assets";
+import {
+  stakeAi,
+  stakeDoctor,
+  stakeDoctorSv,
+  stakePatient,
+} from "../../assets";
 import type { CareProps } from "../../lib/consts";
 
 function StakeHolder({ appLanguage }: CareProps) {
@@ -10,6 +15,8 @@ function StakeHolder({ appLanguage }: CareProps) {
       description: string;
     }>) || [];
   const images = [stakeDoctor, stakePatient, stakeAi];
+  const imagesSv = [stakeDoctorSv, stakePatient, stakeAi];
+
   return (
     <section className="w-full flex flex-col items-center gap-12 md:px-20 px-5 md:py-24 md:min-h-screen">
       <div
@@ -35,7 +42,7 @@ function StakeHolder({ appLanguage }: CareProps) {
               <div className="w-[300px] md:w-full flex flex-col gap-4">
                 <div className="w-full bg-white rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] overflow-hidden flex items-center justify-center">
                   <img
-                    src={images[index]}
+                    src={appLanguage === "sv" ? imagesSv[index] : images[index]}
                     alt="Smart Workflow"
                     className="w-full max-w-full"
                   />

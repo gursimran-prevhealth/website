@@ -31,7 +31,7 @@ import { useTranslation } from "react-i18next";
        };
 
        return (
-         <section className="w-full px-5 md:py-24 pt-12 pb-12 sm:min-h-screen">
+         <section className="w-full px-5 md:py-20 pt-12 pb-12 sm:min-h-screen">
            <div className="w-full max-w-[868px] mx-auto flex flex-col items-center gap-10 md:gap-14">
              {/* Header */}
              <div className="w-full max-w-[582px] flex flex-col items-center gap-3 md:gap-4">

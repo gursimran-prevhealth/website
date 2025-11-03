@@ -157,26 +157,40 @@ const Dropdown = ({
   }, [options, isTemplate]);
 
   // Detect dropdown open direction
+  // Detect dropdown open direction (auto or forced) — robust version
   useEffect(() => {
-    if (!isOpen || !buttonRef.current) return;
+    if (!isOpen) return;
 
-    if (direction) {
+    if (direction === "up" || direction === "down") {
       setOpenDirection(direction);
       return;
     }
-    const rect = buttonRef.current.getBoundingClientRect();
+
+    let btn: HTMLElement | null = null;
+    if (buttonRef && (buttonRef as any).current) {
+      btn = (buttonRef as any).current as HTMLElement;
+    } else if (dropdownRef && (dropdownRef as any).current) {
+      btn = (dropdownRef.current as HTMLElement).querySelector("button");
+    }
+
+    if (!btn) {
+      setOpenDirection("down");
+      return;
+    }
+
+    const rect = btn.getBoundingClientRect();
     const spaceBelow = window.innerHeight - rect.bottom;
     const spaceAbove = rect.top;
 
-    if (direction) {
-      setOpenDirection(direction);
-      return;
-    }
+    const measuredHeight =
+      dropdownHeight && dropdownHeight > 0 ? dropdownHeight : 240;
 
-    setOpenDirection(
-      spaceBelow < dropdownHeight && spaceAbove > dropdownHeight ? "up" : "down"
-    );
-  }, [isOpen, dropdownHeight]);
+    const shouldOpenUp =
+      spaceBelow < measuredHeight && spaceAbove > measuredHeight;
+    const autoDirection = shouldOpenUp ? "up" : "down";
+
+    setOpenDirection(autoDirection);
+  }, [isOpen, dropdownHeight, direction, dropdownRef, buttonRef]);
 
   const buttonClasses = {
     primary: `!bg-primary !text-white hover:!bg-primary-dark 
@@ -308,7 +322,7 @@ const Dropdown = ({
       {isOpen && options.length === 0 && !isProcessing && (
         <div
           className={`absolute right-0 rounded-md shadow-lg border border-gray-200 z-50 bg-white ${
-            openDirection === "up" ? "bottom-full mb-2" : "mt-2"
+            openDirection === "up" ? "bottom-full border mb-2" : "mt-2"
           } ${dropdownClassName}`}
           style={{
             width: `${dropdownWidth}px`,

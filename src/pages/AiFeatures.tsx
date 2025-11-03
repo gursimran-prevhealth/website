@@ -1,15 +1,25 @@
 import { useEffect } from "react";
 import {
   consult1,
+  consult1Sv,
   consult2,
+  consult2Sv,
   consult3,
+  consult3Sv,
   consult4,
+  consult4Sv,
   consult5,
+  consult5Sv,
   consult6,
+  consult6Sv,
   consult7,
+  consult7Sv,
   consult8,
+  consult8Sv,
   heroAi,
   heroAIMobile,
+  heroAIMobileSV,
+  heroAiSv,
 } from "../assets";
 import {
   Button,
@@ -68,12 +78,12 @@ function AiFeatures() {
         </div>
         <div className="w-full max-w-full md:pt-12 pt-24 min-w-[calc(100vw-20px)] md:min-w-[unset]">
           <img
-            src={heroAi}
+            src={appLanguage === "sv" ? heroAiSv : heroAi}
             alt={t("aifeatures.heroSection.heading")}
             className="max-w-[1168px] mx-auto w-full md:block hidden"
           />
           <img
-            src={heroAIMobile}
+            src={appLanguage === "sv" ? heroAIMobileSV : heroAIMobile}
             alt={t("aifeatures.heroSection.heading")}
             className="w-full relative md:hidden"
           />
@@ -121,7 +131,7 @@ function AiFeatures() {
               </div>
               <div className="w-full col-span-2">
                 <img
-                  src={consult1}
+                  src={appLanguage === "sv" ? consult1Sv : consult1}
                   alt=""
                   className="max-w-full w-full md:pl-20"
                 />
@@ -136,7 +146,7 @@ function AiFeatures() {
               </p>
               <div className="w-full flex justify-center md:pt-8 pt-4">
                 <img
-                  src={consult2}
+                  src={appLanguage === "sv" ? consult2Sv : consult2}
                   alt="Consult"
                   className="max-w-[295px] w-full"
                 />
@@ -159,14 +169,18 @@ function AiFeatures() {
               </div>
               <div className="w-full flex justify-center md:pt-16 pt-12">
                 <img
-                  src={consult3}
+                  src={appLanguage === "sv" ? consult3Sv : consult3}
                   alt="Consult"
                   className="max-w-[203px] md:ml-20"
                 />
               </div>
             </div>
             <div className="w-full md:p-6 p-4 rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)]">
-              <img src={consult4} alt="" className="max-w-full w-full" />
+              <img
+                src={appLanguage === "sv" ? consult4Sv : consult4}
+                alt=""
+                className="max-w-full w-full"
+              />
               <div className="max-w-[365px] justify-start text-[#343434] md:text-[28px] text-2xl font-medium font-['Work_Sans'] leading-[135%] md:pt-6 pt-4">
                 {t("aifeatures.featuresList-4.title")}
               </div>
@@ -181,7 +195,11 @@ function AiFeatures() {
               <p className="text-[#555] font-['Work_Sans'] text-base font-light tracking-wider leading-[135%] pt-2 pb-4 max-w-[490px]">
                 {t("aifeatures.featuresList-2.description")}
               </p>
-              <img src={consult5} alt="" className="max-w-full w-full" />
+              <img
+                src={appLanguage === "sv" ? consult5Sv : consult5}
+                alt=""
+                className="max-w-full w-full"
+              />
             </div>
             <div className="w-full md:p-6 p-4 rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)] md:col-span-2 flex md:flex-row flex-col">
               <div className="w-full">
@@ -194,14 +212,18 @@ function AiFeatures() {
               </div>
               <div className="w-full">
                 <img
-                  src={consult6}
+                  src={appLanguage === "sv" ? consult6Sv : consult6}
                   alt=""
                   className="max-w-[95%] ml-auto w-full"
                 />
               </div>
             </div>
             <div className="w-full md:p-6 p-4 rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)]">
-              <img src={consult7} alt="" className="max-w-full w-full" />
+              <img
+                src={appLanguage === "sv" ? consult7Sv : consult7}
+                alt=""
+                className="max-w-full w-full"
+              />
               <div className="max-w-[390px] justify-start text-[#343434] md:text-[28px] text-2xl font-medium font-['Work_Sans'] leading-[135%] md:pt-6 pt-4">
                 {t("aifeatures.featuresList-6.title")}
               </div>
@@ -218,7 +240,7 @@ function AiFeatures() {
               </p>
               <div className="w-full flex justify-center md:pt-8 pt-4">
                 <img
-                  src={consult8}
+                  src={appLanguage === "sv" ? consult8Sv : consult8}
                   alt="Consult"
                   className="max-w-[430px] w-full"
                 />
@@ -241,7 +263,7 @@ function AiFeatures() {
       <Workflow appLanguage={appLanguage} />
       <Testimonials />
       <Faq />
-      <Contact />
+      <Contact appLanguage={appLanguage} />
     </div>
   );
 }

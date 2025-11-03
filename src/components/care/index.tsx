@@ -1,10 +1,15 @@
 import { useTranslation } from "react-i18next";
 import {
   aiTranscription,
+  aiTranscriptionSv,
   dashboard,
+  dashboardDe,
   digitalConsultation,
+  digitalConsultationSv,
   questionnaires,
+  questionnairesSv,
   templateDropdown,
+  templateDropdownSv,
 } from "../../assets";
 import type { CareProps } from "../../lib/consts";
 
@@ -35,7 +40,7 @@ function Care({ appLanguage }: CareProps) {
           <div className="w-full flex md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 p-5">
             <div className="bg-white md:min-w-[unset] min-w-full rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] p-4 md:p-6 flex flex-col md:flex-row gap-4 md:col-span-2 overflow-hidden">
               <div className="flex flex-col gap-4 w-full">
-                <h3 className="text-xl md:text-3xl text-neutral-700 font-medium font-['Work_Sans'] leading-[135%]">
+                <h3 className="text-xl md:text-[1.75rem] text-neutral-700 font-medium font-['Work_Sans'] leading-[135%]">
                   {t("care.features.dashboard.title")}
                 </h3>
                 <p className="text-base text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
@@ -45,7 +50,7 @@ function Care({ appLanguage }: CareProps) {
               <div className="relative md:w-[200%] w-[100%] flex items-end">
                 <img
                   className="min-w-[calc(100vw-32px)] md:min-w-[unset] right-4 relative md:-right-6 -bottom-6 z-10  md:min-h-[360px] md:aspect-ratio-[512/391]"
-                  src={dashboard}
+                  src={appLanguage === "sv" ? dashboardDe : dashboard}
                   alt={t("care.features.dashboard.alt")}
                 />
               </div>
@@ -59,7 +64,7 @@ function Care({ appLanguage }: CareProps) {
                 {t("care.features.questionnaires.desc")}
               </p>
               <img
-                src={questionnaires}
+                src={appLanguage === "sv" ? questionnairesSv : questionnaires}
                 alt={t("care.features.questionnaires.alt")}
                 className=""
               />
@@ -76,7 +81,9 @@ function Care({ appLanguage }: CareProps) {
               </div>
               <div className="w-full">
                 <img
-                  src={aiTranscription}
+                  src={
+                    appLanguage === "sv" ? aiTranscriptionSv : aiTranscription
+                  }
                   alt={t("care.features.aiTranscription.alt")}
                   className="relative -bottom-6 -right-6"
                 />
@@ -87,7 +94,11 @@ function Care({ appLanguage }: CareProps) {
               <div className="relative h-40">
                 <img
                   className="w-full h-full object-cover rounded-[10px]"
-                  src={digitalConsultation}
+                  src={
+                    appLanguage === "sv"
+                      ? digitalConsultationSv
+                      : digitalConsultation
+                  }
                   alt={t("care.features.digitalConsultation.alt")}
                 />
               </div>
@@ -108,11 +119,13 @@ function Care({ appLanguage }: CareProps) {
               <p className="text-base text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
                 {t("care.features.templateDropdown.desc")}
               </p>
-              <div className="relative w-full flex justify-center h-full">
+              <div className="relative  w-full flex justify-center h-full mx-auto">
                 <img
-                  src={templateDropdown}
+                  src={
+                    appLanguage === "sv" ? templateDropdownSv : templateDropdown
+                  }
                   alt={t("care.features.templateDropdown.alt")}
-                  className="-bottom-5 relative"
+                  className="-bottom-7 w-full object-contain relative"
                 />
               </div>
             </div>

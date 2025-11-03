@@ -222,15 +222,15 @@
     "sectionDesc": "See how we're making care easier, faster, and more human directly from those who've felt the difference",
     "list": [
       {
-        "quote": "Clinvvo’s system and app have revolutionized our workflow and significantly enhanced the patient experience. It has simplified patient contact for our midwives and doctors, leading to substantial cost savings for our organization. Thanks to Clinvvo’s solution, our operations are more efficient and effective.",
-        "name": "Hugo Lewné",
-        "role": "CEO, Prima Vård AB"
-      },
-      {
         "quote": "Clinvvo’s platform has transformed the way we work, streamlining communication and making patient interactions smoother than ever. Our clinicians save valuable time, while patients experience faster and more personalized care. The result is both improved efficiency and measurable cost reductions across the organization.",
         "name": "Sofie Andresen",
         "role": "Affärsområdeschef Barn & Kvinnohälsa",
         "desc": "VD Barnbördhuset Stockholm och Verksamhetschef BB Stockholm Family"
+      },
+      {
+        "quote": "Clinvvo’s system and app have revolutionized our workflow and significantly enhanced the patient experience. It has simplified patient contact for our midwives and doctors, leading to substantial cost savings for our organization. Thanks to Clinvvo’s solution, our operations are more efficient and effective.",
+        "name": "Hugo Lewné",
+        "role": "CEO, Prima Vård AB"
       }
     ]
   },

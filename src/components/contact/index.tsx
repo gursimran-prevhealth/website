@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
-import { contactBanner } from "../../assets";
+import { contactBanner, contactBannerSv } from "../../assets";
 import { useTranslation } from "react-i18next";
+import type { CareProps } from "../../lib/consts";
 
-function Contact() {
+function Contact({ appLanguage }: CareProps) {
   const { t } = useTranslation();
   return (
     <section className="w-full px-5 sm:pb-32 pb-14 pt-8 sm:min-h-screen">
       <div className="sm:px-0 px-5 w-full">
         <img
-          src={contactBanner}
+          src={appLanguage === "sv" ? contactBannerSv : contactBanner}
           alt="Contact Banner"
           className="max-w-[908px] w-full flex-shrink-0 rounded-[20px] shadow-[-25px_125px_150px_0_rgba(0,0,0,0.25)] mx-auto"
         />

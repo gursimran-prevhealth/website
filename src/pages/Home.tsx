@@ -1,5 +1,19 @@
 import { Link } from "react-router-dom";
-import { aiPowered, charging, forPatient, forPatient1, hero, heroMobile, lens, smartCare, technology } from "../assets";
+import {
+  aiPowered,
+  aiPoweredSv,
+  charging,
+  forPatient,
+  forPatient1,
+  hero,
+  heroDe,
+  heroMobile,
+  heroMobileDe,
+  lens,
+  smartCare,
+  smartCareSv,
+  technology,
+} from "../assets";
 import { Care, Contact, Faq, Testimonials } from "../components";
 import Button from "../components/button";
 import { useTranslation } from "react-i18next";
@@ -49,15 +63,15 @@ export default function Home() {
           </Button>
         </div>
       </section>
-      <div className="home-image w-[80%] relative overflow-hidden min-h-[160px] mx-auto mt-8">
+      <div className="home-image w-full md:w-[80%] relative overflow-hidden min-h-[160px] mx-auto mt-8">
         <div className="absolute inset-0 bg-gray-300 animate-pulse w-full h-full"></div>
         <img
-          src={hero}
+          src={appLanguage === "sv" ? heroDe : hero}
           alt="Hero"
           className="w-full object-cover relative bg-white hidden md:block"
         />
         <img
-          src={heroMobile}
+          src={appLanguage === "sv" ? heroMobileDe : heroMobile}
           alt="Hero"
           className="w-full object-cover relative bg-white md:hidden"
         />
@@ -185,7 +199,11 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-end items-end md:-mr-20 -mr-5 md:w-[calc(100%+80px)] w-[calc(100%+20px)]">
-            <img src={aiPowered} alt="AI Powered" className="w-full" />
+            <img
+              src={appLanguage === "sv" ? aiPoweredSv : aiPowered}
+              alt="AI Powered"
+              className="w-full"
+            />
           </div>
         </div>
       </section>
@@ -222,7 +240,7 @@ export default function Home() {
           <div className="lg:w-[588px] relative md:w-full w-[calc(100vw-20px)] overflow-hidden md:right-0 -right-10">
             <img
               className="w-full h-full size-full"
-              src={smartCare}
+              src={appLanguage === "sv" ? smartCareSv : smartCare}
               alt="Clinvvo platform screenshot"
             />
           </div>
@@ -306,7 +324,7 @@ export default function Home() {
       <Testimonials />
 
       <Faq />
-      <Contact />
+      <Contact appLanguage={appLanguage} />
     </div>
   );
 }
