@@ -196,8 +196,7 @@ const Dropdown = ({
     primary: `!bg-primary !text-white hover:!bg-primary-dark 
     focus:ring-primary focus:ring-2 focus:ring-offset-0`,
 
-    outline: `bg-transparent w-full ring-1  ring-[#9DBEB9]
-      hover:!bg-white active:!bg-white focus:!bg-white hover:shadow-md focus:shadow-md active:shadow-md
+    outline: `bg-transparent w-full ring-1  ring-[#E7E7E7]
     focus:ring-[#9DBEB9] focus:ring-1 focus:ring-offset-0`,
 
     green: "bg-[#23586A] text-white hover:bg-[#23586A]/90",

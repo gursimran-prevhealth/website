@@ -33,7 +33,7 @@ const Button = ({
         w-full`,
 
     outline: `bg-transparent 
-      hover:!bg-white active:!bg-white focus:!bg-white hover:shadow-md focus:shadow-md active:shadow-md
+      hover:!bg-[#F5F5F5] active:!bg-white  active:shadow-md
     focus:ring-[#9DBEB9] focus:ring-1 focus:ring-offset-0`,
 
     secondary: `bg-[#F5F5F5] !text-gray-text hover:bg-[#E0E0E0]

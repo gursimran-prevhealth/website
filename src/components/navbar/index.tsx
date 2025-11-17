@@ -121,7 +121,7 @@ const Navbar = () => {
               //     className="w-4 h-4"
               //   />
               // }
-              buttonClassName="!bg-[#F5F5F5] hidden  md:inline-flex !h-11"
+              buttonClassName="!bg-white hidden  md:inline-flex !h-11"
               buttonVariant="outline"
             />
           </div>
@@ -201,7 +201,7 @@ const Navbar = () => {
                       className="w-4 h-4"
                     />
                   }
-                  buttonClassName="!bg-[#F5F5F5] !h-11"
+                  buttonClassName="!bg-white !h-11"
                   buttonVariant="outline"
                   direction="up"
                 />
