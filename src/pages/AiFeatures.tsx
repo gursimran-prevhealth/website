@@ -142,7 +142,7 @@ function AiFeatures() {
                 {t("aifeatures.featuresList-2.title")}
               </div>
               <p className="text-[#555] font-['Work_Sans'] text-base tracking-wider font-light leading-[135%] pt-2 max-w-[490px]">
-                {t("aifeatures.featuresList-1.description")}
+                {t("aifeatures.featuresList-2.description")}
               </p>
               <div className="w-full flex justify-center md:pt-8 pt-4">
                 <img
@@ -190,10 +190,10 @@ function AiFeatures() {
             </div>
             <div className="w-full md:p-6 p-4 rounded-[20px] bg-white shadow-[0_1px_24px_0_rgba(0,0,0,0.10)]">
               <div className="max-w-[365px] justify-start text-[#343434] md:text-[28px] text-2xl font-medium font-['Work_Sans'] leading-[135%]">
-                {t("aifeatures.featuresList-2.title")}
+                {t("aifeatures.featuresList-8.title")}
               </div>
               <p className="text-[#555] font-['Work_Sans'] text-base font-light tracking-wider leading-[135%] pt-2 pb-4 max-w-[490px]">
-                {t("aifeatures.featuresList-2.description")}
+                {t("aifeatures.featuresList-8.description")}
               </p>
               <img
                 src={appLanguage === "sv" ? consult5Sv : consult5}

@@ -154,6 +154,10 @@
     "featuresList-7": {
       "title": "Effortless ICD-10 Coding",
       "description": "No more digging through code lists. As you document, Clinvvo surfaces the most relevant ICD-10 codes right next to your notes, ready when you need them"
+    },
+    "featuresList-8": {
+      "title": "Auto Generate Referrals & Sick Notes",
+      "description": "After you’ve outlined what’s needed, our AI creates referrals, sick notes, and summaries, neatly formatted and ready to send in seconds"
     }
   },
   "features": {

@@ -154,6 +154,10 @@
     "featuresList-7": {
       "title": "Enkel ICD-10-kodning",
       "description": "Slipp leta i kodlistor. När du dokumenterar visar Clinvvo de mest relevanta ICD-10-koderna bredvid dina anteckningar, redo när du behöver dem"
+    },
+    "featuresList-8": {
+      "title": "Skapa remisser och sjukintyg automatiskt",
+      "description": "När du har angett vad som behövs skapar vår AI remisser, sjukintyg och sammanfattningar – snyggt formaterade och klara att skickas på bara några sekunder."
     }
   },
   "features": {

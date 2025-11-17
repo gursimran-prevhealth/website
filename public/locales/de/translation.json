@@ -154,6 +154,10 @@
     "featuresList-7": {
       "title": "Mühelose ICD-10-Kodierung",
       "description": "Kein langes Suchen in Codelisten mehr. Während Sie dokumentieren, zeigt Clinvvo die relevantesten ICD-10-Codes direkt neben Ihren Notizen an, bereit, wenn Sie sie brauchen."
+    },
+    "featuresList-8": {
+      "title": "Automatisch Überweisungen & Krankmeldungen erstellen",
+      "description": "Nachdem Sie angegeben haben, was benötigt wird, erstellt unsere KI Überweisungen, Krankmeldungen und Zusammenfassungen – sauber formatiert und in wenigen Sekunden versandbereit."
     }
   },
   "features": {

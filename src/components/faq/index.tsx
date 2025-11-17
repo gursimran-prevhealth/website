@@ -57,7 +57,7 @@ import { useTranslation } from "react-i18next";
                    <div className="flex flex-col gap-2 md:gap-3 py-3 md:py-4">
                      {/* Header Row */}
                      <div className="flex justify-between items-start gap-4">
-                       <h3 className="flex-1 text-base md:text-xl text-[#555] tracking-wider font-light font-[Work_Sans] leading-snug md:leading-7">
+                       <h3 className="flex-1 text-base md:text-xl text-[#555] tracking-wider font-medium font-[Work_Sans] leading-snug md:leading-7">
                          {item.question}
                        </h3>
                        <img
@@ -80,7 +80,7 @@ import { useTranslation } from "react-i18next";
                            openIndex === index ? `${heights[index]}px` : "0px",
                        }}
                      >
-                       <p className="mt-1 md:mt-2 text-sm md:text-lg text-zinc-500 tracking-wider font-light font-[Work_Sans] leading-snug md:leading-7">
+                       <p className="mt-1 md:mt-2 text-sm md:text-lg text-zinc-500 tracking-wider font-normal font-[Work_Sans] leading-snug md:leading-6">
                          {item.answer}
                        </p>
                      </div>

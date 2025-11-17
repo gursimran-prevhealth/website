@@ -61,7 +61,7 @@ function ForDoctors() {
         >
           <div className="flex flex-col justify-start items-start gap-3 md:gap-4 w-full">
             <h2
-              className={`w-full text-center text-[#23586A] text-3xl sm:text-4xl lg:text-6xl font-medium font-['Lora'] leading-[135%]  mx-auto ${
+              className={`w-full text-center text-[#23586A] text-3xl sm:text-4xl lg:text-[4rem] font-medium font-['Lora'] leading-[135%]  mx-auto ${
                 appLanguage === "de" ? " max-w-[55rem]" : "max-w-[40rem]"
               }`}
             >
@@ -111,7 +111,7 @@ function ForDoctors() {
               {t("forDoctors.ecosystemSection.subTitle")}
             </span>
           </div>
-          <h2 className="w-full pt-1.5 text-center text-[#23586a] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium font-['Lora'] leading-[135%]">
+          <h2 className="w-full pt-1.5 text-center text-[#23586a] text-2xl sm:text-3xl md:text-4xl lg:text-[2.5rem] font-medium font-['Lora'] leading-[135%]">
             {t("forDoctors.ecosystemSection.title")}
           </h2>
           <p className="w-full text-center text-[#545454] text-sm md:text-base lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
@@ -125,7 +125,7 @@ function ForDoctors() {
               alt={t("forDoctors.ecosystemSection.features.dashboard.alt")}
               className="max-w-full mx-auto"
             />
-            <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
+            <h3 className="w-full justify-start text-[#343434] md:text-[1.75rem] text-2xl font-medium font-['Work_Sans'] leading-[135%]">
               {t("forDoctors.ecosystemSection.features.dashboard.title")}
             </h3>
             <div className="w-full justify-start text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
@@ -138,7 +138,7 @@ function ForDoctors() {
               alt={t("forDoctors.ecosystemSection.features.aiNotes.alt")}
               className="max-w-full mx-auto"
             />
-            <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
+            <h3 className="w-full justify-start text-[#343434] md:text-[1.75rem] text-2xl font-medium font-['Work_Sans'] leading-[135%]">
               {t("forDoctors.ecosystemSection.features.aiNotes.title")}
             </h3>
             <div className="w-full justify-start text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
@@ -151,7 +151,7 @@ function ForDoctors() {
               alt={t("forDoctors.ecosystemSection.features.smartIntake.alt")}
               className="max-w-full mx-auto"
             />
-            <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
+            <h3 className="w-full justify-start text-[#343434] md:text-[1.75rem] text-2xl font-medium font-['Work_Sans'] leading-[135%]">
               {t("forDoctors.ecosystemSection.features.smartIntake.title")}
             </h3>
             <div className="w-full justify-start text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
@@ -170,7 +170,7 @@ function ForDoctors() {
                 </div>
               </div>
             </div>
-            <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
+            <h3 className="w-full justify-start text-[#343434] md:text-[1.75rem] text-2xl font-medium font-['Work_Sans'] leading-[135%]">
               {t("forDoctors.ecosystemSection.features.voiceNotes.title")}
             </h3>
             <div className="w-full justify-start text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
@@ -186,7 +186,7 @@ function ForDoctors() {
               className="max-w-full mx-auto ml-4"
             />
 
-            <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
+            <h3 className="w-full justify-start text-[#343434] md:text-[1.75rem] text-2xl font-medium font-['Work_Sans'] leading-[135%]">
               {t("forDoctors.ecosystemSection.features.resourceSharing.title")}
             </h3>
             <div className="w-full justify-start text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
@@ -200,7 +200,7 @@ function ForDoctors() {
               className="max-w-full mx-auto"
             />
 
-            <h3 className="w-full justify-start text-[#343434] md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[135%]">
+            <h3 className="w-full justify-start text-[#343434] md:text-[1.75rem] text-2xl font-medium font-['Work_Sans'] leading-[135%]">
               {t("forDoctors.ecosystemSection.features.groupSession.title")}
             </h3>
             <div className="w-full justify-start text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[135%]">
@@ -217,7 +217,7 @@ function ForDoctors() {
               {t("forDoctors.workflowSection.subTitle")}
             </span>
           </div>
-          <h2 className="w-full pt-1.5 text-center text-[#23586a] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium font-['Lora'] leading-[135%]">
+          <h2 className="w-full md:w-[65%] pt-1.5 text-center text-[#23586a] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium font-['Lora'] leading-[135%]">
             {t("forDoctors.workflowSection.title")}
           </h2>
           <p className="w-full text-center text-[#545454] text-sm md:text-base lg:text-xl tracking-wider font-light font-['Work_Sans'] leading-[135%]">
