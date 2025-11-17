@@ -17,7 +17,7 @@ import testimonialPerson1 from "./testimonial.jpg";
 import testimonialPerson2 from "./testimonial1.jpg";
 import digitalConsultation from "./digital-consults.png";
 import digitalConsultationSv from "./digital-consults-sv.png";
-import questionnaires from "./questionaires.png";
+import questionnaires from "./questionaires.svg";
 import questionnairesSv from "./questionaires-sv.png";
 import templateDropdown from "./template-dropdown.png";
 import templateDropdownSv from "./template-dropdown-sv.png";

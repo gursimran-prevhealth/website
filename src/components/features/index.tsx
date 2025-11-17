@@ -101,7 +101,7 @@ export default function Features({ appLanguage }: CareProps) {
         {featureData?.map((item: FeatureItem, index: number) => (
           <div
             key={item.title}
-            className="bg-white rounded-xl shadow-[1.5px_1.5px_3px_0px_rgba(174,174,192,0.40)] hover:border-[1px] hover:border-[#23586A] transition-all duration-200 border-[1px] border-[transparent] cursor-pointer outline-[0.5px] outline-neutral-100 p-4 md:p-6 flex flex-col gap-3"
+            className="bg-white rounded-xl shadow-[1.5px_1.5px_3px_0px_rgba(174,174,192,0.40)] transition-all duration-200 border-[1px] border-[transparent] outline-[0.5px] outline-neutral-100 p-4 md:p-6 flex flex-col gap-3"
           >
             <div className="w-6 h-6 flex items-center justify-center">
               <img src={images[index]} alt={item.title} />

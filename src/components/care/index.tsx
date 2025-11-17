@@ -38,26 +38,26 @@ function Care({ appLanguage }: CareProps) {
         </div>
         <div className="w-full max-w-full overflow-x-scroll scrollbar-hide">
           <div className="w-full flex md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 p-5">
-            <div className="bg-white md:min-w-[unset] min-w-full rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] p-4 md:p-6 flex flex-col md:flex-row gap-4 md:col-span-2 overflow-hidden">
-              <div className="flex flex-col gap-4 w-full">
+            <div className="bg-white md:min-w-[unset] sm:h-[26.25rem]  min-w-full rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] p-4 md:p-5 flex flex-col md:flex-row gap-2 sm:gap-0 md:col-span-2 overflow-hidden">
+              <div className="flex flex-col gap-2 w-full">
                 <h3 className="text-xl md:text-[1.75rem] text-neutral-700 font-medium font-['Work_Sans'] leading-[135%]">
                   {t("care.features.dashboard.title")}
                 </h3>
-                <p className="text-base text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
+                <p className="text-base text-[#555555] tracking-normal font-normal font-['Work_Sans'] leading-[135%]">
                   {t("care.features.dashboard.desc")}
                 </p>
               </div>
               <div className="relative md:w-[200%] w-[100%] flex items-end">
                 <img
-                  className="min-w-[calc(100vw-32px)] md:min-w-[unset] right-4 relative md:-right-6 -bottom-6 z-10  md:min-h-[360px] md:aspect-ratio-[512/391]"
+                  className="min-w-[calc(100vw-32px)] md:min-w-[unset] right-4 relative md:-right-6  -bottom-6 z-10  md:min-h-[340px] "
                   src={appLanguage === "sv" ? dashboardDe : dashboard}
                   alt={t("care.features.dashboard.alt")}
                 />
               </div>
             </div>
 
-            <div className="bg-white md:min-w-[unset] min-w-full rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] p-4 md:p-6 flex flex-col gap-4">
-              <h3 className="text-xl md:text-3xl text-neutral-700 font-medium font-['Work_Sans'] leading-[135%]">
+            <div className="bg-white md:min-w-[unset] sm:h-[26.25rem] min-w-full rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] p-4 md:p-5 flex flex-col gap-2">
+              <h3 className="text-xl sm:w-[85%] md:text-[1.75rem] text-neutral-700 font-medium font-['Work_Sans'] leading-[135%]">
                 {t("care.features.questionnaires.title")}
               </h3>
               <p className="text-base text-[#555] tracking-wider font-light font-['Work_Sans'] leading-[135%]">
@@ -66,11 +66,11 @@ function Care({ appLanguage }: CareProps) {
               <img
                 src={appLanguage === "sv" ? questionnairesSv : questionnaires}
                 alt={t("care.features.questionnaires.alt")}
-                className=""
+                className="h-[190px] w-[240px] m-auto"
               />
             </div>
 
-            <div className="bg-white md:min-w-[unset] min-w-full rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] p-4 md:p-6 flex flex-col gap-0 overflow-hidden">
+            <div className="bg-white md:min-w-[unset] sm:h-[26.25rem] min-w-full rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] p-4 md:p-5 flex flex-col gap-0 overflow-hidden">
               <div className="w-full">
                 <h3 className="text-xl md:text-3xl text-neutral-700 font-medium font-['Work_Sans'] leading-[135%] pb-4">
                   {t("care.features.aiTranscription.title")}
@@ -79,18 +79,18 @@ function Care({ appLanguage }: CareProps) {
                   {t("care.features.aiTranscription.desc")}
                 </p>
               </div>
-              <div className="w-full">
+              <div className="w-full h-full">
                 <img
                   src={
                     appLanguage === "sv" ? aiTranscriptionSv : aiTranscription
                   }
                   alt={t("care.features.aiTranscription.alt")}
-                  className="relative -bottom-6 -right-6"
+                  className="relative -bottom-6 -right-4 sm:-right-6 h-full"
                 />
               </div>
             </div>
 
-            <div className="bg-white md:min-w-[unset] min-w-full rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] p-4 md:p-6 flex flex-col justify-between gap-4">
+            <div className="bg-white md:min-w-[unset] sm:h-[26.25rem] min-w-full rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] p-4 md:p-5 flex flex-col justify-between gap-2">
               <div className="relative h-40">
                 <img
                   className="w-full h-full object-cover rounded-[10px]"
@@ -112,7 +112,7 @@ function Care({ appLanguage }: CareProps) {
               </div>
             </div>
 
-            <div className="bg-white md:min-w-[unset] min-w-full rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] p-4 md:p-6 flex flex-col gap-4 overflow-hidden">
+            <div className="bg-white md:min-w-[unset] sm:h-[26.25rem] min-w-full rounded-[20px] shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] p-4 md:p-5 flex flex-col gap-2 overflow-hidden">
               <h3 className="text-xl md:text-3xl text-neutral-700 font-medium font-['Work_Sans'] leading-[135%]">
                 {t("care.features.templateDropdown.title")}
               </h3>
