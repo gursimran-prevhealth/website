@@ -85,7 +85,7 @@ function Care({ appLanguage }: CareProps) {
                     appLanguage === "sv" ? aiTranscriptionSv : aiTranscription
                   }
                   alt={t("care.features.aiTranscription.alt")}
-                  className="relative -bottom-6 -right-4 sm:-right-6 h-full"
+                  className="relative -bottom-20 sm:-bottom-14 -right-10 sm:-right-20 h-full w-full"
                 />
               </div>
             </div>

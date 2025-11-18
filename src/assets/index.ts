@@ -110,7 +110,7 @@ import fastAccess from "./fast-access.png";
 import fastAccessSv from "./fast-access-sv.png";
 import aboutPatient from "./about-patient.png";
 import aboutDoctor from "./about-doctor.png";
-import ourmission from "./ourmission.svg";
+import ourmission from "./ourmission.png";
 import ourmissionSv from "./ourmission-sv.png";
 import ourvision from "./ourvision.png";
 import work from "./work.svg";
