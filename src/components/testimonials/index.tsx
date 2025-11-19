@@ -2,12 +2,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { useCallback, useState } from "react";
 import SwiperCore from "swiper";
+import ArrowBackIosSharpIcon from "@mui/icons-material/ArrowBackIosSharp";
+import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import {
   testimonial,
   testimonialPerson1,
   testimonialPerson2,
-  arrowLeft,
-  arrowRight,
 } from "../../assets";
 import { useTranslation } from "react-i18next";
 
@@ -146,15 +146,15 @@ const Testimonials = () => {
           <div className="absolute right-1  md:right-7 -bottom-4 sm:-bottom-1 flex gap-2">
             <button
               onClick={handlePrevious}
-              className="w-10 h-10 bg-white rounded-full border-[0.5px] border-gray-100 p-1 flex justify-center items-center m-auto shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] cursor-pointer"
+              className="w-10 h-10 md:w-14 md:h-14 bg-white hover:bg-gray-50 transition-colors duration-500 rounded-full border-[0.5px] border-gray-200 p-1 flex justify-center items-center m-auto  cursor-pointer"
             >
-              <img src={arrowLeft} alt="leftArrow" />
+              <ArrowBackIosSharpIcon className="text-[#AFAFAF] hover:text-[#23586A] transition-colors duration-500]" />
             </button>
             <button
               onClick={handleNext}
-              className="w-10 h-10 bg-white  rounded-full border-[0.5px] border-gray-100  p-1 flex justify-center items-center m-auto shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] cursor-pointer"
+              className="w-10 h-10 md:w-14 md:h-14 bg-white hover:bg-gray-50 transition-colors duration-500   rounded-full border-[0.5px] border-gray-200  p-1 flex justify-center items-center m-auto  cursor-pointer"
             >
-              <img src={arrowRight} alt="leftArrow" />
+              <ArrowForwardIosSharpIcon className="text-[#AFAFAF] hover:text-[#23586A] transition-colors duration-500" />
             </button>
           </div>
         </div>
