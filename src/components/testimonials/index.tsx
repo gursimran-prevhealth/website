@@ -144,18 +144,18 @@ const Testimonials = () => {
             />
           ))}
           <div className="absolute right-1  md:right-7 -bottom-4 sm:-bottom-1 flex gap-2">
-            <div
+            <button
               onClick={handlePrevious}
-              className="w-10 h-10 bg-white rounded-full border-[0.5px] border-gray-100 p-1 flex justify-center items-center m-auto shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)]"
+              className="w-10 h-10 bg-white rounded-full border-[0.5px] border-gray-100 p-1 flex justify-center items-center m-auto shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] cursor-pointer"
             >
               <img src={arrowLeft} alt="leftArrow" />
-            </div>
-            <div
+            </button>
+            <button
               onClick={handleNext}
-              className="w-10 h-10 bg-white  rounded-full border-[0.5px] border-gray-100  p-1 flex justify-center items-center m-auto shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)]"
+              className="w-10 h-10 bg-white  rounded-full border-[0.5px] border-gray-100  p-1 flex justify-center items-center m-auto shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] cursor-pointer"
             >
               <img src={arrowRight} alt="leftArrow" />
-            </div>
+            </button>
           </div>
         </div>
       </div>
