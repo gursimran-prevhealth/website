@@ -92,14 +92,14 @@ const Testimonials = () => {
           {testimonials.map((testimonial: Testimonial, index: number) => (
             <SwiperSlide key={testimonial.name} className="h-full ">
               <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-8 items-center h-full">
-                <div className="w-full lg:w-[40%]">
+                <div className="w-full lg:w-[43%]">
                   <img
                     src={image}
                     alt={testimonial.name}
                     className="w-full h-64 md:h-[26rem] object-cover rounded-[20px]"
                   />
                 </div>
-                <div className="w-full lg:w-[60%] flex flex-col gap-6 md:gap-8 h-full md:h-[26rem] bg-white shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] px-8 rounded-[20px] py-10">
+                <div className="w-full lg:w-[57%] flex flex-col gap-6 md:gap-8 h-full md:h-[26rem] bg-white shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] px-8 rounded-[20px] py-10">
                   <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
                     {testimonial.quote}
                   </p>
@@ -130,7 +130,7 @@ const Testimonials = () => {
           ))}
         </Swiper>
 
-        <div className="flex relative justify-start items-center gap-2.5 lg:-mt-8 mt-8 lg:pl-14  z-[1] lg:w-[60%] lg:ml-auto">
+        <div className="flex relative justify-start items-center gap-2.5 lg:-mt-8 mt-8 lg:pl-14  z-[1] lg:w-[57%] lg:ml-auto">
           {testimonials.map((_, index) => (
             <button
               key={index}
