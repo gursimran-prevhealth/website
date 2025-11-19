@@ -1,8 +1,14 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
-import { useState } from 'react';
-import SwiperCore from 'swiper';
-import { testimonial, testimonialPerson1,testimonialPerson2} from '../../assets';
+import { useCallback, useState } from "react";
+import SwiperCore from "swiper";
+import {
+  testimonial,
+  testimonialPerson1,
+  testimonialPerson2,
+  arrowLeft,
+  arrowRight,
+} from "../../assets";
 import { useTranslation } from "react-i18next";
 
 interface Testimonial {
@@ -24,6 +30,30 @@ const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [swiperInstance, setSwiperInstance] = useState<SwiperCore | null>(null);
 
+  const handleNext = useCallback(() => {
+    if (!swiperInstance) return;
+
+    const totalSlides = testimonials.length;
+
+    if (swiperInstance.activeIndex === totalSlides - 1) {
+      swiperInstance.slideTo(0);
+    } else {
+      swiperInstance.slideNext();
+    }
+  }, [swiperInstance, testimonials.length]);
+
+  const handlePrevious = useCallback(() => {
+    if (!swiperInstance) return;
+
+    const totalSlides = testimonials.length;
+
+    if (swiperInstance.activeIndex === 0) {
+      swiperInstance.slideTo(totalSlides - 1);
+    } else {
+      swiperInstance.slidePrev();
+    }
+  }, [swiperInstance, testimonials.length]);
+
   return (
     <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-24 py-12  md:mt-20 flex flex-col items-center gap-8 md:gap-12 min-h-screen">
       <div className="w-full max-w-[900px] flex flex-col items-center gap-3 md:gap-4 text-center">
@@ -40,7 +70,7 @@ const Testimonials = () => {
           {t("testimonials.sectionDesc")}
         </p>
       </div>
-      <div className="w-full">
+      <div className="w-full h-auto md:h-[27rem] ">
         <Swiper
           modules={[Navigation]}
           spaceBetween={24}
@@ -57,19 +87,19 @@ const Testimonials = () => {
               spaceBetween: 56,
             },
           }}
-          className="w-full"
+          className="w-full h-full"
         >
           {testimonials.map((testimonial: Testimonial, index: number) => (
-            <SwiperSlide key={testimonial.name} className="h-full">
-              <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-14 items-center h-full">
-                <div className="w-full lg:w-1/2">
+            <SwiperSlide key={testimonial.name} className="h-full ">
+              <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-8 items-center h-full">
+                <div className="w-full lg:w-[40%]">
                   <img
                     src={image}
                     alt={testimonial.name}
-                    className="w-full h-64 md:h-96 object-cover rounded-[20px]"
+                    className="w-full h-64 md:h-[26rem] object-cover rounded-[20px]"
                   />
                 </div>
-                <div className="w-full lg:w-1/2 flex flex-col gap-6 md:gap-8 h-full">
+                <div className="w-full lg:w-[60%] flex flex-col gap-6 md:gap-8 h-full md:h-[26rem] bg-white shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] px-8 rounded-[20px] py-10">
                   <p className="text-base md:text-xl text-[#555] tracking-wider font-light font-[Work_Sans] leading-[135%]">
                     {testimonial.quote}
                   </p>
@@ -100,7 +130,7 @@ const Testimonials = () => {
           ))}
         </Swiper>
 
-        <div className="flex justify-start items-center gap-2.5 lg:-mt-8 mt-8 lg:pl-7 relative z-[1] lg:w-1/2 lg:ml-auto">
+        <div className="flex relative justify-start items-center gap-2.5 lg:-mt-8 mt-8 lg:pl-14  z-[1] lg:w-[60%] lg:ml-auto">
           {testimonials.map((_, index) => (
             <button
               key={index}
@@ -113,6 +143,20 @@ const Testimonials = () => {
               aria-label={`Go to testimonial ${index + 1}`}
             />
           ))}
+          <div className="absolute right-1  md:right-7 -bottom-4 sm:-bottom-1 flex gap-2">
+            <div
+              onClick={handlePrevious}
+              className="w-10 h-10 bg-white rounded-full border-[0.5px] border-gray-100 p-1 flex justify-center items-center m-auto shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)]"
+            >
+              <img src={arrowLeft} alt="leftArrow" />
+            </div>
+            <div
+              onClick={handleNext}
+              className="w-10 h-10 bg-white  rounded-full border-[0.5px] border-gray-100  p-1 flex justify-center items-center m-auto shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)]"
+            >
+              <img src={arrowRight} alt="leftArrow" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

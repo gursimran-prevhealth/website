@@ -25,6 +25,8 @@ import dashboard from "./dashboard.png";
 import dashboardDe from "./dashboard-de.png";
 import aiTranscription from "./ai-transcription.png";
 import aiTranscriptionSv from "./ai-transcription-sv.png";
+import arrowLeft from "./arrow-left.svg";
+import arrowRight from "./arrow-right.svg";
 import smartCare from "./smart-care.png";
 import smartCareSv from "./smart-care-sv.png";
 import heroAi from "./heroAi.png";
@@ -149,6 +151,8 @@ export {
   dashboardDe,
   aiTranscription,
   aiTranscriptionSv,
+  arrowLeft,
+  arrowRight,
   smartCare,
   smartCareSv,
   heroAi,
