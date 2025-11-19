@@ -146,15 +146,16 @@ const Testimonials = () => {
           <div className="absolute right-1  md:right-7 -bottom-4 sm:-bottom-1 flex gap-2">
             <button
               onClick={handlePrevious}
-              className="w-10 h-10 md:w-14 md:h-14 bg-white hover:bg-gray-50 transition-colors duration-500 rounded-full border-[0.5px] border-gray-200 p-1 flex justify-center items-center m-auto  cursor-pointer"
+              className="group w-10 h-10 md:w-14 md:h-14 bg-white hover:bg-gray-50 transition-colors duration-500 rounded-full border-[0.5px] border-gray-200 p-1 flex justify-center items-center cursor-pointer"
             >
-              <ArrowBackIosSharpIcon className="text-[#AFAFAF] hover:text-[#23586A] transition-colors duration-500]" />
+              <ArrowBackIosSharpIcon className="text-[#AFAFAF] group-hover:text-[#AFAFAF] hover:text-[#23586A] transition-colors duration-500" />
             </button>
+
             <button
               onClick={handleNext}
-              className="w-10 h-10 md:w-14 md:h-14 bg-white hover:bg-gray-50 transition-colors duration-500   rounded-full border-[0.5px] border-gray-200  p-1 flex justify-center items-center m-auto  cursor-pointer"
+              className="group w-10 h-10 md:w-14 md:h-14 bg-white hover:bg-gray-50 transition-colors duration-500 rounded-full border-[0.5px] border-gray-200 p-1 flex justify-center items-center cursor-pointer"
             >
-              <ArrowForwardIosSharpIcon className="text-[#AFAFAF] hover:text-[#23586A] transition-colors duration-500" />
+              <ArrowForwardIosSharpIcon className="text-[#AFAFAF] group-hover:text-[#AFAFAF] hover:text-[#23586A] transition-colors duration-500" />
             </button>
           </div>
         </div>
