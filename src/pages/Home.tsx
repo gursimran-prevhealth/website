@@ -246,7 +246,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="w-full max-w-[1560px] mx-auto px-5 sm:px-10 lg:px-20  py-10 overflow-hidden flex flex-col items-center gap-16 md:gap-18 ">
+      <div className="w-full max-w-[1560px] lg:mt-20 mx-auto px-5 sm:px-10 lg:px-20  py-10 overflow-hidden flex flex-col items-center gap-16 md:gap-18 ">
         <div className="w-full max-w-[609px] flex flex-col items-center gap-3 md:gap-4 text-center">
           <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
             <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />

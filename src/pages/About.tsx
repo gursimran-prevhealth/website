@@ -112,8 +112,11 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="w-full  md:max-w-[1440px]">
-        <div className="w-full md:px-20 px-5 flex flex-col gap-9">
+      <section className="w-full  md:max-w-[1440px] lg:mt-10 relative m-auto">
+        <div className="absolute w-full h-full -z-10">
+          <img src="blur2.png" className="h-full w-full" alt="blur" />
+        </div>
+        <div className="w-full md:p-20 px-5 flex flex-col gap-9 ">
           <div className="inline-flex items-center gap-1 py-0.5 rounded-[10px]">
             <div className="w-2.5 h-2.5 bg-[#fd8883] rounded-full"></div>
             <div className="text-[#545454] text-base tracking-wider font-light font-['Work_Sans'] leading-[1.35]">
@@ -121,16 +124,16 @@ export default function About() {
             </div>
           </div>
           <div className="w-full flex flex-col gap-6">
-            <h3 className="text-[#23586a] xl:text-5xl md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[1.35]">
+            <h3 className="text-[#23586a]  md:text-[2.5rem] text-2xl font-medium font-['Work_Sans'] leading-[1.35]">
               {t("aboutus.whoWeAre.points.list-1")}
             </h3>
-            <h3 className="text-[#23586a] xl:text-5xl md:text-3xl text-2xl font-medium font-['Work_Sans'] leading-[1.35]">
+            <h3 className="text-[#23586a] md:text-[2.5rem]  text-2xl font-medium font-['Work_Sans'] leading-[1.35]">
               {t("aboutus.whoWeAre.points.list-2")}
             </h3>
           </div>
         </div>
       </section>
-      <section className="w-full min-h-screen md:px-20 px-5 md:py-24 py-16 mx-auto flex flex-col items-center gap-16 max-w-[1440px]">
+      <section className="w-full min-h-screen md:px-20 px-5 md:py-36 py-16 mx-auto flex flex-col items-center gap-16 max-w-[1440px]">
         <div className="w-full max-w-[999px] flex flex-col items-center gap-4 text-center">
           <div className="flex flex-col max-w-[514px] md:max-w-[700px] items-center gap-2 w-full">
             <div className="inline-flex items-center gap-1 py-0.5 rounded-[10px]">

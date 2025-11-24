@@ -55,7 +55,7 @@ const Testimonials = () => {
   }, [swiperInstance, testimonials.length]);
 
   return (
-    <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-24 py-12  md:mt-20 flex flex-col items-center gap-8 md:gap-12 min-h-screen">
+    <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-24 py-12  md:mt-36 flex flex-col items-center gap-8 md:gap-12 min-h-screen">
       <div className="w-full max-w-[900px] flex flex-col items-center gap-3 md:gap-4 text-center">
         <div className="flex items-center gap-1 py-0.5 rounded-[10px]">
           <div className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#FD8883] rounded-full" />
@@ -70,8 +70,8 @@ const Testimonials = () => {
           {t("testimonials.sectionDesc")}
         </p>
       </div>
-      <div className="w-full h-auto md:h-[27rem] ">
-        <Swiper
+      <div className="w-full h-auto md:h-[27rem] sm:px-4">
+        {/* <Swiper
           modules={[Navigation]}
           spaceBetween={24}
           slidesPerView={1}
@@ -128,7 +128,55 @@ const Testimonials = () => {
               </div>
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> */}
+        <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-8 items-center h-full">
+          <div className="w-full lg:w-[43%]">
+            <img
+              src={testimonial}
+              alt="testimonial"
+              className="w-full h-64 md:h-[26rem] object-cover rounded-[20px]"
+            />
+          </div>
+          <div className="w-full lg:w-[57%] h-full">
+            <Swiper
+              modules={[Navigation]}
+              slidesPerView={1}
+              onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+              onSwiper={(swiper) => setSwiperInstance(swiper)}
+              className="w-full h-full"
+            >
+              {testimonials.map((testimonial: Testimonial, index: number) => (
+                <SwiperSlide key={index}>
+                  <div className="flex flex-col gap-6 md:gap-8 h-full bg-white shadow-[0px_1px_24px_0px_rgba(0,0,0,0.10)] px-8 rounded-[20px] py-10">
+                    <p className="text-base md:text-xl text-[#555] font-light">
+                      {testimonial.quote}
+                    </p>
+
+                    <div className="flex items-center gap-4">
+                      <div className="w-14 h-14 bg-zinc-300 rounded-full overflow-hidden">
+                        <img
+                          src={images[index]}
+                          className="size-full object-cover"
+                        />
+                      </div>
+                      <div>
+                        <h4 className="text-base md:text-lg text-[#555]">
+                          {testimonial.name}
+                        </h4>
+                        <p className="text-sm text-[#555]">
+                          {testimonial.role}
+                        </p>
+                        <p className="text-sm text-[#555]">
+                          {testimonial.desc}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
 
         <div className="flex relative justify-start items-center gap-2.5 lg:-mt-8 mt-8 lg:pl-14  z-[1] lg:w-[57%] lg:ml-auto">
           {testimonials.map((_, index) => (
