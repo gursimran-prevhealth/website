@@ -26,7 +26,6 @@ const Testimonials = () => {
     ? rawTestimonials
     : [];
   const images = [testimonialPerson2, testimonialPerson1];
-  const image = testimonial;
   const [activeIndex, setActiveIndex] = useState(0);
   const [swiperInstance, setSwiperInstance] = useState<SwiperCore | null>(null);
 
